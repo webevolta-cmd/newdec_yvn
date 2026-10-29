@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-preview/
+.vercel/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+test-results/
+scripts/e2e/out/
+assets-src/visualizer/room-mask-debug.jpg

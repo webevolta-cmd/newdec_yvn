@@ -1,0 +1,32 @@
+{
+  "id": "white-yellow-gold-net-art-marble",
+  "frame": "t29_833.png",
+  "video": "7668272239770422548",
+  "corners": [
+    [
+      297.70001220703125,
+      359.3999938964844
+    ],
+    [
+      420.1000061035156,
+      345.5
+    ],
+    [
+      444.8999938964844,
+      810.5999755859375
+    ],
+    [
+      318.29998779296875,
+      801.4000244140625
+    ]
+  ],
+  "widthM": 0.4,
+  "heightM": 1.425,
+  "flatten": 0.6,
+  "deglare": 0.0,
+  "pixels": [
+    127,
+    454
+  ],
+  "note": "t=29.83s; frontal swing leaf in chrome flip rack; strip between sticker column (left) and glare box (right), below LED-line reflection, above step reflections; leaf perspective solved from its 4 frame corners (H/W 4.2), scale from leaf height ~2.65 m"
+}

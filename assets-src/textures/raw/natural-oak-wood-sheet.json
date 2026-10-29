@@ -1,0 +1,32 @@
+{
+  "id": "natural-oak-wood-sheet",
+  "frame": "f24_00.png",
+  "video": "natural-oak-wood-sheet",
+  "corners": [
+    [
+      2.0,
+      1.5
+    ],
+    [
+      178.0,
+      143.8000030517578
+    ],
+    [
+      178.0,
+      512.0
+    ],
+    [
+      2.0,
+      519.7000122070312
+    ]
+  ],
+  "widthM": 0.39,
+  "heightM": 0.87,
+  "flatten": 0.75,
+  "deglare": 0.0,
+  "pixels": [
+    201,
+    449
+  ],
+  "note": "video 7683515606145961223 t=24.0s, left wall of final corner bay; perspective from 90deg-corner model (f~461px, wall ~35deg to view axis, VP x~610), scale from column width vs calibrated frame (corner Z~1.34m)"
+}

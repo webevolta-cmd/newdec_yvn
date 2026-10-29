@@ -1,0 +1,32 @@
+{
+  "id": "light-grey-plain-sheet",
+  "frame": "f11_33.png",
+  "video": "light-grey-plain-sheet",
+  "corners": [
+    [
+      2.0,
+      1.5
+    ],
+    [
+      195.0,
+      150.39999389648438
+    ],
+    [
+      195.0,
+      525.0
+    ],
+    [
+      2.0,
+      535.5999755859375
+    ]
+  ],
+  "widthM": 0.57,
+  "heightM": 1.22,
+  "flatten": 0.85,
+  "deglare": 0.0,
+  "pixels": [
+    219,
+    468
+  ],
+  "note": "video 7683515606145961223 t=11.33s, left wall of bathroom corner bay; perspective from 90deg-corner model (f~461px, wall ~38deg to view axis, assumed), scale from column width (corner Z~1.65m); plain colour so scale is uncritical"
+}

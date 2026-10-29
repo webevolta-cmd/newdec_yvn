@@ -1,0 +1,32 @@
+{
+  "id": "black-gold-swirl-art-marble",
+  "frame": "t23_600.png",
+  "video": "7668272239770422548",
+  "corners": [
+    [
+      354.5,
+      486.6000061035156
+    ],
+    [
+      531.5999755859375,
+      487.6000061035156
+    ],
+    [
+      530.5999755859375,
+      835.7999877929688
+    ],
+    [
+      353.6000061035156,
+      818.2999877929688
+    ]
+  ],
+  "widthM": 0.53,
+  "heightM": 1.03,
+  "flatten": 0.6,
+  "deglare": 0.0,
+  "pixels": [
+    177,
+    345
+  ],
+  "note": "t=23.6s; swing leaf in chrome flip rack, area between sticker/glare and step reflections; perspective solved on t=24.0 frame (leaf H/W 5.65 visible), SIFT-transferred; scale from leaf height ~2.75 m (horizon + presenter cross-check)"
+}

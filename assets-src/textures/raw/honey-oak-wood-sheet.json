@@ -1,0 +1,32 @@
+{
+  "id": "honey-oak-wood-sheet",
+  "frame": "f7_87.png",
+  "video": "7684313597001927953",
+  "corners": [
+    [
+      370.0,
+      4.0
+    ],
+    [
+      553.0,
+      1.0
+    ],
+    [
+      572.0,
+      477.0
+    ],
+    [
+      389.0,
+      480.0
+    ]
+  ],
+  "widthM": 0.46,
+  "heightM": 1.2,
+  "flatten": 0.75,
+  "deglare": 0.0,
+  "pixels": [
+    183,
+    477
+  ],
+  "note": "video 7684313597001927953 t=7.87s (sharpest moment); upper-right part of the sheet, right of the label stickers, above the presenter shadow; scale from sticker size vs full-height view at t=4.4s (2.80 m sheet = ~294 px/m there, x1.35 here = ~397 px/m)"
+}

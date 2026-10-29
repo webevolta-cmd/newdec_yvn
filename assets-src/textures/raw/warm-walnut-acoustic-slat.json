@@ -1,0 +1,32 @@
+{
+  "id": "warm-walnut-acoustic-slat",
+  "frame": "f24_8.png",
+  "video": "7684313597001927953",
+  "corners": [
+    [
+      373.1000061035156,
+      62.0
+    ],
+    [
+      567.0999755859375,
+      40.0
+    ],
+    [
+      552.2000122070312,
+      407.0
+    ],
+    [
+      366.20001220703125,
+      410.0
+    ]
+  ],
+  "widthM": 0.44,
+  "heightM": 0.84,
+  "flatten": 0.9,
+  "deglare": 0.0,
+  "pixels": [
+    191,
+    364
+  ],
+  "note": "video 7684313597001927953 t=24.8s (30fps extract). Quad spans 11 slat pitches (half-groove left of slat 1 to groove between slats 11/12; 15 slats per ~0.60 m panel => 40 mm pitch); top/bottom edges sloped toward horizontal vanishing point; above the white product label; darker top of wall trimmed."
+}

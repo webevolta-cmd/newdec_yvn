@@ -1,0 +1,32 @@
+{
+  "id": "light-travertine-look-sheet",
+  "frame": "t10_4.png",
+  "video": "7684313597001927953",
+  "corners": [
+    [
+      174.3000030517578,
+      144.39999389648438
+    ],
+    [
+      478.0,
+      20.799999237060547
+    ],
+    [
+      494.20001220703125,
+      337.0
+    ],
+    [
+      177.60000610351562,
+      389.6000061035156
+    ]
+  ],
+  "widthM": 1.15,
+  "heightM": 1.0,
+  "flatten": 0.75,
+  "deglare": 0.0,
+  "pixels": [
+    324,
+    282
+  ],
+  "note": "video t=10.4s; quad from full-sheet homography (1.22x2.80 m sheet), metric x 0.03-1.18 m, y 0.08-1.08 m from sheet top; above presenter's head"
+}

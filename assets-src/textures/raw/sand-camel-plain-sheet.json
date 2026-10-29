@@ -1,0 +1,32 @@
+{
+  "id": "sand-camel-plain-sheet",
+  "frame": "f24.50.png",
+  "video": "7683515606145961223",
+  "corners": [
+    [
+      300.0,
+      133.0
+    ],
+    [
+      573.0,
+      3.0
+    ],
+    [
+      573.0,
+      425.0
+    ],
+    [
+      300.0,
+      434.0
+    ]
+  ],
+  "widthM": 0.74,
+  "heightM": 0.86,
+  "flatten": 1.0,
+  "deglare": 0.0,
+  "pixels": [
+    311,
+    362
+  ],
+  "note": "right wall of corner booth, t=24.50s (no overlay, presenter below quad); quad follows perspective (wall receding to VP ~x-380); scale from corner LED profile (~0.15 m) vs 2.8 m wall height"
+}

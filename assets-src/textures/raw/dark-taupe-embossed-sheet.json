@@ -1,0 +1,32 @@
+{
+  "id": "dark-taupe-embossed-sheet",
+  "frame": "f11_33.png",
+  "video": "7684313597001927953",
+  "corners": [
+    [
+      5.900000095367432,
+      335.20001220703125
+    ],
+    [
+      112.0,
+      372.0
+    ],
+    [
+      115.0999984741211,
+      603.5
+    ],
+    [
+      8.5,
+      625.4000244140625
+    ]
+  ],
+  "widthM": 0.39,
+  "heightM": 0.81,
+  "flatten": 0.9,
+  "deglare": 0.0,
+  "pixels": [
+    126,
+    261
+  ],
+  "note": "video 7684313597001927953 t=11.33s (before the hand enters); oblique left wing (~26 deg from view axis), quad follows its perspective (horizontal VP 531.6,517.7 from top/bottom trims). Band lit by grazing light where the chevron emboss shows. Scale: 2.80 m sheet height between trims at the far edge; focal ~500 px estimated from the adjacent 1.22x2.80 m travertine sheet (+-10% on width)."
+}

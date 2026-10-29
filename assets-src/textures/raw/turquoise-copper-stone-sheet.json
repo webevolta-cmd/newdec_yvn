@@ -1,0 +1,32 @@
+{
+  "id": "turquoise-copper-stone-sheet",
+  "frame": "f17_6.png",
+  "video": "7674283683913813266",
+  "corners": [
+    [
+      136.39999389648438,
+      81.69999694824219
+    ],
+    [
+      393.6000061035156,
+      133.10000610351562
+    ],
+    [
+      394.20001220703125,
+      222.0
+    ],
+    [
+      138.10000610351562,
+      184.3000030517578
+    ]
+  ],
+  "widthM": 1.12,
+  "heightM": 0.4,
+  "flatten": 0.75,
+  "deglare": 0.6,
+  "pixels": [
+    268,
+    96
+  ],
+  "note": "video 7674283683913813266 t=17.6s (30fps extract). Panel inner corners TL(131,75.5) TR(405.5,131) BR(409,736) BL(143,778) mapped to the 1.20x2.80 m visible sheet (overlay states 1.220 m width, 2.8 m length; bottom edge read below the caption at y~778, consistent with a 1.2 m wide leaf turned ~15-20 deg); sub-rectangle u 0.02-1.14 m, v 0.02-0.42 m taken from that homography. Kept above the central LED streak (deglare left a visible pale ghost on it) and the presenter's head; far-right hinge highlight trimmed."
+}

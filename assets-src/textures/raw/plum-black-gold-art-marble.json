@@ -1,0 +1,32 @@
+{
+  "id": "plum-black-gold-art-marble",
+  "frame": "t26.5.png",
+  "video": "plum-black-gold-art-marble",
+  "corners": [
+    [
+      298.0,
+      505.0
+    ],
+    [
+      476.0,
+      500.0
+    ],
+    [
+      481.0,
+      870.0
+    ],
+    [
+      300.0,
+      860.0
+    ]
+  ],
+  "widthM": 0.58,
+  "heightM": 1.17,
+  "flatten": 0.7,
+  "deglare": 0.0,
+  "pixels": [
+    180,
+    363
+  ],
+  "note": "video 7668272239770422548 t=26.5s (1fps frame 027); lower part of the flip-display leaf below the price stickers: black geode pool, crystalline plum edge, white/gold areas; leaf width ~0.61 m assumed (half sheet), quad = 0.95 of leaf width; bottom trimmed above step reflections"
+}

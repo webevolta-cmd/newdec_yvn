@@ -1,0 +1,32 @@
+{
+  "id": "mocha-taupe-plain-sheet",
+  "frame": "f15.40.png",
+  "video": "7683515606145961223",
+  "corners": [
+    [
+      3.0,
+      35.0
+    ],
+    [
+      205.0,
+      139.0
+    ],
+    [
+      205.0,
+      440.0
+    ],
+    [
+      3.0,
+      435.0
+    ]
+  ],
+  "widthM": 0.48,
+  "heightM": 0.73,
+  "flatten": 1.0,
+  "deglare": 0.0,
+  "pixels": [
+    230,
+    350
+  ],
+  "note": "left wall of hallway corner booth, t=15.40s (clean moment before caption/insets); quad follows perspective (wall receding to VP ~x820)"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "dark-espresso-acoustic-slat",
+  "frame": "f14_02.png",
+  "video": "7684313597001927953",
+  "corners": [
+    [
+      499.0,
+      58.0
+    ],
+    [
+      573.0,
+      38.0
+    ],
+    [
+      567.0,
+      424.5
+    ],
+    [
+      493.0,
+      425.5
+    ]
+  ],
+  "widthM": 0.21,
+  "heightM": 1.16,
+  "flatten": 1.0,
+  "deglare": 0.0,
+  "pixels": [
+    75,
+    416
+  ],
+  "note": "video 7684313597001927953 t=14.02s; rightmost (closest) panel of the slat wall, right of the white edge, above the label sticker. Scale: slat pitch 14 px = 4.0 cm (neighbouring 0.6 m panels show ~15 pitches each), vertical from panel height ~910 px = 2.8 m (~326 px/m); quad follows the wall perspective (top edge slope, ~1 deg groove lean)."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "golden-teak-wood-sheet",
+  "frame": "f10_03.png",
+  "video": "golden-teak-wood-sheet",
+  "corners": [
+    [
+      345.0,
+      140.60000610351562
+    ],
+    [
+      574.0,
+      3.0
+    ],
+    [
+      574.0,
+      459.5
+    ],
+    [
+      345.0,
+      472.0
+    ]
+  ],
+  "widthM": 0.6,
+  "heightM": 1.02,
+  "flatten": 0.9,
+  "deglare": 0.0,
+  "pixels": [
+    248,
+    422
+  ],
+  "note": "video 7683515606145961223 t=10.03s, right wall of corner bay; perspective from 90deg-corner model (f~461px, wall ~50deg to view axis), scale from ceiling/column at corner Z~1.6m"
+}

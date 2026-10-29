@@ -1,0 +1,32 @@
+{
+  "id": "light-grey-acoustic-slat",
+  "frame": "f24_8.png",
+  "video": "7684313597001927953",
+  "corners": [
+    [
+      126.19999694824219,
+      66.4000015258789
+    ],
+    [
+      345.1000061035156,
+      40.0
+    ],
+    [
+      340.1000061035156,
+      330.0
+    ],
+    [
+      126.9000015258789,
+      338.0
+    ]
+  ],
+  "widthM": 0.56,
+  "heightM": 0.7,
+  "flatten": 0.9,
+  "deglare": 0.0,
+  "pixels": [
+    225,
+    281
+  ],
+  "note": "video 7684313597001927953 t=24.8s (30fps extract). Groove-to-groove quad spanning 14 slat pitches of one panel (15 slats per ~0.60 m panel => 40 mm pitch); top/bottom edges sloped toward the horizontal vanishing point; top of wall (darker) trimmed; stops above presenter's hair."
+}
