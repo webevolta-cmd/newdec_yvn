@@ -301,6 +301,21 @@ if (run('catalog')) {
   }
   check('catalog: filters split the products into categories', sum === total && total > 0, `${sum}/${total}`);
   await page.click('[data-catalog-filters] [data-filter="all"]');
+  const collapsed = await page.evaluate(() => ({
+    shown: document.querySelectorAll('[data-product-card]:not([hidden])').length,
+    cats: new Set(Array.from(document.querySelectorAll('[data-product-card]:not([hidden])')).map((c) => c.dataset.category)).size,
+    more: !document.querySelector('[data-catalog-more]').hidden,
+  }));
+  await page.click('[data-catalog-more]');
+  const expanded = await page.evaluate(() => ({
+    shown: document.querySelectorAll('[data-product-card]:not([hidden])').length,
+    more: !document.querySelector('[data-catalog-more]').hidden,
+  }));
+  check(
+    'catalog: starts with a mixed selection and «show all» lists every panel',
+    total <= 12 || (collapsed.shown === 12 && collapsed.cats > 1 && collapsed.more && expanded.shown === total && !expanded.more),
+    `${collapsed.shown} from ${collapsed.cats} categories → ${expanded.shown}/${total}`,
+  );
   const first = await page.$eval('[data-try]', (b) => b.dataset.try);
   await page.click(`[data-try="${first}"]`);
   await page.waitForFunction((pid) => document.querySelector('[data-viz-stage]')?.dataset.applied === pid, first, { timeout: 45000 });

@@ -187,11 +187,11 @@ def make_texture(crop: np.ndarray, rec: dict) -> tuple[np.ndarray, float, float]
         crop = crop[by:-by, bx:-bx]
         img = flat_colour(crop) if rec.get("flat") else even_light(crop, rec.get("evenLight", 0.22))
         img, rw = fit_axis(img, cw, mw, axis=1)
-        # Snap a near-matching repeat to a whole number per module so the pattern lines up with the
-        # joints (at most -15% / +20%; e.g. ribbed tiles), otherwise keep true scale.
+        # rec["snap"]: fit a near-matching repeat to a whole number per module so a regular pattern
+        # (ribbed tiles) lines up with the joints (at most -15% / +30%); otherwise keep true scale.
         n = max(1, round(mw / rw))
         snap = (mw / n) / rw
-        if mw > rw and 0.85 <= snap <= 1.2 and abs(snap - 1) > 0.01:
+        if rec.get("snap") and mw > rw and 0.85 <= snap <= 1.3 and abs(snap - 1) > 0.01:
             img = cv2.resize(img, (round(img.shape[1] * snap), img.shape[0]), interpolation=cv2.INTER_CUBIC)
             rw = mw / n
         if rec.get("grain") == "vertical" and ch < mh * 0.92:

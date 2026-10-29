@@ -622,7 +622,7 @@ export const catalogProducts: Product[] = [
     "alt": "Քարի ռելիեֆով վահանակ՝ ակոսավոր մոխրաշագանակագույն քար, NEW DEC",
     "surface": {
       "texture": "media/panels/taupe-ribbed-stone-panel.webp",
-      "widthM": 0.4765,
+      "widthM": 0.6,
       "heightM": 1.2,
       "moduleW": 0.6,
       "moduleH": 1.2,
@@ -855,7 +855,7 @@ export const catalogProducts: Product[] = [
     "alt": "Վահանակ՝ պղնձագույն ընկուզենի, NEW DEC",
     "surface": {
       "texture": "media/panels/copper-walnut-wood-sheet.webp",
-      "widthM": 1.22,
+      "widthM": 1.0333,
       "heightM": 2.8,
       "moduleW": 1.22,
       "moduleH": 2.8,
@@ -924,7 +924,7 @@ export const catalogProducts: Product[] = [
     "alt": "Վահանակ՝ ոսկեգույն թիք, NEW DEC",
     "surface": {
       "texture": "media/panels/golden-teak-wood-sheet.webp",
-      "widthM": 1.22,
+      "widthM": 1.1274,
       "heightM": 2.8,
       "moduleW": 1.22,
       "moduleH": 2.8,
@@ -993,7 +993,7 @@ export const catalogProducts: Product[] = [
     "alt": "Միագույն վահանակ՝ բաց մոխրագույն, NEW DEC",
     "surface": {
       "texture": "media/panels/light-grey-plain-sheet.webp",
-      "widthM": 1.22,
+      "widthM": 1.0723,
       "heightM": 2.2948,
       "moduleW": 1.22,
       "moduleH": 2.8,
