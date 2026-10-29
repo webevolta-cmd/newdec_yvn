@@ -126,24 +126,6 @@
   }
  },
  {
-  "id": "white-soft-grey-vein-marble",
-  "tiling": "module",
-  "scale": 9.38,
-  "source": {
-   "video": "7668272239770422548",
-   "time": "37.2 s"
-  }
- },
- {
-  "id": "warm-sand-stone-sheet",
-  "tiling": "module",
-  "scale": 8.71,
-  "source": {
-   "video": "7668272239770422548",
-   "time": "38.5 s"
-  }
- },
- {
   "id": "beige-petrified-wood-sheet",
   "tiling": "module",
   "scale": 2.77,

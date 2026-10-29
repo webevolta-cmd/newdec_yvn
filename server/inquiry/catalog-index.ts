@@ -56,14 +56,6 @@ export const catalogIndex: Record<string, { name: string; category: string }> = 
     "name": "Մուգ մոխրագույն մարմար՝ սպիտակ երակներով",
     "category": "Մարմարի տեսքով մեծաչափ թերթեր"
   },
-  "white-soft-grey-vein-marble": {
-    "name": "Սպիտակ մարմար՝ նուրբ մոխրագույն երակներով",
-    "category": "Մարմարի տեսքով մեծաչափ թերթեր"
-  },
-  "warm-sand-stone-sheet": {
-    "name": "Ավազագույն քար՝ մեղմ երակներով",
-    "category": "Մարմարի տեսքով մեծաչափ թերթեր"
-  },
   "beige-petrified-wood-sheet": {
     "name": "Բեժ քարացած փայտ՝ սև երակներով",
     "category": "Էկզոտիկ քարի և օնիքսի տեսքով թերթեր"

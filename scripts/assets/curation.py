@@ -116,12 +116,10 @@ MODULES = {
 # Per-product tiling where the category default does not suit the reference.
 TILING_OVERRIDE: dict[str, str] = {}
 
-# References that exist but are too partial to show a whole sheet faithfully (the pattern would have
-# to be enlarged more than 4x or mirrored into an obvious kaleidoscope). Listed as gaps.
-TOO_PARTIAL = {
-    "turquoise-copper-stone-sheet": "The only clear view is a strip about 1,12 × 0,40 m at 268 × 96 px; filling a 1,22 × 2,80 m sheet "
-    "from it would mean enlarging the pattern about 7x or mirroring it into an obvious kaleidoscope.",
-}
+# A reference that would have to be enlarged more than this to fill one sheet/tile is too partial to
+# show the panel faithfully, and is listed as a gap instead.
+MAX_ENLARGE = 5.0
+
 
 GLOSS = {"Փայլուն": 0.55, "Կիսափայլ": 0.25, "Մատ": 0.06, "Ռելիեֆ": 0.0}
 
@@ -160,8 +158,16 @@ def main(paths: list[str]) -> None:
         if not r or r.get("status") != "ok" or not (RAW / f"{pid}.png").exists():
             gaps.append({"id": pid, "name": name, "reason": (r or {}).get("gap_reason") or "no usable reference crop"})
             continue
-        if pid in TOO_PARTIAL:
-            gaps.append({"id": pid, "name": name, "reason": TOO_PARTIAL[pid]})
+        tiling = TILING_OVERRIDE.get(pid, MODULES[cat].get("tiling"))
+        mw, mh = (1.2, 2.8) if pid == "white-rock-relief-large-sheet" else (MODULES[cat]["moduleW"], MODULES[cat]["moduleH"])
+        enlarge = max(mw / r["widthM"], mh / r["heightM"])
+        if tiling == "module" and enlarge > MAX_ENLARGE:
+            gaps.append({
+                "id": pid,
+                "name": name,
+                "reason": f"The usable view covers only about {r['widthM']:.2f} × {r['heightM']:.2f} m; filling a "
+                f"{mw:.2f} × {mh:.2f} m module would enlarge the pattern about {enlarge:.0f}x.",
+            })
             continue
         module = dict(MODULES[cat])
         if pid in TILING_OVERRIDE:

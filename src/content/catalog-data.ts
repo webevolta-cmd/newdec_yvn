@@ -350,56 +350,6 @@ export const catalogProducts: Product[] = [
     }
   },
   {
-    "id": "white-soft-grey-vein-marble",
-    "name": "Սպիտակ մարմար՝ նուրբ մոխրագույն երակներով",
-    "category": "marble",
-    "finish": "Փայլուն",
-    "size": "2,90 × 1,22 մ",
-    "thickness": "3 մմ",
-    "variants": [],
-    "image": "media/catalog/white-soft-grey-vein-marble.webp",
-    "thumb": "media/catalog/white-soft-grey-vein-marble-thumb.webp",
-    "alt": "Մարմարի տեսքով թերթ՝ սպիտակ մարմար՝ նուրբ մոխրագույն երակներով, NEW DEC",
-    "surface": {
-      "texture": "media/panels/white-soft-grey-vein-marble.webp",
-      "widthM": 1.22,
-      "heightM": 2.8,
-      "moduleW": 1.22,
-      "moduleH": 2.8,
-      "seam": 0.6,
-      "gloss": 0.55
-    },
-    "source": {
-      "video": "7668272239770422548",
-      "time": "37.2 s"
-    }
-  },
-  {
-    "id": "warm-sand-stone-sheet",
-    "name": "Ավազագույն քար՝ մեղմ երակներով",
-    "category": "marble",
-    "finish": "Փայլուն",
-    "size": "2,90 × 1,22 մ",
-    "thickness": "3 մմ",
-    "variants": [],
-    "image": "media/catalog/warm-sand-stone-sheet.webp",
-    "thumb": "media/catalog/warm-sand-stone-sheet-thumb.webp",
-    "alt": "Մարմարի տեսքով թերթ՝ ավազագույն քար՝ մեղմ երակներով, NEW DEC",
-    "surface": {
-      "texture": "media/panels/warm-sand-stone-sheet.webp",
-      "widthM": 1.22,
-      "heightM": 2.8,
-      "moduleW": 1.22,
-      "moduleH": 2.8,
-      "seam": 0.6,
-      "gloss": 0.55
-    },
-    "source": {
-      "video": "7668272239770422548",
-      "time": "38.5 s"
-    }
-  },
-  {
     "id": "beige-petrified-wood-sheet",
     "name": "Բեժ քարացած փայտ՝ սև երակներով",
     "category": "exotic",
