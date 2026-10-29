@@ -4,7 +4,7 @@
   "video": "7696163499633937684",
   "corners": [
     [
-      73.5,
+      56.29999923706055,
       10.0
     ],
     [
@@ -16,17 +16,17 @@
       425.0
     ],
     [
-      85.19999694824219,
+      68.9000015258789,
       425.0
     ]
   ],
-  "widthM": 0.28,
+  "widthM": 0.32,
   "heightM": 0.97,
   "flatten": 0.8,
   "deglare": 0.0,
   "pixels": [
-    121,
-    418
+    138,
+    417
   ],
-  "note": "test"
+  "note": "video 7696163499633937684 t=18.73s (ffmpeg -ss), floor-to-ceiling slat column left of the green-gold marble, after the caption fades and above the presenter's raised hand. Groove-to-groove quad spanning 8 slat pitches on the right part of the column (the left third of the column is ~15% darker from lighting fall-off). Scale: at t=35.15 both column edges are visible and the column holds ~15 pitches (one 0.60 m panel) => 40 mm pitch, so 8 pitches = 0.32 m; local scale 441 px/m at top, 419 px/m at bottom => 415 px tall = 0.97 m. Quad corners sit on fitted groove lines (lean 0.030 left, 0.013 right; residual bow < 1 px)."
 }
