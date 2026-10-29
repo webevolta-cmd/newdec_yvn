@@ -22,11 +22,11 @@
   ],
   "widthM": 0.32,
   "heightM": 0.815,
-  "flatten": 0.8,
+  "flatten": 0.9,
   "deglare": 0.0,
   "pixels": [
     151,
     385
   ],
-  "note": "trial"
+  "note": "video 7696163499633937684 t=18.733s (ffmpeg -ss 18.733, 30fps frame 562): upper part of the floor-to-ceiling slat column left of the green-gold marble, the last frame after the caption fades and before the red light-leak transition (frames from 18.77s carry a red cast). Groove-centre to groove-centre quad over 8 slat pitches, from the slat at the left frame edge to the groove left of the caption-ghost compression block (x>=146, y 215-265), and above the presenter's fingertip (y>=436). Scale: at t=35.13 the whole column shows 15 slats edge to edge, giving a 0.60 m panel and 40 mm pitch, so W = 8 x 0.04 = 0.32 m. H from a camera model fitted to the grooves (vertical VP ~(290,7400) from groove convergence; horizontal VP x ~-3270 from the left-to-right pitch gradient; f ~740 px, H insensitive to f between 550 and 1000 px): 0.815 m. The naive local-pitch estimate (0.92 m) is ~11% too tall because the column is turned ~12 deg and the camera tilts down. Top/bottom edges follow the horizontal VP; groove bow < 1.6 px (lens distortion)."
 }

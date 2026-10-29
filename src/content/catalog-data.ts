@@ -26,8 +26,8 @@ export const catalogProducts: Product[] = [
       "gloss": 0.55
     },
     "source": {
-      "video": "7671633679050984722",
-      "time": "34.0 s"
+      "video": "7675304499333876999",
+      "time": "7.8 s"
     }
   },
   {
@@ -589,6 +589,54 @@ export const catalogProducts: Product[] = [
     }
   },
   {
+    "id": "warm-grey-soft-rock-panel",
+    "name": "Տաք մոխրագույն քար",
+    "category": "stone",
+    "finish": "Ռելիեֆ",
+    "size": "0,60 × 1,20 մ",
+    "variants": [],
+    "image": "media/catalog/warm-grey-soft-rock-panel.webp",
+    "thumb": "media/catalog/warm-grey-soft-rock-panel-thumb.webp",
+    "alt": "Քարի ռելիեֆով վահանակ՝ տաք մոխրագույն քար, NEW DEC",
+    "surface": {
+      "texture": "media/panels/warm-grey-soft-rock-panel.webp",
+      "widthM": 0.6,
+      "heightM": 1.2,
+      "moduleW": 0.6,
+      "moduleH": 1.2,
+      "stagger": 0.5,
+      "seam": 0.25,
+      "gloss": 0.0
+    },
+    "source": {
+      "video": "7668272239770422548",
+      "time": "53.6 s"
+    }
+  },
+  {
+    "id": "smoked-walnut-acoustic-slat",
+    "name": "Ռեյկային՝ մուգ ընկուզենի",
+    "category": "slat",
+    "finish": "Մատ",
+    "variants": [],
+    "image": "media/catalog/smoked-walnut-acoustic-slat.webp",
+    "thumb": "media/catalog/smoked-walnut-acoustic-slat-thumb.webp",
+    "alt": "Ռեյկային վահանակ՝ ռեյկային՝ մուգ ընկուզենի, NEW DEC",
+    "surface": {
+      "texture": "media/panels/smoked-walnut-acoustic-slat.webp",
+      "widthM": 0.64,
+      "heightM": 2.8,
+      "moduleW": 0.6,
+      "moduleH": 2.8,
+      "seam": 0.0,
+      "gloss": 0.06
+    },
+    "source": {
+      "video": "7696163499633937684",
+      "time": "18.7 s"
+    }
+  },
+  {
     "id": "light-grey-acoustic-slat",
     "name": "Ռեյկային՝ բաց մոխրագույն",
     "category": "slat",
@@ -724,6 +772,75 @@ export const catalogProducts: Product[] = [
     "source": {
       "video": "7684313597001927953",
       "time": "7.9 s"
+    }
+  },
+  {
+    "id": "copper-walnut-wood-sheet",
+    "name": "Պղնձագույն ընկուզենի",
+    "category": "wood",
+    "finish": "Մատ",
+    "variants": [],
+    "image": "media/catalog/copper-walnut-wood-sheet.webp",
+    "thumb": "media/catalog/copper-walnut-wood-sheet-thumb.webp",
+    "alt": "Վահանակ՝ պղնձագույն ընկուզենի, NEW DEC",
+    "surface": {
+      "texture": "media/panels/copper-walnut-wood-sheet.webp",
+      "widthM": 1.1,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.35,
+      "gloss": 0.06
+    },
+    "source": {
+      "video": "7683515606145961223",
+      "time": "11.5 s"
+    }
+  },
+  {
+    "id": "greige-oak-wood-sheet",
+    "name": "Մոխրաբեժ կաղնի",
+    "category": "wood",
+    "finish": "Մատ",
+    "variants": [],
+    "image": "media/catalog/greige-oak-wood-sheet.webp",
+    "thumb": "media/catalog/greige-oak-wood-sheet-thumb.webp",
+    "alt": "Վահանակ՝ մոխրաբեժ կաղնի, NEW DEC",
+    "surface": {
+      "texture": "media/panels/greige-oak-wood-sheet.webp",
+      "widthM": 1.08,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.35,
+      "gloss": 0.06
+    },
+    "source": {
+      "video": "7683515606145961223",
+      "time": "4.0 s"
+    }
+  },
+  {
+    "id": "grey-linear-grain-sheet",
+    "name": "Մոխրագույն՝ գծային հյուսվածքով",
+    "category": "wood",
+    "finish": "Մատ",
+    "variants": [],
+    "image": "media/catalog/grey-linear-grain-sheet.webp",
+    "thumb": "media/catalog/grey-linear-grain-sheet-thumb.webp",
+    "alt": "Վահանակ՝ մոխրագույն՝ գծային հյուսվածքով, NEW DEC",
+    "surface": {
+      "texture": "media/panels/grey-linear-grain-sheet.webp",
+      "widthM": 1.04,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.35,
+      "gloss": 0.06
+    },
+    "source": {
+      "video": "7683515606145961223",
+      "time": "10.0 s"
     }
   },
   {

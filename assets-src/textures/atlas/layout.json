@@ -39,6 +39,11 @@
    "file": "atlas-7.png",
    "w": 1024,
    "h": 704
+  },
+  {
+   "file": "atlas-8.png",
+   "w": 1024,
+   "h": 739
   }
  ],
  "items": [
@@ -491,6 +496,51 @@
    "y": 364,
    "w": 280,
    "h": 238
+  },
+  {
+   "atlas": 8,
+   "kind": "tex",
+   "name": "greige-oak-wood-sheet",
+   "x": 24,
+   "y": 24,
+   "w": 240,
+   "h": 476
+  },
+  {
+   "atlas": 8,
+   "kind": "tex",
+   "name": "grey-linear-grain-sheet",
+   "x": 288,
+   "y": 24,
+   "w": 238,
+   "h": 422
+  },
+  {
+   "atlas": 8,
+   "kind": "tex",
+   "name": "smoked-walnut-acoustic-slat",
+   "x": 550,
+   "y": 24,
+   "w": 151,
+   "h": 385
+  },
+  {
+   "atlas": 8,
+   "kind": "tex",
+   "name": "copper-walnut-wood-sheet",
+   "x": 725,
+   "y": 24,
+   "w": 231,
+   "h": 298
+  },
+  {
+   "atlas": 8,
+   "kind": "gal",
+   "name": "grey-rock-panel",
+   "x": 24,
+   "y": 524,
+   "w": 191,
+   "h": 191
   }
  ]
 }

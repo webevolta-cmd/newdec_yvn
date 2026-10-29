@@ -22,11 +22,11 @@
   ],
   "widthM": 0.54,
   "heightM": 1.07,
-  "flatten": 1.0,
+  "flatten": 0.9,
   "deglare": 0.0,
   "pixels": [
     240,
     476
   ],
-  "note": "test"
+  "note": "video 7683515606145961223 native frame 121 (t=4.03s, 1fps frame 4-5 close view, last frame before insets), right wall of the bedroom corner; right of the presenter's hair and above her hand. Quad edges converge to the wall VP x=-410,y=490 from ceiling-trim lines + 90-deg corner (f~462 px); scale from LED strip width. Residual left-to-right shading (wall darker toward the corner) of ~15% that flatten cannot fully remove."
 }

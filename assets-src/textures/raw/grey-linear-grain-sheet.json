@@ -1,0 +1,32 @@
+{
+  "id": "grey-linear-grain-sheet",
+  "frame": "n0301_t10.03.png",
+  "video": "7683515606145961223",
+  "corners": [
+    [
+      4.0,
+      2.0
+    ],
+    [
+      205.0,
+      189.89999389648438
+    ],
+    [
+      205.0,
+      490.0
+    ],
+    [
+      4.0,
+      475.6000061035156
+    ]
+  ],
+  "widthM": 0.52,
+  "heightM": 0.92,
+  "flatten": 0.85,
+  "deglare": 0.0,
+  "pixels": [
+    238,
+    422
+  ],
+  "note": "video 7683515606145961223 native frame 301 (t=10.03s, 1fps frame 11 moment, no text, before insets cover the lower half), left wall of the living-room corner; left of the presenter's hair, above her hand. Wall is ~55 deg from frontal: quad edges converge to VP x=553,y=515 (ceiling-trim slopes + LED-trim ratio, f~380 px in this clip, verticals parallel); scale from LED strip width."
+}

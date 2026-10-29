@@ -81,8 +81,11 @@ TikTok video id and frame it was taken from. Coverage and the remaining gaps are
 ## Inputs needed from the owner
 
 1. Confirmation that Instagram `@newdec_yvn` is this business, and which address to show.
-2. The e-mail address that should receive website requests.
+2. The e-mail address that should receive website requests, and a way to send mail: a Resend API key
+   with a verified sending domain, or SMTP details for a mailbox (see `.env.example`).
 3. Product names or codes as NEW DEC uses them, current price policy, and the rest of the range
    (Instagram and older TikTok videos were not accessible).
-4. Sunday hours; warranty, delivery and installation-service terms if they should be published.
-5. Photos of completed customer projects, if NEW DEC wants a projects section.
+4. Straight-on photos of each sheet in even light, to replace the video references and fill the
+   gaps listed in `CATALOG-COVERAGE.md` (true-scale patterns become possible with whole-sheet photos).
+5. Sunday hours; warranty, delivery and installation-service terms if they should be published.
+6. Photos of completed customer projects, if NEW DEC wants a projects section.

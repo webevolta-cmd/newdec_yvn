@@ -2,10 +2,10 @@
  {
   "id": "navy-violet-gold-vein-marble-sheet",
   "tiling": "module",
-  "scale": 2.01,
+  "scale": 2.1,
   "source": {
-   "video": "7671633679050984722",
-   "time": "34.0 s"
+   "video": "7675304499333876999",
+   "time": "7.8 s"
   }
  },
  {
@@ -216,6 +216,24 @@
   }
  },
  {
+  "id": "warm-grey-soft-rock-panel",
+  "tiling": "module",
+  "scale": 1.56,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "53.6 s"
+  }
+ },
+ {
+  "id": "smoked-walnut-acoustic-slat",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7696163499633937684",
+   "time": "18.7 s"
+  }
+ },
+ {
   "id": "light-grey-acoustic-slat",
   "tiling": "repeat",
   "scale": 1.0,
@@ -267,6 +285,33 @@
   "source": {
    "video": "7684313597001927953",
    "time": "7.9 s"
+  }
+ },
+ {
+  "id": "copper-walnut-wood-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7683515606145961223",
+   "time": "11.5 s"
+  }
+ },
+ {
+  "id": "greige-oak-wood-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7683515606145961223",
+   "time": "4.0 s"
+  }
+ },
+ {
+  "id": "grey-linear-grain-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7683515606145961223",
+   "time": "10.0 s"
   }
  },
  {

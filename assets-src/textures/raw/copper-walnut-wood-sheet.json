@@ -22,11 +22,11 @@
   ],
   "widthM": 0.55,
   "heightM": 0.71,
-  "flatten": 1.0,
+  "flatten": 0.9,
   "deglare": 0.0,
   "pixels": [
     231,
     298
   ],
-  "note": "test"
+  "note": "video 7683515606145961223 native frame 344 (t=11.47s, 1fps frame 12 moment, before text/insets appear), right wall of the bathroom corner; clear of hair, shoulder and hand. Quad edges converge to the wall VP x=-490,y=490 (wall ~31 deg from frontal, from LED-trim width ratio, f~460 px calibrated on the bedroom corner); scale from LED strip width (8.5 cm, calibrated against 2.8 m corner height). Upper sheen zone excluded."
 }

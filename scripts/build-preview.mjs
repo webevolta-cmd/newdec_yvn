@@ -37,7 +37,9 @@ const titleMatch = /<title>[\s\S]*?<\/title>/.exec(headClean);
 const restHead = headClean.replace(titleMatch[0], '');
 
 const page = [
-  titleMatch[0],
+  // The host names the page after its <title>, so the preview carries the business name; the full SEO
+  // title stays in the production build.
+  '<title>NEW DEC</title>',
   '<meta name="claude:viewport-fit-sides" content="cover">',
   restHead,
   // The host provides the <html> element; restore the page language for assistive tech and fonts.

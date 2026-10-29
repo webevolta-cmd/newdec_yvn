@@ -16,10 +16,10 @@
    "alt": "Մարմարի տեսքով թերթ՝ մուգ կապույտ մարմար՝ ոսկեգույն երակներով, NEW DEC",
    "gloss": 0.55,
    "source": {
-    "video": "7671633679050984722",
-    "time": "34.0 s"
+    "video": "7675304499333876999",
+    "time": "7.8 s"
    },
-   "scaleBasis": "In 1fps frame 046 the whole left leaf of the swing rack is visible. I fitted its four print edges (top-left corner extrapolated) and set them to 1.22 x 2.80 m to get a plane homography. SIFT carried it to 230+ frames, with 146 inliers on the chosen frame. Check: with a focal length of about 455 px the leaf axes come out equal-length and perpendicular in every 7671 frame, and also in the 7675 kitchen-booth view of the same print, so the aspect ratio holds to within a few percent. The quad is the plane rectangle u 0.13-1.00 m, v 0.41-1.80 m from the sheet's top-left, projected back into the frame.",
+   "scaleBasis": "All four inner edges of the whole leaf are visible in 7671633679050984722 at t=44.6s (camera pulled back): TL (78.6,11.9), TR (243,246.2), BR (243,769.4), BL (44.6,987.6). Those corners were rectified to a full 1.22 m wide sheet. The sharper, closer 7675 frame was registered to that metric sheet with a SIFT homography (176 inliers, median error 0.5 px at 250 px/m; the same print and sheet appear in both videos). The 7675 frame's own top, bottom and right frame edges land on v=0, v=2.80 and u=1.22 within 2-4 cm, which checks the registration. Self-calibrating both views together gives f≈410 px with the principal point at the image centre, and an aspect 1.05-1.12x taller than 1.22x2.80. For that reason the stated 2.90 m sheet length was used for the vertical scale. The quad is the metric rectangle u 0.38-0.96 m by v 0.31-2.20 m of the sheet, so the texture is 0.58 x 1.885 m. Proportions should be within about 5%.",
    "moduleW": 1.22,
    "moduleH": 2.8,
    "seam": 0.6,
@@ -458,6 +458,44 @@
    "size": "0,60 × 1,20 մ"
   },
   {
+   "id": "warm-grey-soft-rock-panel",
+   "name": "Տաք մոխրագույն քար",
+   "category": "stone",
+   "finish": "Ռելիեֆ",
+   "alt": "Քարի ռելիեֆով վահանակ՝ տաք մոխրագույն քար, NEW DEC",
+   "gloss": 0.0,
+   "source": {
+    "video": "7668272239770422548",
+    "time": "53.6 s"
+   },
+   "scaleBasis": "The loose sample is a 0.60 x 1.20 m stone tile standing on its short edge. It leans about 9° against the right wall and is turned about 60° from the camera. I fitted the top, right and bottom panel edges with sub-pixel gradient line fits: TR (537,503), BR extrapolated to (503,1052) about 30 px below the frame, horizontal vanishing point (-58,515). The focal length is about 428 px. It comes from the orthogonal floor-tile seams and matches the phone's 0.5x ultrawide. With that model, the 0.60 m left edge falls exactly on the visible top-left corner (354,505), and the right edge from TR to BR is 1.20 m. The quad is a true 3D rectangle in the panel plane (s 0.015-0.40 m from the right edge, t 0.015-1.14 m from the top), projected back into the frame. Corners: 400.5,510.6 530.1,509.4 497.6,1015.0 363.3,894.1. W/H changes by only ±8% for focal lengths from 380 to 500 px.",
+   "moduleW": 0.6,
+   "moduleH": 1.2,
+   "seam": 0.25,
+   "tiling": "module",
+   "evenLight": 0.3,
+   "size": "0,60 × 1,20 մ",
+   "stagger": 0.5
+  },
+  {
+   "id": "smoked-walnut-acoustic-slat",
+   "name": "Ռեյկային՝ մուգ ընկուզենի",
+   "category": "slat",
+   "finish": "Մատ",
+   "alt": "Ռեյկային վահանակ՝ ռեյկային՝ մուգ ընկուզենի, NEW DEC",
+   "gloss": 0.06,
+   "source": {
+    "video": "7696163499633937684",
+    "time": "18.7 s"
+   },
+   "scaleBasis": "Horizontal: at t=35.13 s the whole floor-to-ceiling column is in view and holds 15 slats edge to edge, about 193 px at a 13 px pitch. That is a standard 0.60 m acoustic panel with a 40 mm slat-plus-groove pitch, which matches the 15-slat panels in 7684313597001927953. Slats are about 2.5-3x the groove width. The quad runs groove centre to groove centre over 8 pitches, so W = 0.32 m and it tiles horizontally on a half-groove. Vertical: I fitted a camera model to the grooves. They converge to a vertical vanishing point near (290, 7400), so the camera tilts down. The pitch grows from 16.2 to 17.4 px left to right, which gives a horizontal vanishing point at x of about -3270, so the column is turned about 12 degrees. I took f as about 740 px; H moves only between 0.83 and 0.84 m for f from 550 to 1000 px. Back-projecting the quad onto the wall plane gives H = 0.815 m for W = 0.32 m. Simply using the local pitch as the vertical scale would give 0.92 m, about 11% too tall. Top and bottom edges follow the horizontal vanishing point. In the output the grooves are evenly spaced at 18.8 px (40 mm) and vertical.",
+   "moduleW": 0.6,
+   "moduleH": 2.8,
+   "seam": 0.0,
+   "tiling": "repeat",
+   "grain": "vertical"
+  },
+  {
    "id": "light-grey-acoustic-slat",
    "name": "Ռեյկային՝ բաց մոխրագույն",
    "category": "slat",
@@ -559,6 +597,60 @@
     "time": "7.9 s"
    },
    "scaleBasis": "At t=4.4 s the whole sheet height is visible and near front-facing: 822 px between the frame trims, taken as 2.80 m, so about 294 px/m. At t=7.87 s the camera is closer, and the two label stickers measure about 1.35x larger, so about 397 px/m. The quad is 183x477 px, so 0.46 x 1.20 m. The verticals lean about 2.3 deg (camera roll), and the quad follows that lean.",
+   "moduleW": 1.22,
+   "moduleH": 2.8,
+   "seam": 0.35,
+   "tiling": "repeat",
+   "grain": "vertical"
+  },
+  {
+   "id": "copper-walnut-wood-sheet",
+   "name": "Պղնձագույն ընկուզենի",
+   "category": "wood",
+   "finish": "Մատ",
+   "alt": "Վահանակ՝ պղնձագույն ընկուզենի, NEW DEC",
+   "gloss": 0.06,
+   "source": {
+    "video": "7683515606145961223",
+    "time": "11.5 s"
+   },
+   "scaleBasis": "Right wall of the bathroom corner. There is no ceiling or floor in view, so the wall angle (~28-31 deg from frontal) comes from the width ratio of the LED column's two black trims. The focal length is f~460 px, calibrated on the bedroom corner from ceiling and floor lines at a 90 deg corner. The quad's top and bottom edges run to the wall vanishing point (x=-490, y=490). The absolute scale comes from the LED strip width (~8.5 cm, calibrated against the 2.8 m corner height in the far view): ~350-445 px/m across the quad. The aspect ratio holds within ~4% for f between 375 and 462 and for wall angles from 26 to 31 deg. Rectified grain is vertical (lean <0.2 deg).",
+   "moduleW": 1.22,
+   "moduleH": 2.8,
+   "seam": 0.35,
+   "tiling": "repeat",
+   "grain": "vertical"
+  },
+  {
+   "id": "greige-oak-wood-sheet",
+   "name": "Մոխրաբեժ կաղնի",
+   "category": "wood",
+   "finish": "Մատ",
+   "alt": "Վահանակ՝ մոխրաբեժ կաղնի, NEW DEC",
+   "gloss": 0.06,
+   "source": {
+    "video": "7683515606145961223",
+    "time": "4.0 s"
+   },
+   "scaleBasis": "Right wall of the bedroom corner. Both ceiling-trim lines are visible, and with f~462 px (calibrated from 4 lines in the far view of the same clip) and a 90 deg corner they give the horizon at ~y 500 and the wall vanishing point at x=-410 (wall ~33.5 deg from frontal). The LED trim ratio agrees. The quad's top and bottom edges run to that point. The absolute scale comes from the LED strip width, 26.2 px = 8.5 cm at the corner, so ~357-450 px/m across the quad. The aspect ratio holds within ~3% for wall angles from 31 to 36 deg and a horizon from y 490 to 520.",
+   "moduleW": 1.22,
+   "moduleH": 2.8,
+   "seam": 0.35,
+   "tiling": "repeat",
+   "grain": "vertical"
+  },
+  {
+   "id": "grey-linear-grain-sheet",
+   "name": "Մոխրագույն՝ գծային հյուսվածքով",
+   "category": "wood",
+   "finish": "Մատ",
+   "alt": "Վահանակ՝ մոխրագույն՝ գծային հյուսվածքով, NEW DEC",
+   "gloss": 0.06,
+   "source": {
+    "video": "7683515606145961223",
+    "time": "10.0 s"
+   },
+   "scaleBasis": "Left wall of the living-room corner, seen very obliquely (~55 deg from frontal). The ceiling-trim slopes (left 1.58, right -0.88), parallel verticals (horizon ~y 512) and a 90 deg corner give f~380 px in this clip and a wall vanishing point at x=553, y=515. The LED trim ratio gives a consistent wall angle of ~54-55 deg. The quad's top and bottom edges run to that point, so the strong foreshortening (the right part is about 1.6x farther away) is undone. The absolute scale comes from the LED strip width (23 px = 8.5 cm at the corner), so ~517 px/m at the left edge. The aspect ratio holds within ~4% for wall angles from 53 to 57 deg and f between 381 and 462. The absolute size is +-15%.",
    "moduleW": 1.22,
    "moduleH": 2.8,
    "seam": 0.35,
@@ -729,16 +821,6 @@
    "reason": "The usable view covers only about 1.12 × 0.40 m; filling a 1.22 × 2.80 m module would enlarge the pattern about 7x."
   },
   {
-   "id": "warm-grey-soft-rock-panel",
-   "name": "Տաք մոխրագույն քար",
-   "reason": "no usable reference crop"
-  },
-  {
-   "id": "smoked-walnut-acoustic-slat",
-   "name": "Ռեյկային՝ մուգ ընկուզենի",
-   "reason": "no usable reference crop"
-  },
-  {
    "id": "light-oak-acoustic-slat",
    "name": "Ռեյկային՝ բաց կաղնի",
    "reason": "The light oak panel only appears as a wedge-shaped sliver at the left edge of the frame in 7684313597001927953. I checked 30fps extracts from 13.9 s to 20 s, and the camera never pans further left. At its widest the sliver is about 60 px at the top of the wall, narrowing to about 25 px near the floor. The slats lean about 4 degrees, so a quad that follows them and stays on the panel is only about 30-48 px wide (3-4 slats). It also has a strong spotlight gradient and on-screen text crosses its lower part. The other source, 7680190853645716756 frame 9, is a background strip about 28 px wide that includes a label, and its match to this product is low-confidence. Under the 60 px limit, so I did not make a texture."
@@ -761,22 +843,7 @@
   {
    "id": "dark-brown-fluted-panel",
    "name": "Ակոսավոր՝ մուգ շագանակագույն",
-   "reason": "no usable reference crop"
-  },
-  {
-   "id": "copper-walnut-wood-sheet",
-   "name": "Պղնձագույն ընկուզենի",
-   "reason": "no usable reference crop"
-  },
-  {
-   "id": "greige-oak-wood-sheet",
-   "name": "Մոխրաբեժ կաղնի",
-   "reason": "no usable reference crop"
-  },
-  {
-   "id": "grey-linear-grain-sheet",
-   "name": "Մոխրագույն՝ գծային հյուսվածքով",
-   "reason": "no usable reference crop"
+   "reason": "There is no usable true-proportion area, and the object is ambiguous. The dark brown fluted object is a distant background strip at the right edge of the frame, only about 80-88 px wide in total (x≈485-572 at best). The 16.000 ԴՐԱՄ price overlay and its black halo cover it above y≈200 until about t 52.9 s, and the presenter's head and hair cover it below y≈395. Its rib pitch is not uniform. Groove spacing was measured consistently in 6 sharp frames (t 52.5-53.0 s) and falls into three abrupt plateaus from left to right: about 5.4 px (5 ribs), about 9.5 px (3 ribs) and about 13 px (2 ribs). The top edge kinks slightly at the group boundaries. The surface is therefore either faceted (a sample wrapped around a column or corner) or a row of different fluted profiles. A planar perspective cannot explain it, because the top edge is nearly horizontal. A single flat rectification would mix rib widths that differ by up to 2.4x. The largest group with constant pitch is only 2-3 ribs, about 26-28 px wide, which is a sliver well under 60 px. The record's 'evenly spaced ribs' cannot be confirmed. A frontal view from another video is needed."
   },
   {
    "id": "gold-glitter-panel",

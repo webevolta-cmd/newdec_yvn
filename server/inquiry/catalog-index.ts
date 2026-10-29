@@ -96,6 +96,14 @@ export const catalogIndex: Record<string, { name: string; category: string }> = 
     "name": "Մոխրագույն թերթաքար",
     "category": "Քարի ռելիեֆով վահանակներ"
   },
+  "warm-grey-soft-rock-panel": {
+    "name": "Տաք մոխրագույն քար",
+    "category": "Քարի ռելիեֆով վահանակներ"
+  },
+  "smoked-walnut-acoustic-slat": {
+    "name": "Ռեյկային՝ մուգ ընկուզենի",
+    "category": "Ռեյկային և ակոսավոր վահանակներ"
+  },
   "light-grey-acoustic-slat": {
     "name": "Ռեյկային՝ բաց մոխրագույն",
     "category": "Ռեյկային և ակոսավոր վահանակներ"
@@ -118,6 +126,18 @@ export const catalogIndex: Record<string, { name: string; category: string }> = 
   },
   "honey-oak-wood-sheet": {
     "name": "Մեղրագույն կաղնի",
+    "category": "Փայտի և տրավերտինի տեսքով վահանակներ"
+  },
+  "copper-walnut-wood-sheet": {
+    "name": "Պղնձագույն ընկուզենի",
+    "category": "Փայտի և տրավերտինի տեսքով վահանակներ"
+  },
+  "greige-oak-wood-sheet": {
+    "name": "Մոխրաբեժ կաղնի",
+    "category": "Փայտի և տրավերտինի տեսքով վահանակներ"
+  },
+  "grey-linear-grain-sheet": {
+    "name": "Մոխրագույն՝ գծային հյուսվածքով",
     "category": "Փայտի և տրավերտինի տեսքով վահանակներ"
   },
   "golden-teak-wood-sheet": {
