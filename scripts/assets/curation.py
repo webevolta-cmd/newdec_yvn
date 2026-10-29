@@ -184,7 +184,7 @@ def main(paths: list[str]) -> None:
             item["stagger"] = r["stagger"] if cat == "stone" else 0
         products.append(item)
     for pid, r in results.items():
-        if pid not in CURATION and r.get("status") == "gap":
+        if pid not in CURATION and pid not in EXCLUDED and r.get("status") == "gap":
             gaps.append({"id": pid, "name": r.get("name_hy", pid), "reason": r.get("gap_reason") or "no usable reference crop"})
     excluded = [{"id": k, "name": n, "reason": why} for k, (n, why) in EXCLUDED.items()]
     out = {"categoryNames": CATEGORY_NAMES, "products": products, "gaps": gaps, "excluded": excluded}

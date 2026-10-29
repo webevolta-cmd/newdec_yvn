@@ -102,6 +102,29 @@ export const catalogProducts: Product[] = [
     }
   },
   {
+    "id": "golden-brown-marble-wall",
+    "name": "Ոսկեշագանակագույն մարմար՝ նուրբ երակներով",
+    "category": "marble",
+    "finish": "Փայլուն",
+    "variants": [],
+    "image": "media/catalog/golden-brown-marble-wall.webp",
+    "thumb": "media/catalog/golden-brown-marble-wall-thumb.webp",
+    "alt": "Մարմարի տեսքով թերթ՝ ոսկեշագանակագույն մարմար՝ նուրբ երակներով, NEW DEC",
+    "surface": {
+      "texture": "media/panels/golden-brown-marble-wall.webp",
+      "widthM": 1.22,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.6,
+      "gloss": 0.55
+    },
+    "source": {
+      "video": "7680190853645716756",
+      "time": "0.9 s"
+    }
+  },
+  {
     "id": "plum-black-gold-art-marble",
     "name": "Սալորագույն-սև մարմար՝ ոսկեգույն եզրերով",
     "category": "marble",

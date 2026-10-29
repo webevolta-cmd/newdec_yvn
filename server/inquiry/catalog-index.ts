@@ -16,6 +16,10 @@ export const catalogIndex: Record<string, { name: string; category: string }> = 
     "name": "Սև մարմար՝ սպիտակ ցանցաձև երակներով",
     "category": "Մարմարի տեսքով մեծաչափ թերթեր"
   },
+  "golden-brown-marble-wall": {
+    "name": "Ոսկեշագանակագույն մարմար՝ նուրբ երակներով",
+    "category": "Մարմարի տեսքով մեծաչափ թերթեր"
+  },
   "plum-black-gold-art-marble": {
     "name": "Սալորագույն-սև մարմար՝ ոսկեգույն եզրերով",
     "category": "Մարմարի տեսքով մեծաչափ թերթեր"

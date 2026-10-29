@@ -155,6 +155,18 @@
   "quality_notes": "Only the band where grazing light reveals the emboss is used. Above it, the same surface looks smooth under the sheen, and below it, it is nearly black. The emboss is a small repeating chevron or herringbone, about 3 cm per V. It is clearest on the left and lower half and softer toward the far (right) side and the top of the crop, because of oblique-view blur. Colour is a dark warm grey-taupe. No hand, text, trim or other panel. Output is 126x261 px. Flatten 0.9; a residual vertical gradient remains (L 108 to 88, bottom slightly darker)."
  },
  {
+  "id": "fluted-panel-colour-range",
+  "status": "gap",
+  "source": {
+   "video": "7680190853645716756",
+   "frame": "t=4.4-8.8s (best: 4.70s, 1fps frames 005-009)"
+  },
+  "gloss": 0.15,
+  "finish_hy": "Մատ",
+  "gap_reason": "In every usable frame (t=4.4-8.8s) the colour range is one background sample wall about 135 px wide. It is made of six different panels side by side, and each is only 20-24 px wide in the frame: sage x362-381, graphite 381-405, white 405-429, champagne 429-453, mauve-grey 453-473 (with a glare streak) and wood/charcoal 473-495, measured at t=4.70s. A quad on a single colour would be a sliver far under the ~60 px minimum. A quad across the row would mix six different panels. The wall is also soft, being background, and no closer view exists in this video or any other source. So I made no texture.",
+  "quality_notes": "The ribs are visible at about 4-5 px pitch, which is roughly 5-7 ribs per colour panel. Each panel's white label is at about y=490-520, and the presenter's hand and the caption cover the region below y≈560. If this range is needed, it needs a dedicated close-up source, one colour at a time."
+ },
+ {
   "id": "gold-glitter-panel",
   "status": "gap",
   "gap_reason": "The panel only appears as a distant background strip next to the rose-gold panel, in t=0-4s of video 7684313597001927953. The saturated gold strip is never wider than about 20-26 px: about 16-24 px at t=0.6-0.9s and about 20-26 px at t=3.8-3.97s (x≈52-78). That is far under the ~60 px threshold. At t=3.7-4.1s the presenter's hand covers it, and it is motion-blurred and has a bright spotlight hotspot near the top (y≈430-450). The panel does not appear anywhere else in the video, so I produced no texture.",
@@ -165,6 +177,23 @@
   "finish_hy": "Փայլուն",
   "gloss": 0.6,
   "quality_notes": "It looks like dense, bright yellow-gold/amber reflective flecks (glitter or crushed glass) in a silver metal edge trim. A usable texture needs a close-up shot."
+ },
+ {
+  "id": "golden-brown-marble-wall",
+  "status": "ok",
+  "source": {
+   "video": "7680190853645716756",
+   "frame": "t=0.933s (30fps extract, t0_933.png; 1fps frame 001)"
+  },
+  "widthM": 0.955,
+  "heightM": 0.812,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "I took the marble wall height, from the floor line to the ceiling band, as one 2.80 m sheet. The wall's top and floor lines converge to a vanishing point near (1235,475), and I fitted them from a colour mask with a residual under 1 px. The quad's height is 2-31% of the wall height, which gives 0.81 m. I got the width from the same vanishing point and a phone focal length of about 800 px (about 0.95 m). With f set to 700-900 px the width would be 0.9-1.0 m. The opening frames also show the clean wall from the portal edge out to the frame edge as about 1.2 m, which is consistent with one 1.22 m sheet. I cross-checked against a frontal strip at t=20.6s, where I scaled the sticker position to the 2.80 m wall height. At the same px/m both crops show the same vein density.",
+  "quality_notes": "The texture is clean: no presenter, caption, sticker, chrome frame or ceiling. The quad sits just right of the portal edge. Its top is about 15 px below the soft line between the marble and the grey ceiling band. Its bottom stops just above the vertical reflections of the portal chrome, which run through the middle of the wall. The left and right edges follow a +0.025 lean from slight camera roll, and the wall is seen about 50 degrees off-axis. The output is 280x238 px. It is soft overall, and the far (right) side is smeared horizontally by the oblique view and motion blur: horizontal gradient energy is about half the vertical. The top is slightly darker (L 119 vs 128 after --flatten 0.9), and that is acceptable. A sharper option exists but it is only 0.22 m wide: a frontal view at t=20.63s, quad 502.5,2 574.5,6 562.2,410 492.6,410, about 0.225 x 1.30 m. I rejected it because tiling would mirror it every 22 cm. The 1fps source bboxes reached down to y=520, which runs into the reflection band, so I did not use them."
  },
  {
   "id": "golden-teak-wood-sheet",
