@@ -436,6 +436,10 @@
    "tiling": "repeat",
    "evenLight": 0.3,
    "grain": "vertical",
+   "trim": [
+    0.0,
+    0.8
+   ],
    "size": "0,60 × 1,20 մ"
   },
   {

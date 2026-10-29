@@ -116,7 +116,7 @@ MODULES = {
 # Per-product tiling where the category default does not suit the reference. Ribbed relief reads by
 # its rib spacing, so it keeps true scale across the ribs instead of being enlarged to fill a tile.
 TILING_OVERRIDE: dict[str, dict] = {
-    "taupe-ribbed-stone-panel": {"tiling": "repeat", "grain": "vertical"},
+    "taupe-ribbed-stone-panel": {"tiling": "repeat", "grain": "vertical", "trim": [0.0, 0.8]},
 }
 
 # A reference that would have to be enlarged more than this to fill one sheet/tile is too partial to

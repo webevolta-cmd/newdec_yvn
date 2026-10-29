@@ -8,25 +8,25 @@
       15.600000381469727
     ],
     [
-      197.89999389648438,
-      146.0
+      163.89999389648438,
+      122.80000305175781
     ],
     [
-      205.5,
-      476.70001220703125
+      174.0,
+      477.5
     ],
     [
       32.0,
       481.5
     ]
   ],
-  "widthM": 0.64,
+  "widthM": 0.49,
   "heightM": 1.13,
-  "flatten": 0.75,
-  "deglare": 0.4,
+  "flatten": 0.6,
+  "deglare": 0.0,
   "pixels": [
-    226,
-    399
+    178,
+    411
   ],
-  "note": "7675304499333876999 t=0.00s (sharpest, presenter low); left wall of the corner booth. Wall model from 7674283683913813266 f023: top/bottom trim lines (inner height 2.80 m), corner edge, booth VPs, f=520px (90-deg corner; floor-tile joints give 460-550), transferred to this frame by SIFT homography (723 inliers). Quad = u 0.06-0.70 m left of the corner, v 0.30-1.43 m below the top trim."
+  "note": "7675304499333876999 t=0.00s (sharpest frame, presenter low); left wall of the corner booth. Wall model from 7674283683913813266 f023: top/bottom trim lines (inner height 2.80 m), corner edge, booth vanishing points, f=520px (90-deg corner; floor-tile joints give 460-550), transferred to this frame by SIFT homography (723 inliers; cross-check rectification of both videos aligns). Quad = u 0.21-0.70 m left of the corner, v 0.30-1.43 m below the top trim; stops left of a ceiling-spotlight reflection (moves between videos). No deglare: it would erase the light crystal pattern."
 }

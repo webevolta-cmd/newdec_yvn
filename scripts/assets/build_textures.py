@@ -164,6 +164,12 @@ def make_texture(crop: np.ndarray, rec: dict) -> tuple[np.ndarray, float, float]
     """
     mw, mh = rec["moduleW"], rec["moduleH"]
     cw, ch = rec["widthM"], rec["heightM"]
+    if rec.get("trim"):
+        # Keep only rows [top, bottom) of the crop (fractions), e.g. to drop a blurred band.
+        top, bottom = rec["trim"]
+        h = crop.shape[0]
+        crop = crop[round(top * h) : round(bottom * h)]
+        ch *= bottom - top
     cover_scale = max(mw / cw, mh / ch)
     mode = rec.get("tiling") or ("module" if cover_scale <= 1.7 else "repeat")
     rec["tiling"] = mode
@@ -176,6 +182,13 @@ def make_texture(crop: np.ndarray, rec: dict) -> tuple[np.ndarray, float, float]
     else:
         img = even_light(crop, rec.get("evenLight", 0.22))
         img, rw = fit_axis(img, cw, mw, axis=1)
+        # Snap a near-matching repeat to a whole number per module so the pattern lines up with the
+        # joints (at most -15% / +20%; e.g. ribbed tiles), otherwise keep true scale.
+        n = max(1, round(mw / rw))
+        snap = (mw / n) / rw
+        if mw > rw and 0.85 <= snap <= 1.2 and abs(snap - 1) > 0.01:
+            img = cv2.resize(img, (round(img.shape[1] * snap), img.shape[0]), interpolation=cv2.INTER_CUBIC)
+            rw = mw / n
         if rec.get("grain") == "vertical" and ch < mh * 0.92:
             img = cv2.resize(img, (img.shape[1], round(img.shape[0] * mh / ch)), interpolation=cv2.INTER_CUBIC)
             rh = mh
@@ -193,10 +206,10 @@ def even_light(img: np.ndarray, frac: float = 0.22) -> np.ndarray:
     """Removes the photo's lighting gradient (and, with a small frac, compression blotches on plain
     colours) so a mirrored repeat shows no bright or dark bands."""
     f = img.astype(np.float32) + 1
-    lum = f.mean(axis=2)
     sigma = max(3.0, min(img.shape[:2]) * frac)
-    low = cv2.GaussianBlur(lum, (0, 0), sigma)
-    ratio = np.clip(lum.mean() / low, 0.6, 1.6)[..., None]
+    # Per channel, so a colour cast across the photo (warm light at one end) is evened out too.
+    low = cv2.GaussianBlur(f, (0, 0), sigma)
+    ratio = np.clip(f.reshape(-1, 3).mean(axis=0) / low, 0.6, 1.6)
     return np.clip(f * ratio - 1, 0, 255).astype(np.uint8)
 
 
