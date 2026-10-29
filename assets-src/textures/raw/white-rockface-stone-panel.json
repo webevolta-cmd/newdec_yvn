@@ -1,6 +1,6 @@
 {
   "id": "white-rockface-stone-panel",
-  "frame": "t63_300.png",
+  "frame": "t63_267.png",
   "video": "7668272239770422548",
   "corners": [
     [
@@ -28,5 +28,5 @@
     118,
     500
   ],
-  "note": "draft"
+  "note": "video 7668272239770422548 t=63.27s (30fps extract), close-up. Lower white tile of the white column (same wall plane as the taupe/grey column), between the grey column edge and the presenter's hair, below the product stickers and above the frame bottom. Wall-plane rectangle s 0.012..0.235 m, t 0.135..1.08 m; 141-inlier homography. Geometry: calibrated in the t=53.87s wide shot from wall/floor vanishing points (wall VP (888,459), perpendicular floor-grout VP (-124,449)) -> f~495 px, principal point (288,484), vertical scale from the 1.20 m lower tile (stone base to tile seam); transferred to this frame by a SIFT wall-plane homography. Cross-check: s=0.60 m lands on the right relief edge of the white column (visible edge at 0.55-0.60 m). Upper white tile was not used: flatter relief, price overlay and presenter's head."
 }

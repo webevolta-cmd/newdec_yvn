@@ -1,6 +1,6 @@
 {
   "id": "grey-slate-rockface-panel",
-  "frame": "t56_567.png",
+  "frame": "t56_540.png",
   "video": "7668272239770422548",
   "corners": [
     [
@@ -28,5 +28,5 @@
     122,
     537
   ],
-  "note": "draft3"
+  "note": "video 7668272239770422548 t=56.54s (30fps extract). Lower (grey split-face) tile of the left stone column, from the frame edge to 1.5 cm short of the white column edge, 4 cm above the stone base to 3 cm below the seam. Wall-plane rectangle s -0.272..-0.015 m, t 0.04..1.17 m; 713-inlier homography. Geometry: calibrated in the t=53.87s wide shot from wall/floor vanishing points (wall VP (888,459), perpendicular floor-grout VP (-124,449)) -> f~495 px, principal point (288,484), vertical scale from the 1.20 m lower tile (stone base to tile seam); transferred to this frame by a SIFT wall-plane homography. Cross-check: s=0.60 m lands on the right relief edge of the white column (visible edge at 0.55-0.60 m). The faint straight vertical cleft lines are part of the panel relief (same positions on the panel in every frame)."
 }

@@ -1,6 +1,6 @@
 {
   "id": "taupe-ribbed-stone-panel",
-  "frame": "t56_567.png",
+  "frame": "t56_540.png",
   "video": "7668272239770422548",
   "corners": [
     [
@@ -28,5 +28,5 @@
     120,
     430
   ],
-  "note": "draft3"
+  "note": "video 7668272239770422548 t=56.54s (30fps extract). Upper (taupe) tile of the left stone column on the receding left wall, from the frame edge to 1.5 cm short of the taupe/white column edge, between the price label (t~1.28 m) and the tile top (t~2.25 m). Wall-plane rectangle s -0.268..-0.015 m, t 1.30..2.21 m; 713-inlier homography. Geometry: calibrated in the t=53.87s wide shot from wall/floor vanishing points (wall VP (888,459), perpendicular floor-grout VP (-124,449)) -> f~495 px, principal point (288,484), vertical scale from the 1.20 m lower tile (stone base to tile seam); transferred to this frame by a SIFT wall-plane homography. Cross-check: s=0.60 m lands on the right relief edge of the white column (visible edge at 0.55-0.60 m). Rib pitch ~2.1 cm (12 ribs over 0.253 m). Top fifth slightly softer and greyer (shade under the ceiling)."
 }

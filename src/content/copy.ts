@@ -145,9 +145,9 @@ export const copy = {
   install: {
     eyebrow: 'Տեղադրում',
     title: 'Նոր պատ՝ առանց երկար վերանորոգման',
-    image: 'media/gallery/install-glue.webp',
-    imageAlt: 'Ռեյկային վահանակի հետևի կողմին սոսինձ է քսվում տեղադրումից առաջ',
-    imageCaption: 'Կադր NEW DEC-ի տեսանյութից',
+    image: 'media/gallery/install-slats.webp',
+    imageAlt: 'Ռեյկային վահանակներ մոտիկից՝ մոխրագույն և տաք ընկուզենու երանգներով',
+    imageCaption: 'Ռեյկային վահանակներ NEW DEC-ի սրահում',
     points: [
       { icon: 'glue', title: 'Սոսնձվում են պատին', text: 'Վահանակներն ամրացվում են պատին սոսնձով։' },
       { icon: 'clock', title: 'Տեղադրում՝ մեկ օրում', text: 'Բնակարանի պատերը կարելի է թարմացնել ընդամենը մեկ օրում։' },
