@@ -87,7 +87,7 @@ export function composeMail(inquiry: Inquiry, subjectPrefix: string, receivedAt 
     ['Անուն', inquiry.name],
     ['Հեռախոս', phone],
     ['Էլ․ փոստ', inquiry.email ?? 'Նշված չէ'],
-    ['Պանել', productLine],
+    ['Վահանակ', productLine],
     ['Տարբերակ / երանգ', inquiry.variant ?? 'Նշված չէ'],
     ['Մոտավոր մակերես', inquiry.area != null ? `${String(inquiry.area).replace('.', ',')} մ²` : 'Նշված չէ'],
     ['Հաղորդագրություն', inquiry.message ?? '—'],

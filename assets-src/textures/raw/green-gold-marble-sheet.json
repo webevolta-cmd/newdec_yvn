@@ -1,0 +1,32 @@
+{
+  "id": "green-gold-marble-sheet",
+  "frame": "t16_467.png",
+  "video": "7674283683913813266",
+  "corners": [
+    [
+      345.0,
+      98.0
+    ],
+    [
+      555.4000244140625,
+      167.8000030517578
+    ],
+    [
+      548.7000122070312,
+      861.5
+    ],
+    [
+      366.79998779296875,
+      956.7999877929688
+    ]
+  ],
+  "widthM": 0.653,
+  "heightM": 2.139,
+  "flatten": 0.75,
+  "deglare": 0.4,
+  "pixels": [
+    237,
+    776
+  ],
+  "note": "7674283683913813266 t=16.467s (=f17); rack leaf turned ~45deg; metric rectification via SIFT+ECC homography to front-facing 7696163499633937684 f8 (same print and crop: 1.22m = 486px in keystone-corrected f8). Quad lies right of the white sticker and below the top LED streak."
+}

@@ -71,6 +71,23 @@ async function applyAndSettle(page, id) {
 
 const sample = (page, pts) => page.evaluate((p) => window.__NEWDEC_VIZ__.sample(p), pts);
 
+/** Decoded text of every MIME part of a raw e-mail (base64 and quoted-printable bodies). */
+function mailText(raw) {
+  return raw
+    .split(/\r?\n--[^\r\n]+\r?\n/)
+    .map((part) => {
+      const [head, ...rest] = part.split(/\r?\n\r?\n/);
+      const body = rest.join('\n\n');
+      if (/content-transfer-encoding:\s*base64/i.test(head)) return Buffer.from(body.replace(/\s+/g, ''), 'base64').toString('utf8');
+      if (/content-transfer-encoding:\s*quoted-printable/i.test(head)) {
+        const bytes = body.replace(/=\r?\n/g, '').replace(/=([0-9A-F]{2})/gi, (_, h) => String.fromCharCode(parseInt(h, 16)));
+        return Buffer.from(bytes, 'latin1').toString('utf8');
+      }
+      return part;
+    })
+    .join('\n');
+}
+
 // ── 1. Layout at every breakpoint ─────────────────────────────────────────────────────────
 for (const vp of !run('layout') ? [] : [
   { width: 1920, height: 1080, name: 'large desktop' },
@@ -359,7 +376,7 @@ if (run('forms')) {
     check('form: server accepts and the success message is shown', outcome === 'success', outcome + ' ' + statusText);
     await page.waitForTimeout(500);
     const files = readdirSync(MAIL_DIR).sort();
-    const newest = files.length > before ? readFileSync(join(MAIL_DIR, files[files.length - 1]), 'utf8') : '';
+    const newest = files.length > before ? mailText(readFileSync(join(MAIL_DIR, files[files.length - 1]), 'utf8')) : '';
     check('form: e-mail delivered to the SMTP server with the selected panel', files.length === before + 1 && newest.includes(firstCard), `${files.length - before} new message(s)`);
   } else {
     check('form: the request ends in a success or an error message (delivery not checked without MAIL_DIR)', outcome === 'status' || outcome === 'success', outcome + ' ' + statusText);
