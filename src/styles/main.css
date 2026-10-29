@@ -1414,10 +1414,13 @@ h3 {
 }
 
 /* Gallery */
+/* Tall 3x4, wide 6x2 and square 3x2 tiles; with dense flow, three of each plus a fourth square (in the
+   order of gallery.json) fill 8 rows of 12 columns, and 16 rows of 6 columns on small screens. */
 .gallery {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-auto-rows: clamp(140px, 13vw, 210px);
+  grid-auto-rows: clamp(96px, 9.6vw, 150px);
+  grid-auto-flow: row dense;
   gap: clamp(0.6rem, 1.2vw, 1rem);
   list-style: none;
   margin: 0;
@@ -1457,7 +1460,7 @@ h3 {
 }
 .g-tall {
   grid-column: span 3;
-  grid-row: span 3;
+  grid-row: span 4;
 }
 .g-wide {
   grid-column: span 6;
@@ -1475,11 +1478,11 @@ h3 {
 @media (max-width: 900px) {
   .gallery {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    grid-auto-rows: 150px;
+    grid-auto-rows: clamp(68px, 19vw, 150px);
   }
   .g-tall {
     grid-column: span 3;
-    grid-row: span 3;
+    grid-row: span 4;
   }
   .g-wide {
     grid-column: span 6;
@@ -1568,6 +1571,41 @@ h3 {
 @media (max-width: 900px) {
   .proof__grid {
     grid-template-columns: 1fr;
+  }
+}
+/* On phones each reel becomes a row (thumbnail + text) instead of three cramped columns. */
+@media (max-width: 560px) {
+  .reels {
+    grid-template-columns: 1fr;
+  }
+  .reel {
+    display: grid;
+    grid-template-columns: 34% 1fr;
+    align-items: center;
+    aspect-ratio: auto;
+    background: var(--surface);
+  }
+  .reel img {
+    aspect-ratio: 9 / 16;
+    height: auto;
+  }
+  .reel span {
+    position: static;
+    padding: 0.9rem 1rem;
+    background: none;
+    font-size: 0.95rem;
+  }
+  .reel span b {
+    margin-bottom: 0.2rem;
+    color: var(--accent);
+  }
+  .gallery figcaption {
+    left: 0.4rem;
+    bottom: 0.4rem;
+    max-width: calc(100% - 0.8rem);
+    padding: 0.25rem 0.45rem;
+    font-size: 0.7rem;
+    line-height: 1.3;
   }
 }
 

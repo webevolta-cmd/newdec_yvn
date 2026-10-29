@@ -113,8 +113,11 @@ MODULES = {
     "slat": {"moduleW": 0.6, "moduleH": 2.8, "seam": 0.0, "tiling": "repeat", "grain": "vertical"},
     "stone": {"moduleW": 0.6, "moduleH": 1.2, "seam": 0.25, "tiling": "module", "evenLight": 0.3},
 }
-# Per-product tiling where the category default does not suit the reference.
-TILING_OVERRIDE: dict[str, str] = {}
+# Per-product tiling where the category default does not suit the reference. Ribbed relief reads by
+# its rib spacing, so it keeps true scale across the ribs instead of being enlarged to fill a tile.
+TILING_OVERRIDE: dict[str, dict] = {
+    "taupe-ribbed-stone-panel": {"tiling": "repeat", "grain": "vertical"},
+}
 
 # A reference that would have to be enlarged more than this to fill one sheet/tile is too partial to
 # show the panel faithfully, and is listed as a gap instead.
@@ -158,7 +161,7 @@ def main(paths: list[str]) -> None:
         if not r or r.get("status") != "ok" or not (RAW / f"{pid}.png").exists():
             gaps.append({"id": pid, "name": name, "reason": (r or {}).get("gap_reason") or "no usable reference crop"})
             continue
-        tiling = TILING_OVERRIDE.get(pid, MODULES[cat].get("tiling"))
+        tiling = TILING_OVERRIDE.get(pid, {}).get("tiling", MODULES[cat].get("tiling"))
         mw, mh = (1.2, 2.8) if pid == "white-rock-relief-large-sheet" else (MODULES[cat]["moduleW"], MODULES[cat]["moduleH"])
         enlarge = max(mw / r["widthM"], mh / r["heightM"])
         if tiling == "module" and enlarge > MAX_ENLARGE:
@@ -170,8 +173,7 @@ def main(paths: list[str]) -> None:
             })
             continue
         module = dict(MODULES[cat])
-        if pid in TILING_OVERRIDE:
-            module["tiling"] = TILING_OVERRIDE[pid]
+        module.update(TILING_OVERRIDE.get(pid, {}))
         if pid == "white-rock-relief-large-sheet":
             module.update({"moduleW": 1.2, "moduleH": 2.8})
         item = {

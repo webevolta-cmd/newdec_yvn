@@ -9,6 +9,29 @@
  },
  "products": [
   {
+   "id": "navy-violet-gold-vein-marble-sheet",
+   "name": "Մուգ կապույտ մարմար՝ ոսկեգույն երակներով",
+   "category": "marble",
+   "finish": "Փայլուն",
+   "alt": "Մարմարի տեսքով թերթ՝ մուգ կապույտ մարմար՝ ոսկեգույն երակներով, NEW DEC",
+   "gloss": 0.55,
+   "source": {
+    "video": "7671633679050984722",
+    "time": "34.0 s"
+   },
+   "scaleBasis": "In 1fps frame 046 the whole left leaf of the swing rack is visible. I fitted its four print edges (top-left corner extrapolated) and set them to 1.22 x 2.80 m to get a plane homography. SIFT carried it to 230+ frames, with 146 inliers on the chosen frame. Check: with a focal length of about 455 px the leaf axes come out equal-length and perpendicular in every 7671 frame, and also in the 7675 kitchen-booth view of the same print, so the aspect ratio holds to within a few percent. The quad is the plane rectangle u 0.13-1.00 m, v 0.41-1.80 m from the sheet's top-left, projected back into the frame.",
+   "moduleW": 1.22,
+   "moduleH": 2.8,
+   "seam": 0.6,
+   "tiling": "module",
+   "size": "2,80 կամ 2,90 × 1,22 մ",
+   "thickness": "3 կամ 8 մմ",
+   "variants": [
+    "3 մմ",
+    "8 մմ"
+   ]
+  },
+  {
    "id": "black-marble-white-river-sheet",
    "name": "Սև մարմար՝ լայն սպիտակ երակով",
    "category": "marble",
@@ -377,6 +400,64 @@
    "size": "2,80 × 1,20 մ"
   },
   {
+   "id": "white-rockface-stone-panel",
+   "name": "Սպիտակ ժայռաքար",
+   "category": "stone",
+   "finish": "Ռելիեֆ",
+   "alt": "Քարի ռելիեֆով վահանակ՝ սպիտակ ժայռաքար, NEW DEC",
+   "gloss": 0.0,
+   "source": {
+    "video": "7668272239770422548",
+    "time": "63.3 s"
+   },
+   "scaleBasis": "All three stone products sit on the same receding left wall. Calibrated in the 53.87s wide shot: wall vanishing point (888,459) from the wall base and parallel floor-grout lines, plus a perpendicular floor-grout vanishing point (-124,449), gives f≈495 px and principal point (288,484). Vertical scale comes from the 1.20 m lower tile (stone base to tile seam). A SIFT wall-plane homography (141 inliers) moved this into the close-up frame, and the quad is an exact wall rectangle s 0.012-0.235 m, t 0.135-1.08 m. Cross-check: s=0.60 m lands on the white column's right relief edge (visible at 0.55-0.60 m), which agrees with the 0.60 m tile width.",
+   "moduleW": 0.6,
+   "moduleH": 1.2,
+   "seam": 0.25,
+   "tiling": "module",
+   "evenLight": 0.3,
+   "size": "0,60 × 1,20 մ"
+  },
+  {
+   "id": "taupe-ribbed-stone-panel",
+   "name": "Ակոսավոր մոխրաշագանակագույն քար",
+   "category": "stone",
+   "finish": "Ռելիեֆ",
+   "alt": "Քարի ռելիեֆով վահանակ՝ ակոսավոր մոխրաշագանակագույն քար, NEW DEC",
+   "gloss": 0.0,
+   "source": {
+    "video": "7668272239770422548",
+    "time": "56.5 s"
+   },
+   "scaleBasis": "Same wall-plane camera model: f≈495 px from orthogonal wall and floor vanishing points, vertical scale from the 1.20 m lower tile. A 713-inlier SIFT homography moved it into this frame. The quad is the wall rectangle s -0.268 to -0.015 m (left of the column edge), t 1.30-2.21 m. The upper tile's top edge measures at t≈2.25 m. The widest view of the column (frame edge out to s≈-0.28) was chosen. Rib pitch ≈2.1 cm (12 ribs over 0.253 m), which is plausible.",
+   "moduleW": 0.6,
+   "moduleH": 1.2,
+   "seam": 0.25,
+   "tiling": "repeat",
+   "evenLight": 0.3,
+   "grain": "vertical",
+   "size": "0,60 × 1,20 մ"
+  },
+  {
+   "id": "grey-slate-rockface-panel",
+   "name": "Մոխրագույն թերթաքար",
+   "category": "stone",
+   "finish": "Ռելիեֆ",
+   "alt": "Քարի ռելիեֆով վահանակ՝ մոխրագույն թերթաքար, NEW DEC",
+   "gloss": 0.0,
+   "source": {
+    "video": "7668272239770422548",
+    "time": "56.5 s"
+   },
+   "scaleBasis": "Same wall-plane camera model and 713-inlier homography as the taupe tile. The quad is the wall rectangle s -0.272 to -0.015 m, t 0.04-1.17 m: from the frame edge to 1.5 cm short of the white column, and from 4 cm above the stone base to 3 cm below the tile seam. Vertical scale comes from this tile's own 1.20 m height (base to seam), so the vertical extent is about 94% of the tile.",
+   "moduleW": 0.6,
+   "moduleH": 1.2,
+   "seam": 0.25,
+   "tiling": "module",
+   "evenLight": 0.3,
+   "size": "0,60 × 1,20 մ"
+  },
+  {
    "id": "light-grey-acoustic-slat",
    "name": "Ռեյկային՝ բաց մոխրագույն",
    "category": "slat",
@@ -618,11 +699,6 @@
    "reason": "no usable reference crop"
   },
   {
-   "id": "navy-violet-gold-vein-marble-sheet",
-   "name": "Մուգ կապույտ մարմար՝ ոսկեգույն երակներով",
-   "reason": "no usable reference crop"
-  },
-  {
    "id": "white-bold-black-vein-marble",
    "name": "Սպիտակ մարմար՝ սև երակներով",
    "reason": "Only a sliver is ever visible. In the sliding-leaf rack this leaf (NV-B5) is always overlapped by its neighbours and is never pulled out. Its lit face is only 40-46 px wide (about 0.11-0.12 m of the sheet) in every moment checked: front views at 33-35.7 s and 38-39 s, side views at 36-37.6 s, and 48.3-50 s. At 39-47 s inset photos also cover the lower part. A strip this narrow cannot show the sparse, bold black-vein layout of a 1.22 m sheet. Tiling it would turn the sparse veins into a dense repeat. A clearer source is needed, such as a front-facing shot of this sheet or a showroom photo."
@@ -651,21 +727,6 @@
    "id": "turquoise-copper-stone-sheet",
    "name": "Փիրուզագույն քար՝ պղնձագույն բծերով",
    "reason": "The usable view covers only about 1.12 × 0.40 m; filling a 1.22 × 2.80 m module would enlarge the pattern about 7x."
-  },
-  {
-   "id": "white-rockface-stone-panel",
-   "name": "Սպիտակ ժայռաքար",
-   "reason": "no usable reference crop"
-  },
-  {
-   "id": "taupe-ribbed-stone-panel",
-   "name": "Ակոսավոր մոխրաշագանակագույն քար",
-   "reason": "no usable reference crop"
-  },
-  {
-   "id": "grey-slate-rockface-panel",
-   "name": "Մոխրագույն թերթաքար",
-   "reason": "no usable reference crop"
   },
   {
    "id": "warm-grey-soft-rock-panel",

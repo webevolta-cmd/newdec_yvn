@@ -1,5 +1,14 @@
 [
  {
+  "id": "navy-violet-gold-vein-marble-sheet",
+  "tiling": "module",
+  "scale": 2.01,
+  "source": {
+   "video": "7671633679050984722",
+   "time": "34.0 s"
+  }
+ },
+ {
   "id": "black-marble-white-river-sheet",
   "tiling": "module",
   "scale": 3.04,
@@ -177,6 +186,33 @@
   "source": {
    "video": "7687641327487438100",
    "time": "22.9 s"
+  }
+ },
+ {
+  "id": "white-rockface-stone-panel",
+  "tiling": "module",
+  "scale": 2.69,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "63.3 s"
+  }
+ },
+ {
+  "id": "taupe-ribbed-stone-panel",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "56.5 s"
+  }
+ },
+ {
+  "id": "grey-slate-rockface-panel",
+  "tiling": "module",
+  "scale": 2.33,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "56.5 s"
   }
  },
  {

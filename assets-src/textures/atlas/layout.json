@@ -14,6 +14,31 @@
    "file": "atlas-2.png",
    "w": 1024,
    "h": 971
+  },
+  {
+   "file": "atlas-3.png",
+   "w": 1024,
+   "h": 759
+  },
+  {
+   "file": "atlas-4.png",
+   "w": 1024,
+   "h": 903
+  },
+  {
+   "file": "atlas-5.png",
+   "w": 1024,
+   "h": 817
+  },
+  {
+   "file": "atlas-6.png",
+   "w": 1024,
+   "h": 744
+  },
+  {
+   "file": "atlas-7.png",
+   "w": 1024,
+   "h": 704
   }
  ],
  "items": [
@@ -277,6 +302,195 @@
    "y": 721,
    "w": 108,
    "h": 93
+  },
+  {
+   "atlas": 3,
+   "kind": "tex",
+   "name": "cream-green-gold-onyx-sheet",
+   "x": 24,
+   "y": 24,
+   "w": 169,
+   "h": 711
+  },
+  {
+   "atlas": 3,
+   "kind": "tex",
+   "name": "red-petrified-wood-sheet",
+   "x": 217,
+   "y": 24,
+   "w": 173,
+   "h": 556
+  },
+  {
+   "atlas": 3,
+   "kind": "tex",
+   "name": "grey-slate-rockface-panel",
+   "x": 414,
+   "y": 24,
+   "w": 122,
+   "h": 537
+  },
+  {
+   "atlas": 3,
+   "kind": "tex",
+   "name": "white-rockface-stone-panel",
+   "x": 560,
+   "y": 24,
+   "w": 118,
+   "h": 500
+  },
+  {
+   "atlas": 3,
+   "kind": "gal",
+   "name": "reel-marble",
+   "x": 702,
+   "y": 24,
+   "w": 263,
+   "h": 468
+  },
+  {
+   "atlas": 4,
+   "kind": "tex",
+   "name": "navy-violet-gold-vein-marble-sheet",
+   "x": 24,
+   "y": 24,
+   "w": 279,
+   "h": 447
+  },
+  {
+   "atlas": 4,
+   "kind": "tex",
+   "name": "taupe-ribbed-stone-panel",
+   "x": 327,
+   "y": 24,
+   "w": 120,
+   "h": 430
+  },
+  {
+   "atlas": 4,
+   "kind": "gal",
+   "name": "oak-sand-corner",
+   "x": 471,
+   "y": 24,
+   "w": 400,
+   "h": 400
+  },
+  {
+   "atlas": 4,
+   "kind": "gal",
+   "name": "reel-stone",
+   "x": 24,
+   "y": 495,
+   "w": 216,
+   "h": 384
+  },
+  {
+   "atlas": 4,
+   "kind": "gal",
+   "name": "reel-wood",
+   "x": 264,
+   "y": 495,
+   "w": 214,
+   "h": 380
+  },
+  {
+   "atlas": 4,
+   "kind": "gal",
+   "name": "art-marble-portal",
+   "x": 502,
+   "y": 495,
+   "w": 250,
+   "h": 375
+  },
+  {
+   "atlas": 5,
+   "kind": "gal",
+   "name": "install-slats",
+   "x": 24,
+   "y": 24,
+   "w": 300,
+   "h": 375
+  },
+  {
+   "atlas": 5,
+   "kind": "gal",
+   "name": "marble-rack",
+   "x": 348,
+   "y": 24,
+   "w": 374,
+   "h": 374
+  },
+  {
+   "atlas": 5,
+   "kind": "gal",
+   "name": "white-black-corner",
+   "x": 24,
+   "y": 423,
+   "w": 370,
+   "h": 370
+  },
+  {
+   "atlas": 5,
+   "kind": "gal",
+   "name": "breccia-sheet",
+   "x": 418,
+   "y": 423,
+   "w": 246,
+   "h": 369
+  },
+  {
+   "atlas": 6,
+   "kind": "tex",
+   "name": "white-violet-breccia-marble-sheet",
+   "x": 24,
+   "y": 24,
+   "w": 415,
+   "h": 356
+  },
+  {
+   "atlas": 6,
+   "kind": "gal",
+   "name": "green-gold-sheet",
+   "x": 463,
+   "y": 24,
+   "w": 226,
+   "h": 339
+  },
+  {
+   "atlas": 6,
+   "kind": "gal",
+   "name": "quartzite-corner",
+   "x": 24,
+   "y": 404,
+   "w": 576,
+   "h": 316
+  },
+  {
+   "atlas": 7,
+   "kind": "gal",
+   "name": "slat-wall",
+   "x": 24,
+   "y": 24,
+   "w": 576,
+   "h": 316
+  },
+  {
+   "atlas": 7,
+   "kind": "gal",
+   "name": "swing-rack",
+   "x": 24,
+   "y": 364,
+   "w": 576,
+   "h": 316
+  },
+  {
+   "atlas": 7,
+   "kind": "tex",
+   "name": "golden-brown-marble-wall",
+   "x": 624,
+   "y": 364,
+   "w": 280,
+   "h": 238
   }
  ]
 }

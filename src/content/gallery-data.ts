@@ -3,36 +3,20 @@ import type { GalleryItem, ReelItem } from './gallery.ts';
 
 export const galleryItems: GalleryItem[] = [
   {
-    "src": "media/gallery/slat-wall.webp",
-    "alt": "Ռեյկային վահանակների պատ NEW DEC-ի սրահում՝ մի քանի երանգով, հատակից առաստաղ",
-    "caption": "Ռեյկային վահանակները՝ կողք կողքի",
-    "layout": "wide",
-    "width": 1280,
-    "height": 700
-  },
-  {
-    "src": "media/gallery/swing-rack.webp",
-    "alt": "Բացված ցուցադրման դարակ՝ մուգ կապույտ մարմարի և սև մարմարի տեսքով թերթերով",
-    "caption": "Մեծաչափ թերթերը՝ պտտվող դարակներում",
-    "layout": "wide",
-    "width": 1280,
-    "height": 700
-  },
-  {
-    "src": "media/gallery/quartzite-corner.webp",
-    "alt": "Սրահի անկյուն՝ յասամանագույն քվարցիտի և բեժ քարացած փայտի տեսքով թերթերով",
-    "caption": "Էկզոտիկ քարի տեսքով թերթեր",
-    "layout": "wide",
-    "width": 1280,
-    "height": 700
-  },
-  {
     "src": "media/gallery/art-marble-portal.webp",
     "alt": "Ոսկեգույն երակներով մարմարի տեսքով թերթեր քրոմապատ ցուցափեղկում",
     "caption": "Ոսկեգույն երակներով մարմար",
     "layout": "tall",
     "width": 720,
     "height": 1080
+  },
+  {
+    "src": "media/gallery/slat-wall.webp",
+    "alt": "Ռեյկային վահանակների պատ NEW DEC-ի սրահում՝ մի քանի երանգով, հատակից առաստաղ",
+    "caption": "Ռեյկային վահանակները՝ կողք կողքի",
+    "layout": "wide",
+    "width": 1280,
+    "height": 700
   },
   {
     "src": "media/gallery/breccia-sheet.webp",
@@ -43,12 +27,12 @@ export const galleryItems: GalleryItem[] = [
     "height": 1080
   },
   {
-    "src": "media/gallery/green-gold-sheet.webp",
-    "alt": "Զմրուխտականաչ մարմարի տեսքով թերթ՝ ոսկեգույն երակներով",
-    "caption": "Զմրուխտականաչ մարմար",
-    "layout": "tall",
-    "width": 720,
-    "height": 1080
+    "src": "media/gallery/swing-rack.webp",
+    "alt": "Բացված ցուցադրման դարակ՝ մուգ կապույտ մարմարի և սև մարմարի տեսքով թերթերով",
+    "caption": "Մեծաչափ թերթերը՝ պտտվող դարակներում",
+    "layout": "wide",
+    "width": 1280,
+    "height": 700
   },
   {
     "src": "media/gallery/white-black-corner.webp",
@@ -57,6 +41,22 @@ export const galleryItems: GalleryItem[] = [
     "layout": "sq",
     "width": 900,
     "height": 900
+  },
+  {
+    "src": "media/gallery/quartzite-corner.webp",
+    "alt": "Սրահի անկյուն՝ յասամանագույն քվարցիտի և բեժ քարացած փայտի տեսքով թերթերով",
+    "caption": "Էկզոտիկ քարի տեսքով թերթեր",
+    "layout": "wide",
+    "width": 1280,
+    "height": 700
+  },
+  {
+    "src": "media/gallery/green-gold-sheet.webp",
+    "alt": "Զմրուխտականաչ մարմարի տեսքով թերթ՝ ոսկեգույն երակներով",
+    "caption": "Զմրուխտականաչ մարմար",
+    "layout": "tall",
+    "width": 720,
+    "height": 1080
   },
   {
     "src": "media/gallery/oak-sand-corner.webp",
@@ -70,6 +70,14 @@ export const galleryItems: GalleryItem[] = [
     "src": "media/gallery/marble-rack.webp",
     "alt": "Մարմարի տեսքով թերթեր ցուցադրման դարակում",
     "caption": "Մարմարի տեսքով թերթերի տեսականին",
+    "layout": "sq",
+    "width": 900,
+    "height": 900
+  },
+  {
+    "src": "media/gallery/grey-rock-panel.webp",
+    "alt": "Մոխրագույն ժայռաքարի ռելիեֆով վահանակ NEW DEC-ի սրահում",
+    "caption": "Քարի ռելիեֆով վահանակ",
     "layout": "sq",
     "width": 900,
     "height": 900

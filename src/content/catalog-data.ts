@@ -3,6 +3,34 @@ import type { Product } from './products.ts';
 
 export const catalogProducts: Product[] = [
   {
+    "id": "navy-violet-gold-vein-marble-sheet",
+    "name": "Մուգ կապույտ մարմար՝ ոսկեգույն երակներով",
+    "category": "marble",
+    "finish": "Փայլուն",
+    "size": "2,80 կամ 2,90 × 1,22 մ",
+    "thickness": "3 կամ 8 մմ",
+    "variants": [
+      "3 մմ",
+      "8 մմ"
+    ],
+    "image": "media/catalog/navy-violet-gold-vein-marble-sheet.webp",
+    "thumb": "media/catalog/navy-violet-gold-vein-marble-sheet-thumb.webp",
+    "alt": "Մարմարի տեսքով թերթ՝ մուգ կապույտ մարմար՝ ոսկեգույն երակներով, NEW DEC",
+    "surface": {
+      "texture": "media/panels/navy-violet-gold-vein-marble-sheet.webp",
+      "widthM": 1.22,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.6,
+      "gloss": 0.55
+    },
+    "source": {
+      "video": "7671633679050984722",
+      "time": "34.0 s"
+    }
+  },
+  {
     "id": "black-marble-white-river-sheet",
     "name": "Սև մարմար՝ լայն սպիտակ երակով",
     "category": "marble",
@@ -486,6 +514,78 @@ export const catalogProducts: Product[] = [
     "source": {
       "video": "7687641327487438100",
       "time": "22.9 s"
+    }
+  },
+  {
+    "id": "white-rockface-stone-panel",
+    "name": "Սպիտակ ժայռաքար",
+    "category": "stone",
+    "finish": "Ռելիեֆ",
+    "size": "0,60 × 1,20 մ",
+    "variants": [],
+    "image": "media/catalog/white-rockface-stone-panel.webp",
+    "thumb": "media/catalog/white-rockface-stone-panel-thumb.webp",
+    "alt": "Քարի ռելիեֆով վահանակ՝ սպիտակ ժայռաքար, NEW DEC",
+    "surface": {
+      "texture": "media/panels/white-rockface-stone-panel.webp",
+      "widthM": 0.6,
+      "heightM": 1.2,
+      "moduleW": 0.6,
+      "moduleH": 1.2,
+      "seam": 0.25,
+      "gloss": 0.0
+    },
+    "source": {
+      "video": "7668272239770422548",
+      "time": "63.3 s"
+    }
+  },
+  {
+    "id": "taupe-ribbed-stone-panel",
+    "name": "Ակոսավոր մոխրաշագանակագույն քար",
+    "category": "stone",
+    "finish": "Ռելիեֆ",
+    "size": "0,60 × 1,20 մ",
+    "variants": [],
+    "image": "media/catalog/taupe-ribbed-stone-panel.webp",
+    "thumb": "media/catalog/taupe-ribbed-stone-panel-thumb.webp",
+    "alt": "Քարի ռելիեֆով վահանակ՝ ակոսավոր մոխրաշագանակագույն քար, NEW DEC",
+    "surface": {
+      "texture": "media/panels/taupe-ribbed-stone-panel.webp",
+      "widthM": 0.506,
+      "heightM": 1.2,
+      "moduleW": 0.6,
+      "moduleH": 1.2,
+      "seam": 0.25,
+      "gloss": 0.0
+    },
+    "source": {
+      "video": "7668272239770422548",
+      "time": "56.5 s"
+    }
+  },
+  {
+    "id": "grey-slate-rockface-panel",
+    "name": "Մոխրագույն թերթաքար",
+    "category": "stone",
+    "finish": "Ռելիեֆ",
+    "size": "0,60 × 1,20 մ",
+    "variants": [],
+    "image": "media/catalog/grey-slate-rockface-panel.webp",
+    "thumb": "media/catalog/grey-slate-rockface-panel-thumb.webp",
+    "alt": "Քարի ռելիեֆով վահանակ՝ մոխրագույն թերթաքար, NEW DEC",
+    "surface": {
+      "texture": "media/panels/grey-slate-rockface-panel.webp",
+      "widthM": 0.6,
+      "heightM": 1.2,
+      "moduleW": 0.6,
+      "moduleH": 1.2,
+      "seam": 0.25,
+      "gloss": 0.0
+    },
+    "source": {
+      "video": "7668272239770422548",
+      "time": "56.5 s"
     }
   },
   {
