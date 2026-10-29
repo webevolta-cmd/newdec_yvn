@@ -1,0 +1,32 @@
+{
+  "id": "lilac-quartzite-burgundy-sheet",
+  "frame": "t5_033.png",
+  "video": "7674283683913813266",
+  "corners": [
+    [
+      138.60000610351562,
+      30.399999618530273
+    ],
+    [
+      252.3000030517578,
+      12.5
+    ],
+    [
+      253.3000030517578,
+      357.20001220703125
+    ],
+    [
+      135.39999389648438,
+      363.0
+    ]
+  ],
+  "widthM": 0.37,
+  "heightM": 1.05,
+  "flatten": 0.6,
+  "deglare": 0.0,
+  "pixels": [
+    119,
+    339
+  ],
+  "note": "7674283683913813266 t=5.033s (front-facing rack leaf, f5-f6 shot). Panel homography from the full pattern outline at t=5.70s (all four edges visible, 1.22 x 2.80 m), transferred by SIFT. Quad = u 0.03-0.40 m from the left edge, v 0.03-1.08 m from the top: the largest clean area (left of the ceiling-LED streak, above the presenter); the streak could not be removed cleanly by --deglare."
+}

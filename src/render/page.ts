@@ -203,6 +203,7 @@ function catalog(): Raw {
             </li>`,
           )}
         </ul>
+        <div class="catalog__more"><button class="btn btn--ghost" type="button" data-catalog-more hidden>${c.showAll(products.length)}</button></div>
         <p class="catalog__note">${c.note}</p>
       </div>
     </section>`;

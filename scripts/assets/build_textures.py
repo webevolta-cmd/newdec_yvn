@@ -180,7 +180,12 @@ def make_texture(crop: np.ndarray, rec: dict) -> tuple[np.ndarray, float, float]
         img = module_cover(even_light(crop, rec["evenLight"]) if rec.get("evenLight") else crop, mw / mh)
         rw, rh = mw, mh
     else:
-        img = even_light(crop, rec.get("evenLight", 0.22))
+        # Drop the slightly dark rectification fringe before mirroring, or two fringes meet as a line.
+        by, bx = max(2, round(crop.shape[0] * 0.03)), max(2, round(crop.shape[1] * 0.03))
+        cw *= 1 - 2 * bx / crop.shape[1]
+        ch *= 1 - 2 * by / crop.shape[0]
+        crop = crop[by:-by, bx:-bx]
+        img = flat_colour(crop) if rec.get("flat") else even_light(crop, rec.get("evenLight", 0.22))
         img, rw = fit_axis(img, cw, mw, axis=1)
         # Snap a near-matching repeat to a whole number per module so the pattern lines up with the
         # joints (at most -15% / +20%; e.g. ribbed tiles), otherwise keep true scale.
@@ -200,6 +205,16 @@ def make_texture(crop: np.ndarray, rec: dict) -> tuple[np.ndarray, float, float]
     th = pot(min(max(img.shape[0], 360 * rh), 560 * rh), 256, 2048)
     tex = cv2.resize(img, (tw, th), interpolation=cv2.INTER_AREA if tw < img.shape[1] else cv2.INTER_CUBIC)
     return tex, rw, rh
+
+
+def flat_colour(img: np.ndarray) -> np.ndarray:
+    """For plain colours: the panel's measured colour (median of the centre) plus the photo's own fine
+    grain, without its lighting, so no gradient or blotch can repeat across the wall."""
+    f = img.astype(np.float32)
+    h, w = f.shape[:2]
+    centre = f[h // 5 : h - h // 5, w // 5 : w - w // 5].reshape(-1, 3)
+    grain = f - cv2.GaussianBlur(f, (0, 0), 3)
+    return np.clip(np.median(centre, axis=0) + grain, 0, 255).astype(np.uint8)
 
 
 def even_light(img: np.ndarray, frac: float = 0.22) -> np.ndarray:

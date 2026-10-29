@@ -1,5 +1,14 @@
 [
  {
+  "id": "green-gold-marble-sheet",
+  "tiling": "module",
+  "scale": 1.86,
+  "source": {
+   "video": "7674283683913813266",
+   "time": "16.5 s"
+  }
+ },
+ {
   "id": "navy-violet-gold-vein-marble-sheet",
   "tiling": "module",
   "scale": 2.1,
@@ -135,12 +144,30 @@
   }
  },
  {
+  "id": "lavender-cobalt-quartzite-sheet",
+  "tiling": "module",
+  "scale": 2.49,
+  "source": {
+   "video": "7675304499333876999",
+   "time": "0.0 s"
+  }
+ },
+ {
   "id": "beige-petrified-wood-sheet",
   "tiling": "module",
   "scale": 2.77,
   "source": {
    "video": "7675304499333876999",
    "time": "2.1 s"
+  }
+ },
+ {
+  "id": "lilac-quartzite-burgundy-sheet",
+  "tiling": "module",
+  "scale": 3.3,
+  "source": {
+   "video": "7674283683913813266",
+   "time": "5.0 s"
   }
  },
  {

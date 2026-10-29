@@ -273,6 +273,23 @@
   "quality_notes": "108x93 px. The crop is soft: the rounded flutes have little contrast, and the off-axis view means horizontal detail is interpolated. The only clean area is the top of the panel. It lies below the top edge, above a small dark mark on the panel at about (108, 280), and above the LED reflection band and presenter's hair from y~295 down. In every frame of the shot the panel is about 35% darker at the top than lower down. --flatten 0.9 reduces this to about +/-7%, and the build's even_light and mirroring should remove what remains. The crop has no person, text or foreign object. Flutes are straight and vertical."
  },
  {
+  "id": "green-gold-marble-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7674283683913813266",
+   "frame": "t=16.467s (same moment as 1fps f017); extracted to t16_467.png"
+  },
+  "widthM": 0.656,
+  "heightM": 2.104,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "finish_hy": "Փայլուն",
+  "gloss": 0.55,
+  "scale_basis": "In f17 the rack leaf is turned about 45 degrees and its right edge is outside the frame. I matched it to the front-facing wall sheet in 7696163499633937684 f8, which has the same print and the same crop (SIFT and ECC, 96 matches). I fitted it as a calibrated camera (f about 353 px) with the panel's left and bottom edges as constraints. The left edge comes from 7674 f17. The right edge comes from 7674 f1 and falls on the right edge of the 7696 sheet. Together they give 1.22 m = 480 px in the keystone-corrected 7696 frame (about 393 px/m). The quad covers u 0.12-0.78 m and roughly 0.5-2.6 m down the sheet. A fit without the camera model gives proportions within 2% of this one.",
+  "quality_notes": "242x778 px. Upper part is sharp; there is mild motion blur toward the bottom. The quad starts right of a white price sticker on the left edge and below the ceiling-LED streak at the top. Small round spot glints were inpainted with deglare 0.4, which also slightly softens a few fine pale veins. A faint thin reflection line near the top right is barely visible. Lighting is even after flatten 0.75. No person, text or frame in the texture."
+ },
+ {
   "id": "greige-oak-wood-sheet",
   "status": "ok",
   "source": {
@@ -358,6 +375,23 @@
   "quality_notes": "Upper-right part of the sheet: right of the label stickers, above the presenter's shadow, and clear of the on-screen caption (y 700+). No person, text, sticker or frame trim. Fine straight vertical grain, amber-tan with lighter yellow and caramel streaks. Output is 183x477 px. There is a slight left-to-right tone variation that looks like the print's own colour banding, plus a faint lighter sheen at the very top from the ceiling light. Flatten 0.75 (higher values made no difference)."
  },
  {
+  "id": "lavender-cobalt-quartzite-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7675304499333876999",
+   "frame": "t=0.000s (1fps f001, sharpest moment, presenter low); t0_000.png"
+  },
+  "widthM": 0.49,
+  "heightM": 1.13,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "finish_hy": "Փայլուն",
+  "gloss": 0.55,
+  "scale_basis": "I built a wall-plane model from 7674283683913813266 f023 and moved it to the 7675 frame with a SIFT homography (723 inliers). The model uses the top and bottom trim lines (inner height 2.80 m at the corner), the corner edge, and the booth's two horizontal vanishing points with f = 520 px. That focal length gives a 90-degree booth corner, and floor-tile joints independently give 460-550 px. Rectifying both videos with the model gives the same pattern at the same scale. The quad covers u 0.21-0.70 m left of the corner and v 0.30-1.43 m below the top trim. The horizontal scale is uncertain by about ±10% (f between 450 and 600). The 1.22 m sheet width is assumed, because no sheet edge or label is visible.",
+  "quality_notes": "178x411 px, sharp, flatten 0.6. The quad stops left of a round ceiling-spotlight reflection; I confirmed it is a reflection because it shifts relative to the pattern between the two videos. I used no deglare: even at 0.4 it masked about 13% of the light crystal pattern and washed it out. One tiny specular speck remains near the lower right and reads like a natural white glint. The strongest cobalt patch sits just above the quad and is only partly included."
+ },
+ {
   "id": "light-grey-acoustic-slat",
   "status": "ok",
   "source": {
@@ -433,6 +467,23 @@
   },
   "scale_basis": "I measured all four inner edges of the sheet in the t=10.4s frame: TL (168,128), TR (490.5,-9.3), BR (541.5,948), BL (177,846). I assumed a 1.22 x 2.80 m sheet and built a homography from those corners. I then chose a metric rectangle on the sheet (x 0.03-1.18 m, y 0.08-1.08 m from the sheet top) and projected it back to get the quad '174.3,144.4 478.0,20.8 494.2,337.0 177.6,389.6'. That makes it 1.15 x 1.00 m, and the quad follows the sheet's strong keystone and turn exactly. If the sheet is 2.90 m tall, the height would be about 1.04 m, which is within tolerance.",
   "quality_notes": "The output is 324x282 px and the area is clean. It is the full sheet width above the presenter's head, which starts at about 1.12 m below the sheet top. It stays clear of the top and side black trims, the white label sticker (about 1.33 m down at the right edge) and the on-screen caption. I tracked the quad with ECC alignment across t=10.4-11.4s and it stays on the sheet in every frame, with similar sharpness throughout; 10.4s was chosen. The fine vertical cream/tan striations and short grey-brown dashes keep natural proportions. Light is even after flatten 0.75 and no deglare was needed. The image is slightly soft because of mild motion blur, which is typical for this video."
+ },
+ {
+  "id": "lilac-quartzite-burgundy-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7674283683913813266",
+   "frame": "t=5.033s (f5-f6 front-facing rack shot); t5_033.png"
+  },
+  "widthM": 0.37,
+  "heightM": 1.05,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "finish_hy": "Փայլուն",
+  "gloss": 0.55,
+  "scale_basis": "At t=5.70s all four pattern edges of this rack leaf are visible. I fitted them and mapped the outline to 1.22 x 2.80 m. The visible outline ratio of about 2.34 matches a 2.80 m sheet with a little trim overlap; this is the same rack as the 2.8 m green sheet. A SIFT homography carries that geometry to the 5.033s frame. The quad covers u 0.03-0.40 m from the left edge and v 0.03-1.08 m from the top.",
+  "quality_notes": "119x339 px, somewhat soft but clean; flatten 0.6, no deglare. A thick ceiling-LED streak crosses the upper middle of the panel in every frame. Deglare leaves a visible ghost of it, so I excluded it. I rectified 28 frames and compared each with their median: the largest clean rectangles were all about 0.4 m². They are a full-width top band 0.35 m tall, this left strip, and a band below the streak. I chose the left strip. It shows the lavender base, white crackle veins and the diagonal rust/burgundy streak, with some blue-violet at the bottom. It does not contain the large deep blue-violet patch (upper right) or the maroon/cream breccia cluster (lower right), which are behind the streak or the presenter."
  },
  {
   "id": "mauve-black-gold-art-marble",

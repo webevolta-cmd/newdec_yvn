@@ -3,6 +3,30 @@ import type { Product } from './products.ts';
 
 export const catalogProducts: Product[] = [
   {
+    "id": "green-gold-marble-sheet",
+    "name": "Զմրուխտականաչ մարմար՝ ոսկեգույն երակներով",
+    "category": "marble",
+    "finish": "Փայլուն",
+    "size": "2,80 × 1,22 մ",
+    "variants": [],
+    "image": "media/catalog/green-gold-marble-sheet.webp",
+    "thumb": "media/catalog/green-gold-marble-sheet-thumb.webp",
+    "alt": "Մարմարի տեսքով թերթ՝ զմրուխտականաչ մարմար՝ ոսկեգույն երակներով, NEW DEC",
+    "surface": {
+      "texture": "media/panels/green-gold-marble-sheet.webp",
+      "widthM": 1.22,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.6,
+      "gloss": 0.55
+    },
+    "source": {
+      "video": "7674283683913813266",
+      "time": "16.5 s"
+    }
+  },
+  {
     "id": "navy-violet-gold-vein-marble-sheet",
     "name": "Մուգ կապույտ մարմար՝ ոսկեգույն երակներով",
     "category": "marble",
@@ -378,6 +402,29 @@ export const catalogProducts: Product[] = [
     }
   },
   {
+    "id": "lavender-cobalt-quartzite-sheet",
+    "name": "Յասամանագույն քվարցիտ՝ կոբալտե բյուրեղներով",
+    "category": "exotic",
+    "finish": "Փայլուն",
+    "variants": [],
+    "image": "media/catalog/lavender-cobalt-quartzite-sheet.webp",
+    "thumb": "media/catalog/lavender-cobalt-quartzite-sheet-thumb.webp",
+    "alt": "Քարի տեսքով թերթ՝ յասամանագույն քվարցիտ՝ կոբալտե բյուրեղներով, NEW DEC",
+    "surface": {
+      "texture": "media/panels/lavender-cobalt-quartzite-sheet.webp",
+      "widthM": 1.22,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.6,
+      "gloss": 0.55
+    },
+    "source": {
+      "video": "7675304499333876999",
+      "time": "0.0 s"
+    }
+  },
+  {
     "id": "beige-petrified-wood-sheet",
     "name": "Բեժ քարացած փայտ՝ սև երակներով",
     "category": "exotic",
@@ -398,6 +445,29 @@ export const catalogProducts: Product[] = [
     "source": {
       "video": "7675304499333876999",
       "time": "2.1 s"
+    }
+  },
+  {
+    "id": "lilac-quartzite-burgundy-sheet",
+    "name": "Յասամանագույն քվարցիտ՝ բորդո շերտերով",
+    "category": "exotic",
+    "finish": "Փայլուն",
+    "variants": [],
+    "image": "media/catalog/lilac-quartzite-burgundy-sheet.webp",
+    "thumb": "media/catalog/lilac-quartzite-burgundy-sheet-thumb.webp",
+    "alt": "Քարի տեսքով թերթ՝ յասամանագույն քվարցիտ՝ բորդո շերտերով, NEW DEC",
+    "surface": {
+      "texture": "media/panels/lilac-quartzite-burgundy-sheet.webp",
+      "widthM": 1.22,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.6,
+      "gloss": 0.55
+    },
+    "source": {
+      "video": "7674283683913813266",
+      "time": "5.0 s"
     }
   },
   {
@@ -552,7 +622,7 @@ export const catalogProducts: Product[] = [
     "alt": "Քարի ռելիեֆով վահանակ՝ ակոսավոր մոխրաշագանակագույն քար, NEW DEC",
     "surface": {
       "texture": "media/panels/taupe-ribbed-stone-panel.webp",
-      "widthM": 0.6,
+      "widthM": 0.4765,
       "heightM": 1.2,
       "moduleW": 0.6,
       "moduleH": 1.2,
@@ -624,7 +694,7 @@ export const catalogProducts: Product[] = [
     "alt": "Ռեյկային վահանակ՝ ռեյկային՝ մուգ ընկուզենի, NEW DEC",
     "surface": {
       "texture": "media/panels/smoked-walnut-acoustic-slat.webp",
-      "widthM": 0.64,
+      "widthM": 0.6019,
       "heightM": 2.8,
       "moduleW": 0.6,
       "moduleH": 2.8,
@@ -647,7 +717,7 @@ export const catalogProducts: Product[] = [
     "alt": "Ռեյկային վահանակ՝ ռեյկային՝ բաց մոխրագույն, NEW DEC",
     "surface": {
       "texture": "media/panels/light-grey-acoustic-slat.webp",
-      "widthM": 0.6,
+      "widthM": 1.0528,
       "heightM": 2.8,
       "moduleW": 0.6,
       "moduleH": 2.8,
@@ -670,7 +740,7 @@ export const catalogProducts: Product[] = [
     "alt": "Ռեյկային վահանակ՝ ռեյկային՝ տաք ընկուզենի, NEW DEC",
     "surface": {
       "texture": "media/panels/warm-walnut-acoustic-slat.webp",
-      "widthM": 0.88,
+      "widthM": 0.827,
       "heightM": 2.8,
       "moduleW": 0.6,
       "moduleH": 2.8,
@@ -693,7 +763,7 @@ export const catalogProducts: Product[] = [
     "alt": "Ռեյկային վահանակ՝ ռեյկային՝ մուգ սուրճագույն, NEW DEC",
     "surface": {
       "texture": "media/panels/dark-espresso-acoustic-slat.webp",
-      "widthM": 0.42,
+      "widthM": 0.3948,
       "heightM": 2.8,
       "moduleW": 0.6,
       "moduleH": 2.8,
@@ -716,7 +786,7 @@ export const catalogProducts: Product[] = [
     "alt": "Ռեյկային վահանակ՝ ակոսավոր՝ գրաֆիտ, NEW DEC",
     "surface": {
       "texture": "media/panels/graphite-glossy-fluted-panel.webp",
-      "widthM": 1.008,
+      "widthM": 0.9473,
       "heightM": 2.8,
       "moduleW": 0.6,
       "moduleH": 2.8,
@@ -739,7 +809,7 @@ export const catalogProducts: Product[] = [
     "alt": "Ռեյկային վահանակ՝ ռեյկային՝ արծաթամոխրագույն, NEW DEC",
     "surface": {
       "texture": "media/panels/silver-grey-glossy-slat-panel.webp",
-      "widthM": 0.702,
+      "widthM": 0.6593,
       "heightM": 2.8,
       "moduleW": 0.6,
       "moduleH": 2.8,
@@ -762,7 +832,7 @@ export const catalogProducts: Product[] = [
     "alt": "Վահանակ՝ մեղրագույն կաղնի, NEW DEC",
     "surface": {
       "texture": "media/panels/honey-oak-wood-sheet.webp",
-      "widthM": 0.92,
+      "widthM": 0.8647,
       "heightM": 2.8,
       "moduleW": 1.22,
       "moduleH": 2.8,
@@ -808,7 +878,7 @@ export const catalogProducts: Product[] = [
     "alt": "Վահանակ՝ մոխրաբեժ կաղնի, NEW DEC",
     "surface": {
       "texture": "media/panels/greige-oak-wood-sheet.webp",
-      "widthM": 1.22,
+      "widthM": 1.0148,
       "heightM": 2.8,
       "moduleW": 1.22,
       "moduleH": 2.8,
@@ -831,7 +901,7 @@ export const catalogProducts: Product[] = [
     "alt": "Վահանակ՝ մոխրագույն՝ գծային հյուսվածքով, NEW DEC",
     "surface": {
       "texture": "media/panels/grey-linear-grain-sheet.webp",
-      "widthM": 1.22,
+      "widthM": 0.9766,
       "heightM": 2.8,
       "moduleW": 1.22,
       "moduleH": 2.8,
@@ -877,7 +947,7 @@ export const catalogProducts: Product[] = [
     "alt": "Վահանակ՝ բնական բաց կաղնի, NEW DEC",
     "surface": {
       "texture": "media/panels/natural-oak-wood-sheet.webp",
-      "widthM": 0.78,
+      "widthM": 0.7334,
       "heightM": 2.8,
       "moduleW": 1.22,
       "moduleH": 2.8,
@@ -900,7 +970,7 @@ export const catalogProducts: Product[] = [
     "alt": "Վահանակ՝ բաց կրեմագույն տրավերտին, NEW DEC",
     "surface": {
       "texture": "media/panels/light-travertine-look-sheet.webp",
-      "widthM": 1.22,
+      "widthM": 2.1616,
       "heightM": 2.8,
       "moduleW": 1.22,
       "moduleH": 2.8,
@@ -924,7 +994,7 @@ export const catalogProducts: Product[] = [
     "surface": {
       "texture": "media/panels/light-grey-plain-sheet.webp",
       "widthM": 1.22,
-      "heightM": 2.44,
+      "heightM": 2.2948,
       "moduleW": 1.22,
       "moduleH": 2.8,
       "seam": 0.35,
@@ -946,8 +1016,8 @@ export const catalogProducts: Product[] = [
     "alt": "Միագույն վահանակ՝ մոկա, NEW DEC",
     "surface": {
       "texture": "media/panels/mocha-taupe-plain-sheet.webp",
-      "widthM": 0.96,
-      "heightM": 1.46,
+      "widthM": 0.9016,
+      "heightM": 1.3728,
       "moduleW": 1.22,
       "moduleH": 2.8,
       "seam": 0.35,
@@ -969,8 +1039,8 @@ export const catalogProducts: Product[] = [
     "alt": "Միագույն վահանակ՝ ավազագույն, NEW DEC",
     "surface": {
       "texture": "media/panels/sand-camel-plain-sheet.webp",
-      "widthM": 1.48,
-      "heightM": 1.72,
+      "widthM": 1.392,
+      "heightM": 1.6159,
       "moduleW": 1.22,
       "moduleH": 2.8,
       "seam": 0.35,
@@ -992,8 +1062,8 @@ export const catalogProducts: Product[] = [
     "alt": "Միագույն վահանակ՝ մուգ մոխրաշագանակագույն՝ դաջված հյուսվածքով, NEW DEC",
     "surface": {
       "texture": "media/panels/dark-taupe-embossed-sheet.webp",
-      "widthM": 0.78,
-      "heightM": 1.62,
+      "widthM": 0.7336,
+      "heightM": 1.5242,
       "moduleW": 1.22,
       "moduleH": 2.8,
       "seam": 0.35,

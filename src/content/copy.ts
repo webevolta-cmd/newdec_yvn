@@ -61,6 +61,8 @@ export const copy = {
     filterLabel: 'Զտել ըստ տեսակի',
     all: 'Բոլորը',
     countLabel: (n: number) => `Ցուցադրված է ${n} նմուշ`,
+    countOf: (shown: number, total: number) => `Ցուցադրված է ${shown} նմուշ՝ ${total}-ից`,
+    showAll: (n: number) => `Ցույց տալ բոլոր ${n} նմուշները`,
     tryIt: 'Տեսնել ինտերիերում',
     quote: 'Ստանալ առաջարկ',
     specFallback: 'Չափերը ճշտեք սրահում',

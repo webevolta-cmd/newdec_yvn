@@ -44,6 +44,11 @@
    "file": "atlas-8.png",
    "w": 1024,
    "h": 739
+  },
+  {
+   "file": "atlas-9.png",
+   "w": 1024,
+   "h": 826
   }
  ],
  "items": [
@@ -541,6 +546,42 @@
    "y": 524,
    "w": 191,
    "h": 191
+  },
+  {
+   "atlas": 9,
+   "kind": "tex",
+   "name": "green-gold-marble-sheet",
+   "x": 24,
+   "y": 24,
+   "w": 242,
+   "h": 778
+  },
+  {
+   "atlas": 9,
+   "kind": "tex",
+   "name": "warm-grey-soft-rock-panel",
+   "x": 290,
+   "y": 24,
+   "w": 155,
+   "h": 453
+  },
+  {
+   "atlas": 9,
+   "kind": "tex",
+   "name": "lavender-cobalt-quartzite-sheet",
+   "x": 469,
+   "y": 24,
+   "w": 178,
+   "h": 411
+  },
+  {
+   "atlas": 9,
+   "kind": "tex",
+   "name": "lilac-quartzite-burgundy-sheet",
+   "x": 671,
+   "y": 24,
+   "w": 119,
+   "h": 339
   }
  ]
 }

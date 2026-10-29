@@ -72,25 +72,50 @@ function initReveal(): void {
   }
 }
 
+const INITIAL_CARDS = 12;
+
 function initCatalog(onTry: (id: string) => void): void {
   const grid = document.querySelector<HTMLElement>('[data-catalog-grid]');
   const count = document.querySelector<HTMLElement>('[data-catalog-count]');
   const filters = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-catalog-filters] [data-filter]'));
   if (!grid) return;
   const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-product-card]'));
+  const more = document.querySelector<HTMLButtonElement>('[data-catalog-more]');
+
+  // The "all" view starts with a short selection, taken round-robin across categories so it shows
+  // the whole range; "show all" (or any category filter) lists everything.
+  const byCat = new Map<string, HTMLElement[]>();
+  for (const c of cards) byCat.set(c.dataset.category!, [...(byCat.get(c.dataset.category!) ?? []), c]);
+  const featured = new Set<HTMLElement>();
+  for (let i = 0; featured.size < Math.min(INITIAL_CARDS, cards.length); i++) {
+    for (const list of byCat.values()) if (list[i] && featured.size < INITIAL_CARDS) featured.add(list[i]);
+  }
+  let expanded = cards.length <= INITIAL_CARDS;
+
+  const apply = (cat: string) => {
+    let n = 0;
+    for (const c of cards) {
+      const show = cat === 'all' ? expanded || featured.has(c) : c.dataset.category === cat;
+      c.hidden = !show;
+      if (show) n++;
+    }
+    const collapsed = cat === 'all' && !expanded;
+    if (more) more.hidden = !collapsed;
+    if (count) count.textContent = collapsed ? copy.catalog.countOf(n, cards.length) : copy.catalog.countLabel(n);
+  };
   for (const f of filters) {
     f.addEventListener('click', () => {
-      const cat = f.dataset.filter!;
       for (const x of filters) x.setAttribute('aria-pressed', String(x === f));
-      let n = 0;
-      for (const c of cards) {
-        const show = cat === 'all' || c.dataset.category === cat;
-        c.hidden = !show;
-        if (show) n++;
-      }
-      if (count) count.textContent = copy.catalog.countLabel(n);
+      apply(f.dataset.filter!);
     });
   }
+  more?.addEventListener('click', () => {
+    const firstHidden = cards.find((c) => c.hidden);
+    expanded = true;
+    apply('all');
+    firstHidden?.querySelector<HTMLElement>('[data-try]')?.focus({ preventScroll: true });
+  });
+  apply('all');
   grid.addEventListener('click', (e) => {
     const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-try]');
     if (btn) onTry(btn.dataset.try!);

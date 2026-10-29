@@ -937,6 +937,54 @@ h3 {
   padding: 0.5rem 0.95rem;
   font-size: 0.9rem;
 }
+.catalog__more {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+}
+.catalog__more:has(> [hidden]) {
+  display: none;
+}
+@media (max-width: 560px) {
+  .catalog__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+  }
+  .card__badge {
+    left: 0.5rem;
+    top: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.68rem;
+  }
+  .card__body {
+    gap: 0.35rem;
+    padding: 0.75rem 0.75rem 0.85rem;
+  }
+  .card__cat {
+    display: none;
+  }
+  .card__name {
+    font-size: 0.98rem;
+  }
+  .card__spec {
+    font-size: 0.8rem;
+  }
+  .card__src {
+    font-size: 0.72rem;
+  }
+  .card__actions {
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+  }
+  .card__actions .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.45rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
 .catalog__note {
   margin-top: 2rem;
   color: var(--muted);

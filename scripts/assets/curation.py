@@ -109,7 +109,7 @@ MODULES = {
     "marble": {"moduleW": 1.22, "moduleH": 2.8, "seam": 0.6, "tiling": "module"},
     "exotic": {"moduleW": 1.22, "moduleH": 2.8, "seam": 0.6, "tiling": "module"},
     "wood": {"moduleW": 1.22, "moduleH": 2.8, "seam": 0.35, "tiling": "repeat", "grain": "vertical"},
-    "plain": {"moduleW": 1.22, "moduleH": 2.8, "seam": 0.35, "tiling": "repeat", "evenLight": 0.07},
+    "plain": {"moduleW": 1.22, "moduleH": 2.8, "seam": 0.35, "tiling": "repeat", "flat": True},
     "slat": {"moduleW": 0.6, "moduleH": 2.8, "seam": 0.0, "tiling": "repeat", "grain": "vertical"},
     "stone": {"moduleW": 0.6, "moduleH": 1.2, "seam": 0.25, "tiling": "module", "evenLight": 0.3},
 }
