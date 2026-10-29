@@ -9,6 +9,15 @@
   }
  },
  {
+  "id": "white-violet-breccia-marble-sheet",
+  "tiling": "module",
+  "scale": 2.75,
+  "source": {
+   "video": "7689891374333807892",
+   "time": "16.4 s"
+  }
+ },
+ {
   "id": "white-statuario-sheet",
   "tiling": "module",
   "scale": 4.0,
@@ -105,6 +114,24 @@
   "source": {
    "video": "7668272239770422548",
    "time": "52.9 s"
+  }
+ },
+ {
+  "id": "white-soft-grey-vein-marble",
+  "tiling": "module",
+  "scale": 9.38,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "37.2 s"
+  }
+ },
+ {
+  "id": "warm-sand-stone-sheet",
+  "tiling": "module",
+  "scale": 8.71,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "38.5 s"
   }
  },
  {

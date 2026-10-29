@@ -4,6 +4,10 @@ export const catalogIndex: Record<string, { name: string; category: string }> = 
     "name": "Սև մարմար՝ լայն սպիտակ երակով",
     "category": "Մարմարի տեսքով մեծաչափ թերթեր"
   },
+  "white-violet-breccia-marble-sheet": {
+    "name": "Սպիտակ մարմար՝ մանուշակագույն երակներով",
+    "category": "Մարմարի տեսքով մեծաչափ թերթեր"
+  },
   "white-statuario-sheet": {
     "name": "Ձյունաճերմակ մարմար՝ մոխրագույն երանգներով",
     "category": "Մարմարի տեսքով մեծաչափ թերթեր"
@@ -46,6 +50,14 @@ export const catalogIndex: Record<string, { name: string; category: string }> = 
   },
   "charcoal-white-vein-marble": {
     "name": "Մուգ մոխրագույն մարմար՝ սպիտակ երակներով",
+    "category": "Մարմարի տեսքով մեծաչափ թերթեր"
+  },
+  "white-soft-grey-vein-marble": {
+    "name": "Սպիտակ մարմար՝ նուրբ մոխրագույն երակներով",
+    "category": "Մարմարի տեսքով մեծաչափ թերթեր"
+  },
+  "warm-sand-stone-sheet": {
+    "name": "Ավազագույն քար՝ մեղմ երակներով",
     "category": "Մարմարի տեսքով մեծաչափ թերթեր"
   },
   "beige-petrified-wood-sheet": {

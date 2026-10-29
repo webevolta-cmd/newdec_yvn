@@ -171,7 +171,7 @@ def make_texture(crop: np.ndarray, rec: dict) -> tuple[np.ndarray, float, float]
         rec["scaleFactor"] = round(max(cover_scale, 1.0), 2)
         if cover_scale > 4:
             print(f"warning: {rec['id']} pattern enlarged x{cover_scale:.1f}; consider tiling 'repeat' or a larger reference")
-        img = module_cover(crop, mw / mh)
+        img = module_cover(even_light(crop, rec["evenLight"]) if rec.get("evenLight") else crop, mw / mh)
         rw, rh = mw, mh
     else:
         img = even_light(crop, rec.get("evenLight", 0.22))

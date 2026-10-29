@@ -1,0 +1,32 @@
+{
+  "id": "golden-brown-marble-wall",
+  "frame": "t0_933.png",
+  "video": "7680190853645716756",
+  "corners": [
+    [
+      395.70001220703125,
+      12.600000381469727
+    ],
+    [
+      562.2999877929688,
+      104.4000015258789
+    ],
+    [
+      567.5999755859375,
+      315.8999938964844
+    ],
+    [
+      402.29998779296875,
+      276.3999938964844
+    ]
+  ],
+  "widthM": 0.955,
+  "heightM": 0.812,
+  "flatten": 0.9,
+  "deglare": 0.0,
+  "pixels": [
+    280,
+    238
+  ],
+  "note": "video 7680190853645716756 t=0.933s (30fps extract, frame 29 of the opening shot). Marble wall to the right of the chrome portal, seen ~50 deg off-axis (wall top/floor lines converge to VP ~(1235,475); verticals lean +0.025 from a slight camera roll, quad edges follow it). Quad sits just right of the portal edge, its top 2% of wall height below the marble/ceiling line (avoids the soft grey-band edge) and its bottom at 31% (just above the vertical reflections of the portal chrome that run through mid-wall; sticker, presenter and caption are lower). Scale: marble wall height taken as one 2.80 m sheet (floor to ceiling band); width from the vanishing point with f~800 px (W~0.95 m), cross-checked against the sharper frontal strip at t=20.6s where vein density matches. Far (right) side is somewhat soft/horizontally smeared from the oblique view."
+}

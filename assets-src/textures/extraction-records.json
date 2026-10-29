@@ -479,6 +479,23 @@
   "gap_reason": ""
  },
  {
+  "id": "warm-sand-stone-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "t=38.45s (inside 1fps frame 039); extracted to scratchpad/t38_450.png"
+  },
+  "widthM": 0.14,
+  "heightM": 1.26,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "gloss": 0.5,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "The leaf's own price label is 31x40 px, giving a w/h of 0.76. That matches the frontal reference from the pulled-out leaves at t=47.9 and 52.6 s, so the strip is front-facing. The label size, 0.078 x 0.103 m, comes from the leaf face height: about 2.75 m equals 26.7 label heights, measured at t=49.5 and 52.6 s. That gives about 395 px/m on both axes. The 56 x 497 px quad is therefore 0.14 x 1.26 m.",
+  "quality_notes": "Native size is 56x499 px, at the lower width limit. The leaves in this sliding display rack overlap, so only about 14 cm of this sheet ever shows; the strip is about 60 px of lit face in every view between 33 and 50 s. The quad sits below the price label and above the bottom trim. It skips the roughly 8 px shadow ramp beside the occluding trim. The surface is clean: no person, text or glare. Lighting is even (column brightness 161-170). The colour is warm sand / pinkish beige, mean RGB about 181/166/155, with faint cloudy veining. The pattern is near-plain, so it should tile and mirror horizontally with little visible repeat."
+ },
+ {
   "id": "warm-walnut-acoustic-slat",
   "status": "ok",
   "source": {
@@ -494,6 +511,21 @@
   "finish_hy": "Մատ",
   "scale_basis": "In frame 15 the whole walnut panel is visible and has 15 slats, so it is about a 0.60 m panel with a 40 mm pitch, the same as the grey panel next to it. The quad spans 11 pitches: from a half-groove before slat 1, at the edge of the black band between panels, to the groove between slats 11 and 12. That makes it 0.44 m wide and seamless horizontally. The local pitch is 17.4 px (436 px/m), with a perspective correction of about 0.98 because this panel is almost front-facing to its viewing ray. That gives 426 px/m vertically, so the mean quad height of 358 px is 0.84 m. Top and bottom edges are sloped toward the horizontal vanishing point. In the output, the grooves are evenly spaced at 17.4 px and vertical. moduleH 2.80 is estimated: floor to ceiling, 2.4-2.8 m from frame 15.",
   "quality_notes": "191x364 px. Clean: it sits above the white product label at y of about 418 and stays clear of the presenter's hair and shoulder, the text overlays, and the right frame edge. Sharp tan-copper walnut slats with visible flowing linear grain on black felt, gaps about half the slat width. Flatten 0.9 and no deglare (there was no glare). The darker top of the wall was trimmed off. A mild residual remains: the top eighth is about 10% darker, which needs a blend if the texture is tiled vertically."
+ },
+ {
+  "id": "white-bold-black-vein-marble",
+  "status": "gap",
+  "gap_reason": "Only a sliver is ever visible. In the sliding-leaf rack this leaf (NV-B5) is always overlapped by its neighbours and is never pulled out. Its lit face is only 40-46 px wide (about 0.11-0.12 m of the sheet) in every moment checked: front views at 33-35.7 s and 38-39 s, side views at 36-37.6 s, and 48.3-50 s. At 39-47 s inset photos also cover the lower part. A strip this narrow cannot show the sparse, bold black-vein layout of a 1.22 m sheet. Tiling it would turn the sparse veins into a dense repeat. A clearer source is needed, such as a front-facing shot of this sheet or a showroom photo.",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "best sliver t=38.45s (frame 039), x 530-574, y 520-950"
+  },
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "quality_notes": "I checked about 300 frames at 30 fps between 33 and 53 s, and the widest clean strip is about 46 px. The bold veins cross the full width of that strip at y≈600-720 and y≈900-1000."
  },
  {
   "id": "white-lavender-gold-art-marble",
@@ -530,6 +562,23 @@
   "quality_notes": "176x389 px native, flatten 0.85, no deglare needed (matte stone). No presenter, text, pin overlay, fluted panel or trim inside the quad; it stops left of the rock's right edge and above the presenter's shoulder. The lower two thirds show the deep, sweeping diagonal split-face relief well under raking light. The upper third has softer, lower-contrast relief because the spotlight hits it flatter. The top-left is a little darker even after flattening. Colour is warm ivory/beige. Rock relief is not planar, so expect a residual shear of about 1 degree."
  },
  {
+  "id": "white-soft-grey-vein-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "t=37.20s (inside 1fps frame 038); extracted to scratchpad/t37_200.png"
+  },
+  "widthM": 0.13,
+  "heightM": 0.575,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "The camera is close and front-facing. The leaf's own label (XL8236-1) is 43x55 px, w/h 0.78 against a frontal 0.76. Using the same label size as above (0.078 x 0.103 m, from a leaf face of about 2.75 m), that is about 545 px/m at the label. Below the label the scale grows with camera pitch, measured from the diverging trims. Integrated over the quad, the result is 0.13 m wide (both the top and bottom edges give about 0.128-0.133 m) and about 0.575 m tall (0.56-0.62 m depending on the pitch estimate).",
+  "quality_notes": "Native size is 74x327 px. Taken from the right-most of the two XL8236-1 leaves; both carry the same code, so it is one design. This is the widest view of either leaf (about 80-87 px), but still only about 13 cm of the sheet shows between the overlapping leaves. The quad is below the price label and the window-glare patch, inside the trims, and follows the converging verticals and about 4.6 deg of roll. The surface is clean: no person, text or glare. Lighting is even (rows 166-176). The colour reads as light warm grey-white, mean RGB about 177/172/161, under the warm showroom light. It shows faint, soft grey wispy veins. The veins are low-contrast and slightly soft from video compression."
+ },
+ {
   "id": "white-statuario-sheet",
   "status": "ok",
   "source": {
@@ -545,6 +594,24 @@
   "finish_hy": "Փայլուն",
   "scale_basis": "Left wall of the bathroom corner booth, about 40 deg off-axis. The quad follows the perspective: vanishing point about (672,506), from fitted top and bottom trim lines. Vertical scale comes from the 2.80 m sheet height at the corner (709 px). Horizontal scale uses f=470 px. That is a compromise: a 90-deg corner in this booth gives about 420, and the neighbouring booth gives about 620, so the width is within about +-15%. The quad covers u 0.175-0.898 m from the corner and v 0.29-0.99 m from the top.",
   "quality_notes": "251x244 px. Clean, light warm-grey/white marble with soft diagonal cloudy grey shading. One LED patch was inpainted with deglare 0.85; only a barely visible faint ring is left. Limitation: the thin crack-like grey veins lie just below a band of LED reflections (a thin LED line and dots). Deglare does not remove that line even at 1.0, so the quad stops above the band. As a result, the texture shows the plain cloudy part of the sheet without the sparse crack veins."
+ },
+ {
+  "id": "white-violet-breccia-marble-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7689891374333807892",
+   "frame": "t~16.45s (dense extract, same moment as 1 fps frame 017); saved as scratchpad/t16.45s.png"
+  },
+  "widthM": 1.19,
+  "heightM": 1.02,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.3,
+  "finish_hy": "Կիսափայլ",
+  "scale_basis": "I fitted a panel homography to the front rack leaf's top and bottom trims and its two side edges in this frame. The whole 1.22 x 2.80 m sheet is visible here: about 420 px wide and 950-1060 px tall (the leaf is turned about 11 deg, right side nearer), and that aspect is consistent with the stated size. I chose the quad as panel coordinates u 0.015-1.205 m and v 0.08-1.10 m from the top and projected it back to the frame, so the rectification follows the leaf's perspective. Output is 415x356 px, about 349 px/m on both axes.",
+  "quality_notes": "This is the upper part of the leaf, above the presenter's hair, at the 16-17 s moment, which has no on-screen text. Frames at 6-11 s are sharper but carry size captions over the panel. The quad has no person, text, black trim, sticker or other panel in it. The 1 fps frame 12 source is also clean but gives a shorter area (about 1.03 m tall). No visible LED glare, so --deglare is 0; --flatten is the default 0.75 and the lighting is even. Pattern: warm off-white cells with dense charcoal to plum fractured veins running lower-left to upper-right, plus rust/peach clasts, all at natural proportions. Mild video softness, as expected at native resolution.",
+  "gap_reason": ""
  },
  {
   "id": "white-wide-fluted-panel",

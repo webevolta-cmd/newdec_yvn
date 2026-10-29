@@ -1,0 +1,32 @@
+{
+  "id": "white-violet-breccia-marble-sheet",
+  "frame": "t16.45s.png",
+  "video": "7689891374333807892",
+  "corners": [
+    [
+      145.39999389648438,
+      60.400001525878906
+    ],
+    [
+      553.2999877929688,
+      3.0999999046325684
+    ],
+    [
+      564.0,
+      375.29998779296875
+    ],
+    [
+      146.8000030517578,
+      394.79998779296875
+    ]
+  ],
+  "widthM": 1.19,
+  "heightM": 1.02,
+  "flatten": 0.75,
+  "deglare": 0.0,
+  "pixels": [
+    415,
+    356
+  ],
+  "note": "t~16.45s (1 fps frame 17 moment). Upper part of the front rack leaf above the presenter's head, no text overlay. Quad derived from a panel homography fitted to the leaf's top/bottom trims and side edges (leaf turned ~11 deg, right side nearer; horizontal VP ~(-3400,556)); panel coords u 0.015-1.205 m, v 0.08-1.10 m from the top. Scale: full sheet 1.22 x 2.80 m spans ~420 x 950-1060 px in this frame, consistent aspect."
+}

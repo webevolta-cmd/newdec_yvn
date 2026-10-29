@@ -1,0 +1,32 @@
+{
+  "id": "warm-sand-stone-sheet",
+  "frame": "t38_450.png",
+  "video": "warm-sand-stone-sheet",
+  "corners": [
+    [
+      442.29998779296875,
+      456.0
+    ],
+    [
+      498.8999938964844,
+      456.0
+    ],
+    [
+      503.1000061035156,
+      953.0
+    ],
+    [
+      448.70001220703125,
+      953.0
+    ]
+  ],
+  "widthM": 0.14,
+  "heightM": 1.26,
+  "flatten": 0.75,
+  "deglare": 0.0,
+  "pixels": [
+    56,
+    499
+  ],
+  "note": "video 7668272239770422548 t=38.45s (between 1fps frames 038/039); sliding-leaf rack NV-B4 (label XL824x), near-frontal view (label w/h 0.76 = frontal reference); only a ~0.14 m strip of the leaf is visible between the overlapping leaves; quad = lit face below the price label, right of the shadow ramp next to the occluding trim, above the bottom trim; scale from the leaf's own price label (31x40 px; label 0.078x0.103 m derived from leaf face height ~2.75 m = 26.7 label heights), ~395 px/m both axes"
+}

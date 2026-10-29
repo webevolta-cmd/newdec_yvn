@@ -9,6 +9,11 @@
    "file": "atlas-1.png",
    "w": 1024,
    "h": 717
+  },
+  {
+   "file": "atlas-2.png",
+   "w": 1024,
+   "h": 971
   }
  ],
  "items": [
@@ -164,6 +169,114 @@
    "y": 411,
    "w": 126,
    "h": 261
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "white-rock-relief-large-sheet",
+   "x": 24,
+   "y": 24,
+   "w": 176,
+   "h": 389
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "violet-sodalite-sheet",
+   "x": 224,
+   "y": 24,
+   "w": 202,
+   "h": 380
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "black-marble-white-river-sheet",
+   "x": 450,
+   "y": 24,
+   "w": 155,
+   "h": 317
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "beige-petrified-wood-sheet",
+   "x": 629,
+   "y": 24,
+   "w": 164,
+   "h": 300
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "brown-fossil-agate-sheet",
+   "x": 817,
+   "y": 24,
+   "w": 189,
+   "h": 300
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "greige-taupe-vein-marble",
+   "x": 24,
+   "y": 437,
+   "w": 189,
+   "h": 260
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "light-grey-cloud-marble",
+   "x": 237,
+   "y": 437,
+   "w": 137,
+   "h": 252
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "white-statuario-sheet",
+   "x": 398,
+   "y": 437,
+   "w": 251,
+   "h": 244
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "charcoal-white-vein-marble",
+   "x": 673,
+   "y": 437,
+   "w": 196,
+   "h": 228
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "black-aubergine-web-marble-sheet",
+   "x": 24,
+   "y": 721,
+   "w": 213,
+   "h": 226
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "silver-grey-glossy-slat-panel",
+   "x": 261,
+   "y": 721,
+   "w": 74,
+   "h": 219
+  },
+  {
+   "atlas": 2,
+   "kind": "tex",
+   "name": "graphite-glossy-fluted-panel",
+   "x": 359,
+   "y": 721,
+   "w": 108,
+   "h": 93
   }
  ]
 }

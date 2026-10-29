@@ -1,0 +1,32 @@
+{
+  "id": "white-soft-grey-vein-marble",
+  "frame": "t37_200.png",
+  "video": "white-soft-grey-vein-marble",
+  "corners": [
+    [
+      468.6000061035156,
+      594.0
+    ],
+    [
+      538.9000244140625,
+      588.2999877929688
+    ],
+    [
+      568.2999877929688,
+      914.0
+    ],
+    [
+      492.3999938964844,
+      920.0
+    ]
+  ],
+  "widthM": 0.13,
+  "heightM": 0.575,
+  "flatten": 0.75,
+  "deglare": 0.0,
+  "pixels": [
+    74,
+    327
+  ],
+  "note": "video 7668272239770422548 t=37.20s (1fps frame 038); sliding-leaf rack NV-B6, right-most leaf (label XL8236-1; the leaf left of it carries the same code), camera close and near-frontal (label w/h 0.78 vs frontal 0.76); only ~0.13 m of the leaf is visible between overlapping leaves; quad = lit face below the price label and window-glare patch, inside the trims, following converging verticals (pitch) and ~4.6 deg roll; scale from the leaf's own price label (43x55 px; label 0.078x0.103 m from leaf face height ~2.75 m), ~545-600 px/m with pitch correction"
+}
