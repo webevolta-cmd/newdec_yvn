@@ -1,0 +1,32 @@
+{
+  "id": "navy-violet-gold-vein-marble-sheet",
+  "frame": "t34.04.png",
+  "video": "7671633679050984722",
+  "corners": [
+    [
+      4.800000190734863,
+      16.799999237060547
+    ],
+    [
+      186.6999969482422,
+      228.89999389648438
+    ],
+    [
+      189.8000030517578,
+      552.2999877929688
+    ],
+    [
+      11.199999809265137,
+      586.4000244140625
+    ]
+  ],
+  "widthM": 0.87,
+  "heightM": 1.39,
+  "flatten": 0.5,
+  "deglare": 0.1,
+  "pixels": [
+    279,
+    447
+  ],
+  "note": "video 7671633679050984722 t=34.04s (inside 1fps frame 035; native 24fps frame, sharpest steady moment), left leaf of the black-framed swing rack, camera zoomed out, presenter standing right of the leaf, overlay text below the quad. Geometry: leaf plane homography from the four print edges in 1fps frame 046 (whole leaf visible, TL corner extrapolated) set to 1.22 x 2.80 m, transferred to this frame by SIFT (146 inliers); metric cross-checked: f~455 px gives equal-norm orthogonal axes in all 7671 frames and in the 7675 kitchen-booth view of the same print. Quad = u 0.13-1.00 m, v 0.41-1.80 m from the sheet's top-left (left 0.13 m is outside the frame; right 0.2 m blurred/reflective; below 1.8 m the presenter's reflection and arm). Leaf is seen at ~60 deg, so the right third is upsampled ~2.5x horizontally. deglare 0.1 removes one ceiling-spot reflection dot at u0.71 v1.09 while leaving the crackle veins; flatten 0.5 keeps the real lilac band"
+}

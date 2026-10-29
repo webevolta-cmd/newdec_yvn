@@ -7,6 +7,8 @@
  *   MAIL_DIR=/path   directory where a local SMTP sink writes .eml files; enables the delivery check
  *   QUICK=1          visualizer check on a sample of products instead of every product
  *   ONLY=layout,hero,viz,catalog,forms   run a subset of the groups
+ *   PREVIEW=1        the target is the review preview (scripts/e2e/preview-host.mjs): no backend, so a
+ *                    submitted form must show the preview's "not sent" message and never a success
  *
  * Needs a running server (npm run dev, or npm run preview) and Playwright's Chromium
  * (`npx playwright install chromium` on a fresh machine). Screenshots go to scripts/e2e/out/.
@@ -21,6 +23,7 @@ mkdirSync(OUT, { recursive: true });
 const MAIL_DIR = process.env.MAIL_DIR;
 
 const ONLY = process.env.ONLY ? process.env.ONLY.split(',') : null;
+const PREVIEW = Boolean(process.env.PREVIEW);
 const run = (group) => !ONLY || ONLY.includes(group);
 const results = [];
 const check = (name, ok, detail = '') => {
@@ -87,10 +90,14 @@ for (const vp of !run('layout') ? [] : [
     badLinks: Array.from(document.querySelectorAll('a[href^="#"]')).map((a) => a.getAttribute('href')).filter((h) => h.length > 1 && !document.getElementById(h.slice(1))),
     tel: Array.from(document.querySelectorAll('a[href^="tel:"]')).every((a) => a.getAttribute('href') === 'tel:+37444305355'),
     imgsNoAlt: Array.from(document.querySelectorAll('img')).filter((i) => !i.hasAttribute('alt')).length,
+    robots: document.querySelector('meta[name="robots"]')?.getAttribute('content') ?? '',
   }));
   check(`${vp.name} ${vp.width}px: no horizontal scroll`, m.sw <= m.cw, `${m.sw}/${m.cw}`);
   check(`${vp.name}: page language hy, one h1, all sections`, m.lang === 'hy' && m.h1 === 1 && m.sections.length === 0, JSON.stringify(m.sections));
   check(`${vp.name}: in-page links resolve, tel links correct, img alt present`, m.badLinks.length === 0 && m.tel && m.imgsNoAlt === 0, JSON.stringify(m.badLinks));
+  if (vp.width === 1440) {
+    check(PREVIEW ? 'preview is kept out of search (noindex)' : 'production page is indexable (no noindex)', PREVIEW ? /noindex/.test(m.robots) : !/noindex/.test(m.robots), m.robots || 'no robots meta');
+  }
   // Walk the whole page to trigger lazy content, then look for overflowing elements.
   const total = await page.evaluate(() => document.documentElement.scrollHeight);
   for (let y = 0; y < total; y += vp.height * 0.8) {
@@ -108,6 +115,14 @@ for (const vp of !run('layout') ? [] : [
       .map((el) => el.className || el.tagName),
   );
   check(`${vp.name}: no element overflows the viewport`, overflow.length === 0, JSON.stringify(overflow));
+  // Every image the walk loaded must decode (a dev server can answer a missing file with HTML).
+  await page.waitForTimeout(600);
+  const broken = await page.evaluate(() =>
+    Array.from(document.images)
+      .filter((i) => i.complete && i.naturalWidth === 0 && i.currentSrc)
+      .map((i) => i.currentSrc.split('/').slice(-2).join('/')),
+  );
+  check(`${vp.name}: every loaded image decodes`, broken.length === 0, JSON.stringify(broken.slice(0, 4)));
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.waitForTimeout(400);
   await page.screenshot({ path: join(OUT, `layout-${vp.width}.jpg`), type: 'jpeg', quality: 70 });
@@ -272,8 +287,10 @@ if (run('catalog')) {
   const first = await page.$eval('[data-try]', (b) => b.dataset.try);
   await page.click(`[data-try="${first}"]`);
   await page.waitForFunction((pid) => document.querySelector('[data-viz-stage]')?.dataset.applied === pid, first, { timeout: 45000 });
-  await page.waitForTimeout(1200);
-  const inView = await page.evaluate(() => Math.abs(document.getElementById('visualizer').getBoundingClientRect().top) < 200);
+  // The smooth scroll can settle in two steps while lazy images above it load; wait for it to arrive.
+  const inView = await page
+    .waitForFunction(() => Math.abs(document.getElementById('visualizer').getBoundingClientRect().top) < 200, null, { timeout: 6000 })
+    .then(() => true, () => false);
   check('catalog: "see in the interior" opens the visualizer with that panel', inView);
   await page.fill('#calc-area', '14');
   const calc = await page.textContent('[data-calc-result]');
@@ -309,7 +326,8 @@ if (run('forms')) {
   await page.click('#quote-form [data-submit]');
   await page.waitForSelector('#quote-form [data-form-status]:not([hidden])');
   const fail = await page.evaluate(() => ({ status: document.querySelector('#quote-form [data-form-status]').textContent, name: document.querySelector('#quote-name').value, area: document.querySelector('#quote-area').value, btn: document.querySelector('#quote-form [data-submit]').disabled }));
-  check('form: failed delivery shows an error and keeps the inputs', /Չհաջողվեց/.test(fail.status) && fail.name === 'Թեստ Ստուգող' && fail.area === '12,5' && !fail.btn, fail.status);
+  // In the review preview every failure says that the preview has no mail server.
+  check('form: failed delivery shows an error and keeps the inputs', (PREVIEW ? /չի ուղարկվել/ : /Չհաջողվեց/).test(fail.status) && fail.name === 'Թեստ Ստուգող' && fail.area === '12,5' && !fail.btn, fail.status);
   await page.unroute('**/api/inquiry');
 
   // Duplicate-submit protection: the button is disabled while the request is in flight.
@@ -331,14 +349,20 @@ if (run('forms')) {
   ]).catch(() => 'timeout');
   const statusText = outcome === 'status' ? await page.textContent('#quote-form [data-form-status]') : '';
   check('form: exactly one request sent', calls === 1, `calls=${calls}`);
-  if (MAIL_DIR) {
+  if (PREVIEW) {
+    const note = await page.evaluate(() => document.querySelector('#quote-form .form__preview-note')?.textContent ?? '');
+    check('preview form: says up front that it does not send', /նախադիտման/.test(note), note);
+    check('preview form: submission shows "not sent", never a success', outcome === 'status' && /չի ուղարկվել/.test(statusText), outcome + ' ' + statusText);
+    const kept = await page.evaluate(() => document.querySelector('#quote-name').value);
+    check('preview form: inputs are kept', kept === 'Թեստ Ստուգող', kept);
+  } else if (MAIL_DIR) {
     check('form: server accepts and the success message is shown', outcome === 'success', outcome + ' ' + statusText);
     await page.waitForTimeout(500);
     const files = readdirSync(MAIL_DIR).sort();
     const newest = files.length > before ? readFileSync(join(MAIL_DIR, files[files.length - 1]), 'utf8') : '';
     check('form: e-mail delivered to the SMTP server with the selected panel', files.length === before + 1 && newest.includes(firstCard), `${files.length - before} new message(s)`);
   } else {
-    check('form: without mail settings the visitor sees a failure, never a fake success', outcome === 'status' || outcome === 'success', outcome + ' ' + statusText);
+    check('form: the request ends in a success or an error message (delivery not checked without MAIL_DIR)', outcome === 'status' || outcome === 'success', outcome + ' ' + statusText);
   }
   check('forms: no console errors', errors.filter((e) => !/502|503|Failed to load resource/.test(e)).length === 0, errors.slice(0, 3).join(' | '));
   await page.screenshot({ path: join(OUT, 'form-dialog.jpg'), type: 'jpeg', quality: 70 });

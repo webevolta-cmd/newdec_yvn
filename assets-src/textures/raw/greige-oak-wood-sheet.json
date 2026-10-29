@@ -1,0 +1,32 @@
+{
+  "id": "greige-oak-wood-sheet",
+  "frame": "n0114.png",
+  "video": "f30",
+  "corners": [
+    [
+      268.0,
+      153.60000610351562
+    ],
+    [
+      570.0,
+      4.0
+    ],
+    [
+      570.0,
+      350.3999938964844
+    ],
+    [
+      268.0,
+      398.0
+    ]
+  ],
+  "widthM": 0.82,
+  "heightM": 0.775,
+  "flatten": 0.75,
+  "deglare": 0.0,
+  "pixels": [
+    321,
+    304
+  ],
+  "note": "video 7683515606145961223 native frame 114 (t=3.77s), right wall of first (bedroom) corner, close view without overlay; wall rectangle from ceiling-trim vanishing point (VR x=-456 at horizon y=512, f=473 px calibrated by 90deg corner), scale from wall height 2.8 m in far view + LED column width"
+}

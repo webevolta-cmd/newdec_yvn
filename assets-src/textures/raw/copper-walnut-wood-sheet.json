@@ -1,32 +1,32 @@
 {
   "id": "copper-walnut-wood-sheet",
-  "frame": "f14_733.png",
-  "video": "copper-walnut-wood-sheet",
+  "frame": "n0345_t11.47.png",
+  "video": "7683515606145961223",
   "corners": [
     [
-      357.5,
-      126.4000015258789
+      358.0,
+      215.0
     ],
     [
-      544.0,
-      5.599999904632568
+      570.0,
+      137.60000610351562
     ],
     [
-      569.5999755859375,
-      444.3999938964844
+      570.0,
+      522.0999755859375
     ],
     [
-      373.6000061035156,
-      468.0
+      358.0,
+      520.0
     ]
   ],
-  "widthM": 0.41,
-  "heightM": 0.85,
+  "widthM": 0.5,
+  "heightM": 0.84,
   "flatten": 0.8,
   "deglare": 0.0,
   "pixels": [
-    210,
-    435
+    219,
+    368
   ],
-  "note": "video 7683515606145961223 t=14.733s (native frame 442: sharpest clean moment without overlay or compression streak), right wall of bathroom corner bay, above/right of presenter; perspective from 90deg-corner model (f=461px calibrated on first bay, roll -2.4deg from LED column tilt, pitch ~1.5deg, wall 49deg to corner line of sight as measured in the first bay), scale from LED column width 56px vs first-bay calibration (corner ~1.56 m)"
+  "note": ""
 }
