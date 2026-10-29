@@ -1,32 +1,32 @@
 {
   "id": "red-petrified-wood-sheet",
   "frame": "t24_867.png",
-  "video": "red-petrified-wood-sheet",
+  "video": "7675304499333876999",
   "corners": [
     [
       9.100000381469727,
-      52.900001525878906
+      389.1000061035156
     ],
     [
-      154.89999389648438,
-      169.0
+      159.1999969482422,
+      419.8999938964844
     ],
     [
-      172.6999969482422,
-      847.5
+      170.60000610351562,
+      855.0
     ],
     [
-      31.799999237060547,
-      966.0999755859375
+      23.799999237060547,
+      980.7000122070312
     ]
   ],
-  "widthM": 0.47,
-  "heightM": 2.42,
+  "widthM": 0.48,
+  "heightM": 1.54,
   "flatten": 0.75,
-  "deglare": 0.6,
+  "deglare": 0.0,
   "pixels": [
-    185,
-    954
+    173,
+    556
   ],
-  "note": "test"
+  "note": "video 7675304499333876999 t=24.867s (30fps frame, caption-free moment before the logo; 1fps frame 025); left leaf of the final corner booth (red petrified wood | onyx pair), lower part of the sheet: u 0.20-0.68 m from the corner trim, v 1.20-2.74 m from the top trim (sheet seen ~55 deg off-axis, quad follows its perspective; far side on the left as a viewer facing the wall sees it). Geometry: reference frame t=16.8s with both leaves' top and bottom trims visible; horizontal VPs (591,509) and (-274,509) with a 90-deg booth corner give f~413 px, floor-tile grout orthogonality gives f~430 px, used f=420; inner-trim height 2.80 m at the corner; wall-plane homography transferred by SIFT (570 inliers). Width uncertainty ~+-7% (f 380-470). Region starts below the band of ceiling-LED reflections (dot, short lines, white patch at v 0.75-1.16) and stays right of the presenter's jacket; no deglare because it also erases the lilac-grey grain highlights."
 }

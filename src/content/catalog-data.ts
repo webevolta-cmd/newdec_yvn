@@ -469,6 +469,52 @@ export const catalogProducts: Product[] = [
     }
   },
   {
+    "id": "red-petrified-wood-sheet",
+    "name": "Կարմրաշագանակագույն քարացած փայտ",
+    "category": "exotic",
+    "finish": "Փայլուն",
+    "variants": [],
+    "image": "media/catalog/red-petrified-wood-sheet.webp",
+    "thumb": "media/catalog/red-petrified-wood-sheet-thumb.webp",
+    "alt": "Քարի տեսքով թերթ՝ կարմրաշագանակագույն քարացած փայտ, NEW DEC",
+    "surface": {
+      "texture": "media/panels/red-petrified-wood-sheet.webp",
+      "widthM": 1.22,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.6,
+      "gloss": 0.55
+    },
+    "source": {
+      "video": "7675304499333876999",
+      "time": "24.9 s"
+    }
+  },
+  {
+    "id": "cream-green-gold-onyx-sheet",
+    "name": "Կրեմագույն օնիքս՝ կանաչ և ոսկեգույն երակներով",
+    "category": "exotic",
+    "finish": "Փայլուն",
+    "variants": [],
+    "image": "media/catalog/cream-green-gold-onyx-sheet.webp",
+    "thumb": "media/catalog/cream-green-gold-onyx-sheet-thumb.webp",
+    "alt": "Քարի տեսքով թերթ՝ կրեմագույն օնիքս՝ կանաչ և ոսկեգույն երակներով, NEW DEC",
+    "surface": {
+      "texture": "media/panels/cream-green-gold-onyx-sheet.webp",
+      "widthM": 1.22,
+      "heightM": 2.8,
+      "moduleW": 1.22,
+      "moduleH": 2.8,
+      "seam": 0.6,
+      "gloss": 0.55
+    },
+    "source": {
+      "video": "7675304499333876999",
+      "time": "24.9 s"
+    }
+  },
+  {
     "id": "white-rock-relief-large-sheet",
     "name": "Սպիտակ ժայռաքար, մեծ թերթ",
     "category": "stone",

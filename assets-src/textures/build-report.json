@@ -171,6 +171,24 @@
   }
  },
  {
+  "id": "red-petrified-wood-sheet",
+  "tiling": "module",
+  "scale": 2.54,
+  "source": {
+   "video": "7675304499333876999",
+   "time": "24.9 s"
+  }
+ },
+ {
+  "id": "cream-green-gold-onyx-sheet",
+  "tiling": "module",
+  "scale": 2.68,
+  "source": {
+   "video": "7675304499333876999",
+   "time": "24.9 s"
+  }
+ },
+ {
   "id": "white-rock-relief-large-sheet",
   "tiling": "module",
   "scale": 4.44,

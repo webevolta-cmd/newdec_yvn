@@ -362,6 +362,40 @@
    "tiling": "module"
   },
   {
+   "id": "red-petrified-wood-sheet",
+   "name": "Կարմրաշագանակագույն քարացած փայտ",
+   "category": "exotic",
+   "finish": "Փայլուն",
+   "alt": "Քարի տեսքով թերթ՝ կարմրաշագանակագույն քարացած փայտ, NEW DEC",
+   "gloss": 0.55,
+   "source": {
+    "video": "7675304499333876999",
+    "time": "24.9 s"
+   },
+   "scaleBasis": "Reference frame t=16.8s shows the top and bottom trims of both booth leaves. Their horizontal vanishing points, (591,509) and (-274,509), with a 90-degree booth corner give f~413 px. Floor-tile grout orthogonality independently gives f~430 px, so f=420 was used. The 2.80 m inner-trim height at the corner gives the metric wall-plane homography, which was transferred to t=24.867s by SIFT (570 inliers). The quad is the wall rectangle u 0.20-0.68 m from the corner trim and v 1.20-2.74 m from the top trim. The width changes by about 7% for f between 380 and 470.",
+   "moduleW": 1.22,
+   "moduleH": 2.8,
+   "seam": 0.6,
+   "tiling": "module"
+  },
+  {
+   "id": "cream-green-gold-onyx-sheet",
+   "name": "Կրեմագույն օնիքս՝ կանաչ և ոսկեգույն երակներով",
+   "category": "exotic",
+   "finish": "Փայլուն",
+   "alt": "Քարի տեսքով թերթ՝ կրեմագույն օնիքս՝ կանաչ և ոսկեգույն երակներով, NEW DEC",
+   "gloss": 0.55,
+   "source": {
+    "video": "7675304499333876999",
+    "time": "24.9 s"
+   },
+   "scaleBasis": "Uses the same booth camera model as the red sheet: reference t=16.8s, 90-degree-corner vanishing points (f~413 px), cross-checked by floor-tile orthogonality (f~430 px), f=420. The 2.80 m inner-trim height at the corner gives the scale. The right-wall homography was transferred to t=24.867s by SIFT (177 inliers). The quad is u 0.50-0.955 m from the corner trim and v 0.82-2.74 m from the top trim. The width changes by about 4% for f between 380 and 470.",
+   "moduleW": 1.22,
+   "moduleH": 2.8,
+   "seam": 0.6,
+   "tiling": "module"
+  },
+  {
    "id": "white-rock-relief-large-sheet",
    "name": "Սպիտակ ժայռաքար, մեծ թերթ",
    "category": "stone",
@@ -645,16 +679,6 @@
    "id": "turquoise-copper-stone-sheet",
    "name": "Փիրուզագույն քար՝ պղնձագույն բծերով",
    "reason": "The only clear view is a strip about 1,12 × 0,40 m at 268 × 96 px; filling a 1,22 × 2,80 m sheet from it would mean enlarging the pattern about 7x or mirroring it into an obvious kaleidoscope."
-  },
-  {
-   "id": "red-petrified-wood-sheet",
-   "name": "Կարմրաշագանակագույն քարացած փայտ",
-   "reason": "no usable reference crop"
-  },
-  {
-   "id": "cream-green-gold-onyx-sheet",
-   "name": "Կրեմագույն օնիքս՝ կանաչ և ոսկեգույն երակներով",
-   "reason": "no usable reference crop"
   },
   {
    "id": "white-rockface-stone-panel",

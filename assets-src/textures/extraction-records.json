@@ -121,6 +121,23 @@
   "quality_notes": "Narrow but clean strip in the right part of the leaf: warm ivory base with burnt-orange/copper veins, a copper band, and a deep plum-black mass with pale crackle veins, copper edges and small gold flecks. I avoided the price overlay and red X above, the two label stickers to the left, the inset picture below and the shaded strip at the leaf's right edge. The inset picture covers the lower half of the leaf in every frame where this sheet appears, so no larger clean area exists. Flatten 0.5 to keep the real cream/plum contrast. Native 101x383 px, slightly soft."
  },
  {
+  "id": "cream-green-gold-onyx-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7675304499333876999",
+   "frame": "t=24.867s (30fps extract, between 1fps frames 025/026; caption-free moment before the logo)"
+  },
+  "widthM": 0.455,
+  "heightM": 1.92,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.6,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Uses the same booth camera model as the red sheet: reference t=16.8s, 90-degree-corner vanishing points (f~413 px), cross-checked by floor-tile orthogonality (f~430 px), f=420. The 2.80 m inner-trim height at the corner gives the scale. The right-wall homography was transferred to t=24.867s by SIFT (177 inliers). The quad is u 0.50-0.955 m from the corner trim and v 0.82-2.74 m from the top trim. The width changes by about 4% for f between 380 and 470.",
+  "quality_notes": "Output is 169x711 px. It shows a pale cream base with the sage/teal cloudy band at the top, golden-ochre crackle veins, a yellow band, and the long orange-brown diagonal vein with dark hairlines below. The region sits below the big diagonal LED streak and the horizontal LED line (v<0.78), right of the presenter, and left of a short LED line (u>0.967) and a small white label (u~1.08). A pale cloud at the lower left was checked against t=21.27s and is part of the stone, not a reflection. Deglare 0.6 only removed two tiny specks (0.04% of pixels). The upper area of the sheet (orange/pink veins above the green band) could not be included because large LED reflections cross it in every frame."
+ },
+ {
   "id": "dark-espresso-acoustic-slat",
   "status": "ok",
   "source": {
@@ -407,6 +424,23 @@
   "finish_hy": "Փայլուն",
   "scale_basis": "The flip-display leaf is about 190x850 px and is turned about 10 deg (VP far left), so it is close to front-facing. I assumed the leaf is about 0.61 m wide (half of a 1.22 m sheet). That gives about 311 px/m and a leaf about 2.7 m tall, which is consistent with the camera height and presenter checks. The quad covers 0.95 of the leaf width (180 px = 0.58 m) and 362 px of height. Horizontal and vertical px/m agree to about 1%.",
   "quality_notes": "Lower part of the leaf below the price stickers: plum band with gold lines, crystalline violet/gold geode edge, jet-black pool, white areas with dark veins and a gold vein. No presenter, text, stickers or frame. The bottom was trimmed above the stepped-base reflections, but faint horizontal reflection lines remain in the small dark area at the lower right. There is a faint soft reflection blob in the black pool. Flatten 0.7, no deglare (deglare would erase the white crackle veins). Native 180x363 px, slightly soft from the video."
+ },
+ {
+  "id": "red-petrified-wood-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7675304499333876999",
+   "frame": "t=24.867s (30fps extract, between 1fps frames 025/026; caption-free moment before the logo)"
+  },
+  "widthM": 0.48,
+  "heightM": 1.54,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Reference frame t=16.8s shows the top and bottom trims of both booth leaves. Their horizontal vanishing points, (591,509) and (-274,509), with a 90-degree booth corner give f~413 px. Floor-tile grout orthogonality independently gives f~430 px, so f=420 was used. The 2.80 m inner-trim height at the corner gives the metric wall-plane homography, which was transferred to t=24.867s by SIFT (570 inliers). The quad is the wall rectangle u 0.20-0.68 m from the corner trim and v 1.20-2.74 m from the top trim. The width changes by about 7% for f between 380 and 470.",
+  "quality_notes": "Output is 173x556 px. It shows the lower part of the left booth leaf: flowing wavy strata, chocolate-brown and grey-lilac grain, rust-orange and pale crackle knots. No presenter, caption, pin icon, trim or reflections remain. The region was placed below the band of ceiling-LED reflections (a dot, short lines and a white patch at v 0.75-1.16) and right of the jacket. Deglare was set to 0 because at 0.6 and above it erased 6-15% of pixels, which were the real lilac-grey grain highlights. The 1fps bbox regions (f21/f25, upper sheet) all contain those LED reflections. Lighting is even with flatten 0.75. The sheet is seen about 55 degrees off-axis, so sharpness is moderate."
  },
  {
   "id": "rose-gold-glitter-panel",

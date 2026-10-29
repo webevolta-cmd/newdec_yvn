@@ -1,32 +1,32 @@
 {
   "id": "cream-green-gold-onyx-sheet",
   "frame": "t24_867.png",
-  "video": "cream-green-gold-onyx-sheet",
+  "video": "7675304499333876999",
   "corners": [
     [
       349.29998779296875,
       288.3999938964844
     ],
     [
-      520.2999877929688,
-      225.5
+      501.3999938964844,
+      232.5
     ],
     [
-      541.7000122070312,
-      953.2000122070312
+      522.0999755859375,
+      943.5
     ],
     [
       365.29998779296875,
       865.4000244140625
     ]
   ],
-  "widthM": 0.5,
+  "widthM": 0.455,
   "heightM": 1.92,
   "flatten": 0.75,
   "deglare": 0.6,
   "pixels": [
-    190,
-    728
+    169,
+    711
   ],
-  "note": "test"
+  "note": "video 7675304499333876999 t=24.867s (30fps frame, caption-free moment before the logo; 1fps frame 025); right leaf of the final corner booth, right of the presenter: u 0.50-0.955 m from the corner trim, v 0.82-2.74 m from the top trim (green cloudy band at the top, golden crackle, yellow band and the long orange-brown diagonal vein below). Geometry: reference frame t=16.8s, horizontal VPs with a 90-deg booth corner (f~413 px) cross-checked by floor-tile grout orthogonality (f~430 px), used f=420; inner-trim height 2.80 m at the corner; wall-plane homography transferred by SIFT (177 inliers); width uncertainty ~+-4% (f 380-470). Below the big diagonal LED streak and LED line (v<0.78), left of a short LED line at u>0.967 and a white label at u~1.08; lower-left pale cloud verified as part of the stone by comparison with t=21.27s; deglare 0.6 only removes two tiny specks (0.04% of pixels)."
 }

@@ -76,6 +76,14 @@ export const catalogIndex: Record<string, { name: string; category: string }> = 
     "name": "Շագանակագույն բրածո քար",
     "category": "Էկզոտիկ քարի և օնիքսի տեսքով թերթեր"
   },
+  "red-petrified-wood-sheet": {
+    "name": "Կարմրաշագանակագույն քարացած փայտ",
+    "category": "Էկզոտիկ քարի և օնիքսի տեսքով թերթեր"
+  },
+  "cream-green-gold-onyx-sheet": {
+    "name": "Կրեմագույն օնիքս՝ կանաչ և ոսկեգույն երակներով",
+    "category": "Էկզոտիկ քարի և օնիքսի տեսքով թերթեր"
+  },
   "white-rock-relief-large-sheet": {
     "name": "Սպիտակ ժայռաքար, մեծ թերթ",
     "category": "Քարի ռելիեֆով վահանակներ"
