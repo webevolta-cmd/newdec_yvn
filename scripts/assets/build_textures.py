@@ -2,18 +2,20 @@
 
 Inputs
   assets-src/textures/raw/<id>.png + <id>.json   rectified crops from make_texture.py
-  assets-src/textures/upscaled/<id>.png           optional 2x upscale of the same crop
+  assets-src/textures/upscaled/<id>.webp          optional 4x upscale of the same crop
   assets-src/textures/catalog.json                curated product list (names, categories, specs)
   assets-src/gallery/gallery.json + raw crops      gallery, reel and section images
 
 Commands
   python3 -I scripts/assets/build_textures.py pack    # writes upscale atlases to assets-src/textures/atlas/
-  python3 -I scripts/assets/build_textures.py unpack  # splits upscaled atlases into upscaled/<id>.png
+                                                      # (upscale each atlas-N.png to 4K, save as atlas-N-up.png)
+  python3 -I scripts/assets/build_textures.py unpack  # splits upscaled atlases into upscaled/<id>.webp
   python3 -I scripts/assets/build_textures.py build   # writes public/media/{panels,catalog,gallery} + TS data
 
-Tiling rule: when a crop spans (almost) a whole sheet or tile, it is fitted to that module so every
-repeat boundary falls on a real joint. Otherwise the crop is mirrored so the pattern continues
-without a hard edge. The pattern is never stretched by more than 8%.
+Tiling rule: sheets and tiles with a distinctive pattern (marble, stone, relief) show the photographed
+pattern scaled uniformly to fill each module, so every repeat boundary is a real joint. Uniform or
+periodic surfaces (wood grain, slats, plain colours) keep true scale and continue by mirroring.
+The pattern is never stretched non-uniformly by more than 8%.
 """
 
 import json
@@ -31,7 +33,8 @@ UPSCALED = SRC / "textures" / "upscaled"
 ATLAS = SRC / "textures" / "atlas"
 PUBLIC = ROOT / "public" / "media"
 GUTTER = 24
-ATLAS_W = 2048
+ATLAS_W = 1024
+ATLAS_MAX_H = 1024
 
 
 def pot(n: float, lo: int = 256, hi: int = 2048) -> int:
@@ -42,7 +45,7 @@ def pot(n: float, lo: int = 256, hi: int = 2048) -> int:
 
 
 def load_crop(pid: str) -> np.ndarray:
-    up = UPSCALED / f"{pid}.png"
+    up = UPSCALED / f"{pid}.webp"
     img = cv2.imread(str(up if up.exists() else RAW / f"{pid}.png"), cv2.IMREAD_COLOR)
     if img is None:
         raise SystemExit(f"missing crop for {pid}")
@@ -51,20 +54,27 @@ def load_crop(pid: str) -> np.ndarray:
 
 # ── pack / unpack ────────────────────────────────────────────────────────────────────────────
 
-def pack() -> None:
-    """Shelf-packs every raw crop (and gallery crop) into atlases for one upscale call each."""
+def pack(only: list[str] | None = None) -> None:
+    """Shelf-packs the crops that have no upscaled version yet into 1024 px atlases, so a 4K upscale
+    of one atlas enlarges every crop on it about 4x. Run again after adding crops: new atlases are
+    appended to layout.json and earlier ones are kept. Optional names limit which crops are packed."""
     ATLAS.mkdir(parents=True, exist_ok=True)
+    layout_file = ATLAS / "layout.json"
+    meta = json.loads(layout_file.read_text()) if layout_file.exists() else {"atlases": [], "items": []}
     items = []
     for f in sorted(RAW.glob("*.png")):
-        items.append(("tex", f.stem, f))
+        if not (UPSCALED / f"{f.stem}.webp").exists():
+            items.append(("tex", f.stem, f))
     for f in sorted((SRC / "gallery" / "raw").glob("*.png")):
-        items.append(("gal", f.stem, f))
+        if not (SRC / "gallery" / "upscaled" / f"{f.stem}.webp").exists():
+            items.append(("gal", f.stem, f))
+    if only:
+        items = [it for it in items if it[1] in only]
     imgs = [(k, n, cv2.imread(str(p))) for k, n, p in items]
     imgs.sort(key=lambda t: -t[2].shape[0])
-    atlases, layout = [], []
+    first_new = len(meta["atlases"])
     x = y = shelf = 0
     canvas_items: list = []
-    max_h = 1500
 
     def flush():
         nonlocal canvas_items
@@ -72,27 +82,32 @@ def pack() -> None:
             return
         h = max(yy + im.shape[0] for _, _, im, _, yy in canvas_items) + GUTTER
         canvas = np.full((h, ATLAS_W, 3), 128, np.uint8)
-        idx = len(atlases)
+        idx = len(meta["atlases"])
+        meta["items"] = [it for it in meta["items"] if it["name"] not in {n for _, n, _, _, _ in canvas_items}]
         for kind, name, im, xx, yy in canvas_items:
             canvas[yy : yy + im.shape[0], xx : xx + im.shape[1]] = im
-            layout.append({"atlas": idx, "kind": kind, "name": name, "x": xx, "y": yy, "w": im.shape[1], "h": im.shape[0]})
+            meta["items"].append({"atlas": idx, "kind": kind, "name": name, "x": xx, "y": yy, "w": im.shape[1], "h": im.shape[0]})
         cv2.imwrite(str(ATLAS / f"atlas-{idx}.png"), canvas)
-        atlases.append({"file": f"atlas-{idx}.png", "w": ATLAS_W, "h": h})
+        meta["atlases"].append({"file": f"atlas-{idx}.png", "w": ATLAS_W, "h": h})
         canvas_items = []
 
     for kind, name, im in imgs:
         h, w = im.shape[:2]
+        if w + 2 * GUTTER > ATLAS_W or h + 2 * GUTTER > ATLAS_MAX_H:
+            s = min((ATLAS_W - 2 * GUTTER) / w, (ATLAS_MAX_H - 2 * GUTTER) / h)
+            im = cv2.resize(im, (int(w * s), int(h * s)), interpolation=cv2.INTER_AREA)
+            h, w = im.shape[:2]
         if x + w + GUTTER > ATLAS_W:
             x, y, shelf = 0, y + shelf + GUTTER, 0
-        if y + h + GUTTER > max_h:
+        if y + h + GUTTER > ATLAS_MAX_H:
             flush()
             x = y = shelf = 0
         canvas_items.append((kind, name, im, x + GUTTER, y + GUTTER))
         x += w + GUTTER
         shelf = max(shelf, h)
     flush()
-    (ATLAS / "layout.json").write_text(json.dumps({"atlases": atlases, "items": layout}, indent=1))
-    print(json.dumps(atlases))
+    layout_file.write_text(json.dumps(meta, indent=1))
+    print(json.dumps(meta["atlases"][first_new:]))
 
 
 def unpack() -> None:
@@ -100,7 +115,7 @@ def unpack() -> None:
     UPSCALED.mkdir(parents=True, exist_ok=True)
     (SRC / "gallery" / "upscaled").mkdir(parents=True, exist_ok=True)
     for i, a in enumerate(meta["atlases"]):
-        up = cv2.imread(str(ATLAS / f"atlas-{i}-up.png"))
+        up = cv2.imread(str(ATLAS / a["file"].replace(".png", "-up.png")))
         if up is None:
             print(f"skip atlas {i}: no upscaled file")
             continue
@@ -113,7 +128,7 @@ def unpack() -> None:
             x1, y1 = round((it["x"] + it["w"]) * sx), round((it["y"] + it["h"]) * sy)
             crop = up[y0:y1, x0:x1]
             dest = UPSCALED if it["kind"] == "tex" else SRC / "gallery" / "upscaled"
-            cv2.imwrite(str(dest / f"{it['name']}.png"), crop)
+            cv2.imwrite(str(dest / f"{it['name']}.webp"), crop, [cv2.IMWRITE_WEBP_QUALITY, 95])
     print("unpacked")
 
 
@@ -137,38 +152,52 @@ def make_texture(crop: np.ndarray, rec: dict) -> tuple[np.ndarray, float, float]
     """Builds the repeating texture and returns it with its repeat size in metres.
 
     Tiling modes (rec["tiling"], or chosen automatically):
-      module    each sheet/tile shows the real crop, scaled uniformly to cover the module; the
-                texture repeats exactly on the joints and nothing is mirrored.
-      bookmatch the crop and its mirror image side by side fill one sheet (a common way marble
-                sheets are installed); used when the crop covers too little of the sheet width.
-      repeat    true scale, fitted or mirrored along each axis; for uniform or periodic surfaces
-                (slats, plain colours, granular stone) where mirroring is not noticeable.
-    rec["scaleFactor"] records how much the print is enlarged versus reality (1.0 = true scale).
+      module  each sheet/tile shows the photographed pattern, scaled uniformly to cover the whole
+              module; the texture repeats exactly on the real joints and nothing is mirrored, like
+              identical printed sheets. Used for marble, stone and relief panels.
+      repeat  true scale across the surface, fitted or mirrored; for uniform or periodic surfaces
+              (slats, wood grain, plain colours). With rec["grain"] == "vertical" (wood, slats,
+              travertine) the crop is fitted to the module height along the grain instead of being
+              mirrored, which keeps the spacing across the grain (the scale the eye reads) true.
+    rec["scaleFactor"] records how much the pattern is enlarged versus the photographed fragment
+    (1.0 = true scale); CATALOG-COVERAGE.md lists it per product.
     """
     mw, mh = rec["moduleW"], rec["moduleH"]
     cw, ch = rec["widthM"], rec["heightM"]
     cover_scale = max(mw / cw, mh / ch)
-    book_scale = max(mw / 2 / cw, mh / ch)
-    mode = rec.get("tiling") or ("module" if cover_scale <= 1.7 else "bookmatch" if book_scale <= 1.9 else "repeat")
+    mode = rec.get("tiling") or ("module" if cover_scale <= 1.7 else "repeat")
     rec["tiling"] = mode
     if mode == "module":
-        rec["scaleFactor"] = round(max(cover_scale, 0.0), 2)
+        rec["scaleFactor"] = round(max(cover_scale, 1.0), 2)
+        if cover_scale > 4:
+            print(f"warning: {rec['id']} pattern enlarged x{cover_scale:.1f}; consider tiling 'repeat' or a larger reference")
         img = module_cover(crop, mw / mh)
         rw, rh = mw, mh
-    elif mode == "bookmatch":
-        half = module_cover(crop, (mw / 2) / mh)
-        img = np.hstack([half, cv2.flip(half, 1)])
-        rec["scaleFactor"] = round(book_scale, 2)
-        rw, rh = mw, mh
     else:
-        img, rw = fit_axis(crop, cw, mw, axis=1)
-        img, rh = fit_axis(img, ch, mh, axis=0)
+        img = even_light(crop, rec.get("evenLight", 0.22))
+        img, rw = fit_axis(img, cw, mw, axis=1)
+        if rec.get("grain") == "vertical" and ch < mh * 0.92:
+            img = cv2.resize(img, (img.shape[1], round(img.shape[0] * mh / ch)), interpolation=cv2.INTER_CUBIC)
+            rh = mh
+        else:
+            img, rh = fit_axis(img, ch, mh, axis=0)
         rec["scaleFactor"] = 1.0
     # Keep about 560 px per metre where the source allows it, within power-of-two limits.
     tw = pot(min(max(img.shape[1], 360 * rw), 560 * rw), 256, 2048)
     th = pot(min(max(img.shape[0], 360 * rh), 560 * rh), 256, 2048)
     tex = cv2.resize(img, (tw, th), interpolation=cv2.INTER_AREA if tw < img.shape[1] else cv2.INTER_CUBIC)
     return tex, rw, rh
+
+
+def even_light(img: np.ndarray, frac: float = 0.22) -> np.ndarray:
+    """Removes the photo's lighting gradient (and, with a small frac, compression blotches on plain
+    colours) so a mirrored repeat shows no bright or dark bands."""
+    f = img.astype(np.float32) + 1
+    lum = f.mean(axis=2)
+    sigma = max(3.0, min(img.shape[:2]) * frac)
+    low = cv2.GaussianBlur(lum, (0, 0), sigma)
+    ratio = np.clip(lum.mean() / low, 0.6, 1.6)[..., None]
+    return np.clip(f * ratio - 1, 0, 255).astype(np.uint8)
 
 
 def module_cover(crop: np.ndarray, aspect: float) -> np.ndarray:
@@ -246,13 +275,17 @@ def build() -> None:
                     "gloss": rec.get("gloss", 0),
                     **({"exposure": item["exposure"]} if item.get("exposure") else {}),
                 },
-                "source": {"video": rec["video"], "frame": rec["frame"]},
+                "source": item["source"],
                 "_tiling": rec["tiling"],
                 "_scale": rec["scaleFactor"],
             }
         )
         print(f"{pid:42s} tex {tex.shape[1]}x{tex.shape[0]}  repeat {rw:.2f}x{rh:.2f} m  {rec['tiling']} x{rec['scaleFactor']}")
 
+    keep = {p["id"] for p in products}
+    for stale in [*(PUBLIC / "panels").glob("*.webp"), *(PUBLIC / "catalog").glob("*.webp")]:
+        if stale.stem.removesuffix("-thumb") not in keep:
+            stale.unlink()
     report = [{"id": p["id"], "tiling": p.pop("_tiling"), "scale": p.pop("_scale"), "source": p["source"]} for p in products]
     (SRC / "textures" / "build-report.json").write_text(json.dumps(report, indent=1) + "\n")
     head = "// Generated by scripts/assets/build_textures.py — do not edit by hand.\n"
@@ -279,7 +312,7 @@ def build_gallery() -> None:
     gallery, reels = [], []
     for it in g["items"]:
         name = it["name"]
-        up = SRC / "gallery" / "upscaled" / f"{name}.png"
+        up = SRC / "gallery" / "upscaled" / f"{name}.webp"
         img = cv2.imread(str(up if up.exists() else SRC / "gallery" / "raw" / f"{name}.png"))
         w, h = sizes[it["kind"]]
         img = cover(img, w, h, 0.5)
@@ -302,4 +335,7 @@ def build_gallery() -> None:
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "build"
-    {"pack": pack, "unpack": unpack, "build": build}[cmd]()
+    if cmd == "pack":
+        pack(sys.argv[2:] or None)
+    else:
+        {"unpack": unpack, "build": build}[cmd]()

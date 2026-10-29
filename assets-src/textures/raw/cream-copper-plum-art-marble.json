@@ -1,0 +1,32 @@
+{
+  "id": "cream-copper-plum-art-marble",
+  "frame": "t21.05s.png",
+  "video": "7668272239770422548",
+  "corners": [
+    [
+      440.0,
+      211.0
+    ],
+    [
+      540.0,
+      198.0
+    ],
+    [
+      538.0,
+      575.0
+    ],
+    [
+      437.0,
+      573.0
+    ]
+  ],
+  "widthM": 0.335,
+  "heightM": 1.27,
+  "flatten": 0.5,
+  "deglare": 0.0,
+  "pixels": [
+    101,
+    383
+  ],
+  "note": "video 7668272239770422548 t=21.05s (within 1fps frame 022); swinging flip-display leaf at its widest moment, turned ~17 deg; right part of the leaf between the price-label stickers and the leaf edge, below the price overlay and above the inset picture; perspective from the leaf bottom edge with a level camera; scale from leaf width ~0.61 m (~180 px at mid-height)"
+}

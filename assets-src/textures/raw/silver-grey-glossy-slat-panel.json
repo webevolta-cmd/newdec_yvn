@@ -1,0 +1,32 @@
+{
+  "id": "silver-grey-glossy-slat-panel",
+  "frame": "f17_4.png",
+  "video": "7674283683913813266",
+  "corners": [
+    [
+      50.400001525878906,
+      312.8999938964844
+    ],
+    [
+      123.19999694824219,
+      309.70001220703125
+    ],
+    [
+      117.0,
+      529.5999755859375
+    ],
+    [
+      41.29999923706055,
+      530.0
+    ]
+  ],
+  "widthM": 0.351,
+  "heightM": 1.033,
+  "flatten": 0.9,
+  "deglare": 0.0,
+  "pixels": [
+    74,
+    219
+  ],
+  "note": "video 7674283683913813266 t=17.4s (30fps extract, presenter's hand not yet on the panel). Loose sample leaning on the back wall, nearly frontal (top edge 162-168 px, bottom 770-774 px). Groove-to-groove quad over 9 slat pitches (2nd groove to the last fully visible one, left of the rack hinge), between the LED streak at y~287 (+halo) and y=530 where the leaning panel starts to bow. Scale: full panel 2.8 m spans ~72 pitch units (pitch 8.0 px at top to 9.1 px at bottom) => ~3.9 cm per slat+groove; height in local pitch units (26.5)."
+}

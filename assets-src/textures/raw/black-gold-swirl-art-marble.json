@@ -20,13 +20,13 @@
       818.2999877929688
     ]
   ],
-  "widthM": 0.53,
-  "heightM": 1.03,
+  "widthM": 0.51,
+  "heightM": 0.99,
   "flatten": 0.6,
   "deglare": 0.0,
   "pixels": [
     177,
     345
   ],
-  "note": "t=23.6s; swing leaf in chrome flip rack, area between sticker/glare and step reflections; perspective solved on t=24.0 frame (leaf H/W 5.65 visible), SIFT-transferred; scale from leaf height ~2.75 m (horizon + presenter cross-check)"
+  "note": "t=23.6s (between 1fps frames 024/025); swing leaf in chrome flip rack; area between sticker/glare box (above) and chrome-step reflections (below), inside leaf frame; perspective solved from leaf frame corners at t=24.0 and transferred by SIFT homography; scale from leaf height ~2.65 m (horizon + presenter cross-check)"
 }

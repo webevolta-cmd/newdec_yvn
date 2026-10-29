@@ -82,6 +82,12 @@ export class InquiryForm {
     }
     host.querySelector('[data-reset]')?.addEventListener('click', () => this.reset());
     if (site.turnstileSiteKey) void this.mountTurnstile();
+    if (site.preview) {
+      const note = document.createElement('p');
+      note.className = 'form__preview-note';
+      note.textContent = copy.form.previewNote;
+      this.form.querySelector('.form__foot')?.before(note);
+    }
   }
 
   private input(name: string): HTMLInputElement {
@@ -222,7 +228,7 @@ export class InquiryForm {
       });
     } catch {
       this.setPending(false);
-      this.showStatus(navigator.onLine === false ? copy.form.status.offline : copy.form.status.failed);
+      this.showStatus(navigator.onLine === false ? copy.form.status.offline : site.preview ? copy.form.status.preview : copy.form.status.failed);
       return;
     }
 
@@ -245,7 +251,7 @@ export class InquiryForm {
       return;
     }
     const map: Record<string, string> = copy.form.status;
-    this.showStatus(map[body.code ?? ''] ?? copy.form.status.failed);
+    this.showStatus(map[body.code ?? ''] ?? (site.preview ? copy.form.status.preview : copy.form.status.failed));
   }
 
   private showSuccess(name: string, phone: string): void {

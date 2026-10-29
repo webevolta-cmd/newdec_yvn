@@ -1,0 +1,32 @@
+{
+  "id": "black-aubergine-web-marble-sheet",
+  "frame": "t14_900.png",
+  "video": "7675304499333876999",
+  "corners": [
+    [
+      378.3999938964844,
+      675.4000244140625
+    ],
+    [
+      573.5,
+      723.5999755859375
+    ],
+    [
+      573.5,
+      971.4000244140625
+    ],
+    [
+      378.3999938964844,
+      858.0
+    ]
+  ],
+  "widthM": 0.585,
+  "heightM": 0.62,
+  "flatten": 0.75,
+  "deglare": 0.0,
+  "pixels": [
+    213,
+    226
+  ],
+  "note": "t=14.90s (30fps extract). Right wall of the bathroom booth (white/black pair), seen ~44deg off-axis; quad follows its perspective (top trim + bottom edge, horizontal VP ~(-169,540)). Scale: 2.80 m sheet height at the corner (699 px), horizontal from a level-camera model with f=470 px (90-deg-corner value ~420, neighbouring booth ~620; width uncertainty about -5/+17%). Quad = u 0.40-0.985 m from the corner, v 2.12-2.74 m from the top: lower-right part of the sheet with web veins and the white breccia band, right of the presenter (and of the jeans reflection band), below the reflected vertical bar of the opposite wall; the large reflected rectangle and LED lines higher up are excluded. deglare off (it erases the white veins)."
+}

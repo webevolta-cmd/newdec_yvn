@@ -1,0 +1,32 @@
+{
+  "id": "white-rock-relief-large-sheet",
+  "frame": "t22_867.png",
+  "video": "7687641327487438100",
+  "corners": [
+    [
+      6.199999809265137,
+      12.699999809265137
+    ],
+    [
+      169.6999969482422,
+      134.89999389648438
+    ],
+    [
+      182.60000610351562,
+      452.29998779296875
+    ],
+    [
+      36.099998474121094,
+      441.70001220703125
+    ]
+  ],
+  "widthM": 0.284,
+  "heightM": 0.63,
+  "flatten": 0.85,
+  "deglare": 0.0,
+  "pixels": [
+    176,
+    389
+  ],
+  "note": "video 7687641327487438100 t=22.87s (30fps extract), left rock wall above the presenter's shoulder and the location pin. Quad is a wall-plane rectangle: corridor VP (574,482)/(592,469) from ceiling, ceiling-channel and rock floor-junction lines; verticals from fluted/column edges; f~420px (0.5x ultra-wide; 370-480 gives W 0.25-0.30 m); vertical scale from the 2.80 m floor-to-ceiling rock sheet in the 1fps frame 16, transferred to this frame by a 311-inlier SIFT plane homography via t=15.87s. Upper third has softer relief (flatter light)."
+}

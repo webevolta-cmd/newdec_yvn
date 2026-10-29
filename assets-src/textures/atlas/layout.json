@@ -1,0 +1,169 @@
+{
+ "atlases": [
+  {
+   "file": "atlas-0.png",
+   "w": 1024,
+   "h": 982
+  },
+  {
+   "file": "atlas-1.png",
+   "w": 1024,
+   "h": 717
+  }
+ ],
+ "items": [
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "white-lavender-gold-art-marble",
+   "x": 24,
+   "y": 24,
+   "w": 167,
+   "h": 488
+  },
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "honey-oak-wood-sheet",
+   "x": 215,
+   "y": 24,
+   "w": 183,
+   "h": 477
+  },
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "light-grey-plain-sheet",
+   "x": 422,
+   "y": 24,
+   "w": 219,
+   "h": 468
+  },
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "white-yellow-gold-net-art-marble",
+   "x": 665,
+   "y": 24,
+   "w": 127,
+   "h": 454
+  },
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "natural-oak-wood-sheet",
+   "x": 816,
+   "y": 24,
+   "w": 201,
+   "h": 449
+  },
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "golden-teak-wood-sheet",
+   "x": 24,
+   "y": 536,
+   "w": 248,
+   "h": 422
+  },
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "dark-espresso-acoustic-slat",
+   "x": 296,
+   "y": 536,
+   "w": 75,
+   "h": 416
+  },
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "mauve-black-gold-art-marble",
+   "x": 395,
+   "y": 536,
+   "w": 107,
+   "h": 392
+  },
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "cream-copper-plum-art-marble",
+   "x": 526,
+   "y": 536,
+   "w": 101,
+   "h": 383
+  },
+  {
+   "atlas": 0,
+   "kind": "tex",
+   "name": "warm-walnut-acoustic-slat",
+   "x": 651,
+   "y": 536,
+   "w": 191,
+   "h": 364
+  },
+  {
+   "atlas": 1,
+   "kind": "tex",
+   "name": "plum-black-gold-art-marble",
+   "x": 24,
+   "y": 24,
+   "w": 180,
+   "h": 363
+  },
+  {
+   "atlas": 1,
+   "kind": "tex",
+   "name": "sand-camel-plain-sheet",
+   "x": 228,
+   "y": 24,
+   "w": 311,
+   "h": 362
+  },
+  {
+   "atlas": 1,
+   "kind": "tex",
+   "name": "mocha-taupe-plain-sheet",
+   "x": 563,
+   "y": 24,
+   "w": 230,
+   "h": 350
+  },
+  {
+   "atlas": 1,
+   "kind": "tex",
+   "name": "black-gold-swirl-art-marble",
+   "x": 817,
+   "y": 24,
+   "w": 177,
+   "h": 345
+  },
+  {
+   "atlas": 1,
+   "kind": "tex",
+   "name": "light-travertine-look-sheet",
+   "x": 24,
+   "y": 411,
+   "w": 324,
+   "h": 282
+  },
+  {
+   "atlas": 1,
+   "kind": "tex",
+   "name": "light-grey-acoustic-slat",
+   "x": 372,
+   "y": 411,
+   "w": 225,
+   "h": 281
+  },
+  {
+   "atlas": 1,
+   "kind": "tex",
+   "name": "dark-taupe-embossed-sheet",
+   "x": 621,
+   "y": 411,
+   "w": 126,
+   "h": 261
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "greige-taupe-vein-marble",
+  "frame": "f47_733.png",
+  "video": "greige-taupe-vein-marble",
+  "corners": [
+    [
+      299.70001220703125,
+      706.4000244140625
+    ],
+    [
+      481.6000061035156,
+      725.2000122070312
+    ],
+    [
+      490.6000061035156,
+      995.7999877929688
+    ],
+    [
+      302.0,
+      955.4000244140625
+    ]
+  ],
+  "widthM": 0.48,
+  "heightM": 0.66,
+  "flatten": 0.75,
+  "deglare": 1.0,
+  "pixels": [
+    189,
+    260
+  ],
+  "note": "video 7668272239770422548 t=47.733s (between 1fps frames 048/049, inset gone, sharpest sub-frame). Greige leaf of the rotating rack, turned ~12-15 deg. Quad = lower part of the leaf, below the window reflection and right of the presenter's shadow strip; a small white LED glint inpainted by deglare. Scale: full leaf quad in this view (bottom/side edges measured, top edge transferred by SIFT homography from t=47.0s) gives W/H=0.25 at f~460 px (f solved from the 1.22x2.90 light-grey sheet in the same video); visible leaf height taken as 2.88 m -> leaf face ~0.72 m wide; quad = u 0.215-0.695 m, v 2.17-2.83 m in leaf coordinates."
+}

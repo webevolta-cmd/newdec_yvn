@@ -1,0 +1,32 @@
+{
+  "id": "light-grey-cloud-marble",
+  "frame": "f32_833.png",
+  "video": "light-grey-cloud-marble",
+  "corners": [
+    [
+      130.8000030517578,
+      117.0999984741211
+    ],
+    [
+      248.5,
+      63.70000076293945
+    ],
+    [
+      253.5,
+      329.5
+    ],
+    [
+      132.6999969482422,
+      354.79998779296875
+    ]
+  ],
+  "widthM": 0.5,
+  "heightM": 0.92,
+  "flatten": 0.85,
+  "deglare": 0.0,
+  "pixels": [
+    137,
+    252
+  ],
+  "note": "video 7668272239770422548 t=32.833s (text-free moment before the price overlay appears). Full-height sheet flat on the wall left of the rotating rack, wall turned away to the left. Whole sheet quad measured (TL 6.5,156 TR 258.7,36.1 BR 276.5,926.6 BL 4,836.7; BR from right-edge and bottom-edge lines) and mapped to 1.22x2.90 m (consistent with f~445 px). Quad = u 0.68-1.18 m, v 0.08-1.00 m: right of a vertical window-reflection band (u 0.41-0.61) and above the presenter's head."
+}

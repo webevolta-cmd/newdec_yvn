@@ -1,0 +1,32 @@
+{
+  "id": "mauve-black-gold-art-marble",
+  "frame": "t32_533.png",
+  "video": "7668272239770422548",
+  "corners": [
+    [
+      359.70001220703125,
+      382.20001220703125
+    ],
+    [
+      464.29998779296875,
+      369.79998779296875
+    ],
+    [
+      488.70001220703125,
+      768.2999877929688
+    ],
+    [
+      380.1000061035156,
+      762.5
+    ]
+  ],
+  "widthM": 0.36,
+  "heightM": 1.32,
+  "flatten": 0.6,
+  "deglare": 0.0,
+  "pixels": [
+    107,
+    392
+  ],
+  "note": "t=32.53s (1fps frame 033); swing leaf in chrome flip rack; strip right of sticker column, below LED-line reflection, above chrome-step reflections, left of occluding post; deglare not used (it erases the thin pale-gold veins); perspective from leaf frame corners; scale from leaf height ~2.65 m"
+}

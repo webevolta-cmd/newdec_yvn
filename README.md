@@ -105,16 +105,60 @@ scripts/e2e/                   Playwright checks
 
 ### Regenerating assets
 
+The outputs (`public/media/**`, `src/content/catalog-data.ts`, `src/content/gallery-data.ts`,
+`server/inquiry/catalog-index.ts`, `CATALOG-COVERAGE.md`) are committed, so this is only needed when
+a master changes. Requires Python 3 with `opencv-python-headless`, `numpy` and `Pillow`.
+
+Visualizer room (wall mask and lighting from `assets-src/visualizer/room-master.jpg`):
+
 ```bash
 python3 -I scripts/assets/build_room_masks.py
 ```
 
-```bash
-python3 -I scripts/assets/build_textures.py
-```
+Panel textures and catalog images:
 
-Requires Python 3 with `opencv-python-headless` and `numpy`. The outputs are committed, so this is
-only needed when the masters change.
+1. Rectify a reference photo to a flat, true-size crop. This writes `assets-src/textures/raw/<id>.png`
+   and `.json`. Corners are pixel positions in the photo (TL TR BR BL), and the size is the real size
+   of that quad.
+
+   ```bash
+   python3 -I scripts/assets/make_texture.py --id <id> --frame photo.png --corners "x,y x,y x,y x,y" --width-m 1.22 --height-m 2.8
+   ```
+
+   If needed, remove a reflection streak:
+
+   ```bash
+   python3 -I scripts/assets/remove_streaks.py <id> "x1,y1,x2,y2,width"
+   ```
+
+2. Add the product's Armenian name, category, finish and stated specs to `scripts/assets/curation.py`,
+   then write `assets-src/textures/catalog.json` (the argument is the extraction record JSON):
+
+   ```bash
+   python3 -I scripts/assets/curation.py records.json
+   ```
+
+3. Optional: upscale the crops. `pack` puts crops without an upscaled version on 1024 px atlases in
+   `assets-src/textures/atlas/`. Upscale each `atlas-N.png` to 4K and save it next to it as
+   `atlas-N-up.png`, then run `unpack`.
+
+   ```bash
+   python3 -I scripts/assets/build_textures.py pack
+   ```
+
+   ```bash
+   python3 -I scripts/assets/build_textures.py unpack
+   ```
+
+4. Build the textures, catalog images, gallery and generated data, then the coverage report:
+
+   ```bash
+   python3 -I scripts/assets/build_textures.py build
+   ```
+
+   ```bash
+   python3 -I scripts/assets/coverage.py
+   ```
 
 ## Content rules
 

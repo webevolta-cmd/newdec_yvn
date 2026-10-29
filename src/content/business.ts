@@ -19,8 +19,8 @@ export const business = {
   },
   geo: { lat: 40.198211, lng: 44.493516 },
   hours: [
-    { days: 'Երկուշաբթի – ուրբաթ', short: 'Երկ.–Ուրբ.', open: '11:00', close: '19:00', schema: 'Mo-Fr 11:00-19:00' },
-    { days: 'Շաբաթ', short: 'Շաբ.', open: '11:00', close: '18:00', schema: 'Sa 11:00-18:00' },
+    { days: 'Երկուշաբթի – ուրբաթ', short: 'Երկ․–Ուրբ․', open: '11:00', close: '19:00', schema: 'Mo-Fr 11:00-19:00' },
+    { days: 'Շաբաթ', short: 'Շաբ․', open: '11:00', close: '18:00', schema: 'Sa 11:00-18:00' },
   ],
   social: {
     instagram: 'https://www.instagram.com/newdec_yvn/',

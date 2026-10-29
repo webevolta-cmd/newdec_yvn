@@ -1,0 +1,32 @@
+{
+  "id": "charcoal-white-vein-marble",
+  "frame": "f52_900.png",
+  "video": "charcoal-white-vein-marble",
+  "corners": [
+    [
+      135.0,
+      191.89999389648438
+    ],
+    [
+      327.8999938964844,
+      185.60000610351562
+    ],
+    [
+      330.5,
+      408.70001220703125
+    ],
+    [
+      131.5,
+      412.8999938964844
+    ]
+  ],
+  "widthM": 0.645,
+  "heightM": 0.75,
+  "flatten": 0.75,
+  "deglare": 0.6,
+  "pixels": [
+    196,
+    228
+  ],
+  "note": "video 7668272239770422548 t=52.90s (text-free moment), charcoal leaf of hinged rack, nearly front-facing. Quad = band between ceiling-edge reflection line and light-fixture/storefront reflections; LED streak removed by deglare. Scale: leaf visible face W/H=0.268 measured on near-fronto frame 053 (rectangle aspect stable for f 300-900 px), visible height taken as 2.88 m (2.90 m sheet) -> 0.77 m visible width (left side hidden by neighbouring leaf); leaf corners transferred to t=52.90 by SIFT homography on veins; presenter height cross-check gives leaf height 2.7-2.8 m (within 5%)."
+}

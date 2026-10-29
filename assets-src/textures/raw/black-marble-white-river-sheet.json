@@ -1,0 +1,32 @@
+{
+  "id": "black-marble-white-river-sheet",
+  "frame": "t8.03s.png",
+  "video": "7675304499333876999",
+  "corners": [
+    [
+      364.1000061035156,
+      247.89999389648438
+    ],
+    [
+      506.70001220703125,
+      180.1999969482422
+    ],
+    [
+      505.20001220703125,
+      526.2999877929688
+    ],
+    [
+      362.8999938964844,
+      536.2999877929688
+    ]
+  ],
+  "widthM": 0.45,
+  "heightM": 0.92,
+  "flatten": 0.5,
+  "deglare": 0.0,
+  "pixels": [
+    155,
+    317
+  ],
+  "note": "video 7675304499333876999 t=8.03s (1fps frame 009, kitchen booth right leaf); middle of the sheet: the broad white river with its jagged dark-veined left edge and black field on both sides; above the presenter's shoulder, below the diagonal ceiling-LED reflection, left of a short LED line on the black; geometry: sheet inner-trim height 2.80 m (top-left corner + bottom edge visible), horizontal scale from the 1.22 m leaf width measured in 7671633679050984722 f044 (same print, SIFT homography, 110 inliers) cross-checked with a pinhole model (f~520-590 px); quad = u 0.48-0.93 m, v 0.80-1.72 m from the sheet's top-left; no deglare (it erases the fine white veins); flatten 0.5 to keep the black/white contrast"
+}

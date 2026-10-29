@@ -10,3 +10,6 @@ dist-preview/
 test-results/
 scripts/e2e/out/
 assets-src/visualizer/room-mask-debug.jpg
+
+# Upscale atlases are intermediates; the unpacked crops in upscaled/ are kept
+assets-src/textures/atlas/*.png

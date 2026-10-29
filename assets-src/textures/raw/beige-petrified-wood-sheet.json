@@ -1,0 +1,32 @@
+{
+  "id": "beige-petrified-wood-sheet",
+  "frame": "t2.13s.png",
+  "video": "7675304499333876999",
+  "corners": [
+    [
+      268.0,
+      100.5
+    ],
+    [
+      406.5,
+      22.100000381469727
+    ],
+    [
+      401.29998779296875,
+      345.6000061035156
+    ],
+    [
+      267.0,
+      377.5
+    ]
+  ],
+  "widthM": 0.55,
+  "heightM": 1.01,
+  "flatten": 0.75,
+  "deglare": 0.6,
+  "pixels": [
+    164,
+    300
+  ],
+  "note": "video 7675304499333876999 t=2.13s (1fps frame 003); right leaf of the corner booth (lavender-quartzite pair), upper-left part of the sheet left of the big black vein and the ceiling-LED reflection, above presenter's head; panel geometry from 7674283683913813266 frame 023 (inner trim height 2.80 m, horizontal scale from vanishing points with a 90-deg booth corner, f~633 px; leaf 0..1.12 m spans x 258..550 there) transferred by SIFT homography (59+ inliers); quad = u 0.03-0.58 m, v 0.03-1.04 m from the sheet's top-left; one thin LED line inpainted by deglare 0.6"
+}

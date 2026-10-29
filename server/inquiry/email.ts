@@ -86,7 +86,7 @@ export function composeMail(inquiry: Inquiry, subjectPrefix: string, receivedAt 
   const rows: Array<[string, string]> = [
     ['Անուն', inquiry.name],
     ['Հեռախոս', phone],
-    ['Էլ. փոստ', inquiry.email ?? 'Նշված չէ'],
+    ['Էլ․ փոստ', inquiry.email ?? 'Նշված չէ'],
     ['Պանել', productLine],
     ['Տարբերակ / երանգ', inquiry.variant ?? 'Նշված չէ'],
     ['Մոտավոր մակերես', inquiry.area != null ? `${String(inquiry.area).replace('.', ',')} մ²` : 'Նշված չէ'],

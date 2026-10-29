@@ -1,7 +1,7 @@
 import { business } from '../content/business.ts';
 import { copy } from '../content/copy.ts';
 import { gallery, reels, tiktokStats } from '../content/gallery.ts';
-import { categories, products, type Product } from '../content/products.ts';
+import { categories, products, sourceUrl, type Product } from '../content/products.ts';
 import { attrs, escapeHtml, html, raw, type Raw } from './html.ts';
 import { icons } from './icons.ts';
 
@@ -194,6 +194,7 @@ function catalog(): Raw {
                 <p class="card__cat">${categories[p.category].name}</p>
                 <h3 class="card__name">${p.name}</h3>
                 <p class="card__spec">${specLine(p) || c.specFallback}</p>
+                <a class="card__src" href="${sourceUrl(p)}" target="_blank" rel="noopener">${c.sourceLink}${icons.arrow}</a>
                 <div class="card__actions">
                   <button class="btn btn--primary" type="button" data-try="${p.id}">${c.tryIt}</button>
                   <button class="btn btn--ghost" type="button" data-quote data-product="${p.id}" data-source="catalog">${c.quote}</button>

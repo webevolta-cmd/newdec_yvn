@@ -1,0 +1,32 @@
+{
+  "id": "graphite-glossy-fluted-panel",
+  "frame": "f13_98.png",
+  "video": "7674283683913813266",
+  "corners": [
+    [
+      57.599998474121094,
+      197.0
+    ],
+    [
+      131.8000030517578,
+      170.5
+    ],
+    [
+      127.5,
+      267.29998779296875
+    ],
+    [
+      53.099998474121094,
+      285.5
+    ]
+  ],
+  "widthM": 0.504,
+  "heightM": 0.432,
+  "flatten": 0.9,
+  "deglare": 0.0,
+  "pixels": [
+    108,
+    93
+  ],
+  "note": "video 7674283683913813266 t=13.98s (30fps extract). Loose sample leaning on the back wall, seen ~30 deg off-axis (top/bottom edges converge to a vanishing point near x=-750). Quad runs groove-to-groove over 12 flute pitches (panel shows 14 flutes edge to edge), its top just under the panel's top edge and its bottom just above a small dark mark and the LED reflection band / presenter's hair. Scale: 2.8 m panel height and the measured off-axis foreshortening (~0.72) give ~4.2 cm per flute (14 flutes ~0.59 m panel); height from local vertical px x foreshortening."
+}

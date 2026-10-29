@@ -1,0 +1,263 @@
+[
+ {
+  "id": "black-marble-white-river-sheet",
+  "tiling": "module",
+  "scale": 3.04,
+  "source": {
+   "video": "7675304499333876999",
+   "time": "8.0 s"
+  }
+ },
+ {
+  "id": "white-statuario-sheet",
+  "tiling": "module",
+  "scale": 4.0,
+  "source": {
+   "video": "7675304499333876999",
+   "time": "14.9 s"
+  }
+ },
+ {
+  "id": "black-aubergine-web-marble-sheet",
+  "tiling": "module",
+  "scale": 4.52,
+  "source": {
+   "video": "7675304499333876999",
+   "time": "14.9 s"
+  }
+ },
+ {
+  "id": "plum-black-gold-art-marble",
+  "tiling": "module",
+  "scale": 2.39,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "26.5 s"
+  }
+ },
+ {
+  "id": "white-lavender-gold-art-marble",
+  "tiling": "module",
+  "scale": 2.8,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "12.5 s"
+  }
+ },
+ {
+  "id": "cream-copper-plum-art-marble",
+  "tiling": "module",
+  "scale": 3.64,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "21.1 s"
+  }
+ },
+ {
+  "id": "black-gold-swirl-art-marble",
+  "tiling": "module",
+  "scale": 2.83,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "23.6 s"
+  }
+ },
+ {
+  "id": "white-yellow-gold-net-art-marble",
+  "tiling": "module",
+  "scale": 3.05,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "29.8 s"
+  }
+ },
+ {
+  "id": "mauve-black-gold-art-marble",
+  "tiling": "module",
+  "scale": 3.39,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "32.5 s"
+  }
+ },
+ {
+  "id": "light-grey-cloud-marble",
+  "tiling": "module",
+  "scale": 3.04,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "32.8 s"
+  }
+ },
+ {
+  "id": "greige-taupe-vein-marble",
+  "tiling": "module",
+  "scale": 4.24,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "47.7 s"
+  }
+ },
+ {
+  "id": "charcoal-white-vein-marble",
+  "tiling": "module",
+  "scale": 3.73,
+  "source": {
+   "video": "7668272239770422548",
+   "time": "52.9 s"
+  }
+ },
+ {
+  "id": "beige-petrified-wood-sheet",
+  "tiling": "module",
+  "scale": 2.77,
+  "source": {
+   "video": "7675304499333876999",
+   "time": "2.1 s"
+  }
+ },
+ {
+  "id": "violet-sodalite-sheet",
+  "tiling": "module",
+  "scale": 2.19,
+  "source": {
+   "video": "7675304499333876999",
+   "time": "5.1 s"
+  }
+ },
+ {
+  "id": "brown-fossil-agate-sheet",
+  "tiling": "module",
+  "scale": 2.95,
+  "source": {
+   "video": "7675304499333876999",
+   "time": "4.9 s"
+  }
+ },
+ {
+  "id": "white-rock-relief-large-sheet",
+  "tiling": "module",
+  "scale": 4.44,
+  "source": {
+   "video": "7687641327487438100",
+   "time": "22.9 s"
+  }
+ },
+ {
+  "id": "light-grey-acoustic-slat",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7684313597001927953",
+   "time": "24.8 s"
+  }
+ },
+ {
+  "id": "warm-walnut-acoustic-slat",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7684313597001927953",
+   "time": "24.8 s"
+  }
+ },
+ {
+  "id": "dark-espresso-acoustic-slat",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7684313597001927953",
+   "time": "14.0 s"
+  }
+ },
+ {
+  "id": "graphite-glossy-fluted-panel",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7674283683913813266",
+   "time": "14.0 s"
+  }
+ },
+ {
+  "id": "silver-grey-glossy-slat-panel",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7674283683913813266",
+   "time": "17.4 s"
+  }
+ },
+ {
+  "id": "honey-oak-wood-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7684313597001927953",
+   "time": "7.9 s"
+  }
+ },
+ {
+  "id": "golden-teak-wood-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7683515606145961223",
+   "time": "10.0 s"
+  }
+ },
+ {
+  "id": "natural-oak-wood-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7683515606145961223",
+   "time": "24.0 s"
+  }
+ },
+ {
+  "id": "light-travertine-look-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7684313597001927953",
+   "time": "10.4 s"
+  }
+ },
+ {
+  "id": "light-grey-plain-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7683515606145961223",
+   "time": "11.3 s"
+  }
+ },
+ {
+  "id": "mocha-taupe-plain-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7683515606145961223",
+   "time": "15.4 s"
+  }
+ },
+ {
+  "id": "sand-camel-plain-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7683515606145961223",
+   "time": "24.5 s"
+  }
+ },
+ {
+  "id": "dark-taupe-embossed-sheet",
+  "tiling": "repeat",
+  "scale": 1.0,
+  "source": {
+   "video": "7684313597001927953",
+   "time": "11.3 s"
+  }
+ }
+]

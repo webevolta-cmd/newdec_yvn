@@ -1,0 +1,32 @@
+{
+  "id": "violet-sodalite-sheet",
+  "frame": "t5.13s.png",
+  "video": "7675304499333876999",
+  "corners": [
+    [
+      54.400001525878906,
+      5.900000095367432
+    ],
+    [
+      227.5,
+      119.5
+    ],
+    [
+      229.0,
+      455.8999938964844
+    ],
+    [
+      57.79999923706055,
+      428.79998779296875
+    ]
+  ],
+  "widthM": 0.68,
+  "heightM": 1.28,
+  "flatten": 0.75,
+  "deglare": 0.0,
+  "pixels": [
+    202,
+    380
+  ],
+  "note": "video 7675304499333876999 t=5.13s (1fps frame 006, bedroom booth left leaf); upper part of the sheet from 0.09 m left of the corner trim outward, between the diagonal ceiling-LED reflection (left) and the presenter's head/raised hand (right/below); geometry: top and bottom edges of both booth leaves visible in the t=4.0s frame, vanishing points with a 90-deg corner give f~650 px (used 620), inner-trim height 2.80 m; quad = 0.68 x 1.28 m starting 0.12 m below the top trim; two tiny bright specks left in place because deglare also erases the stone's white crystalline speckle"
+}

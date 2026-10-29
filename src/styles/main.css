@@ -908,6 +908,24 @@ h3 {
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
+.card__src {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  align-self: flex-start;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-underline-offset: 3px;
+}
+.card__src:hover {
+  color: var(--fg);
+}
+.card__src svg {
+  width: 0.85em;
+  height: 0.85em;
+}
 .card__actions {
   display: flex;
   flex-wrap: wrap;
@@ -1790,6 +1808,14 @@ h3 {
   font-size: 0.82rem;
   color: var(--muted);
   max-width: 46ch;
+}
+.form__preview-note {
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px dashed currentColor;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.85;
 }
 .form__status {
   padding: 0.85rem 1rem;

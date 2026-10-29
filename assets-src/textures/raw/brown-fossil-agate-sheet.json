@@ -1,0 +1,32 @@
+{
+  "id": "brown-fossil-agate-sheet",
+  "frame": "t4_867.png",
+  "video": "7675304499333876999",
+  "corners": [
+    [
+      289.1000061035156,
+      99.69999694824219
+    ],
+    [
+      439.0,
+      6.400000095367432
+    ],
+    [
+      439.0,
+      336.3999938964844
+    ],
+    [
+      289.1000061035156,
+      369.3999938964844
+    ]
+  ],
+  "widthM": 0.6,
+  "heightM": 0.95,
+  "flatten": 0.75,
+  "deglare": 0.6,
+  "pixels": [
+    189,
+    300
+  ],
+  "note": "t=4.867s (30fps extract, sharper than the 1fps frames). Right wall of the bedroom booth (violet/brown pair), seen ~46deg off-axis; quad follows its perspective (horizontal VP ~(-382,517) from the top trim and bottom edge). Scale: 2.80 m sheet height at the corner (788 px), horizontal from a level-camera model with f~649 px from the 90-deg booth corner (both walls' VPs; an f of ~590-630 gives -4..0%, an f of ~420 would make it ~15% narrower). Quad = u 0.03-0.63 m from the corner, v 0.10-1.05 m from the top: upper-left part of the sheet, left of the thick ceiling-LED reflection (deglare cannot remove its halo) and above the presenter's head; one thin LED line inpainted (deglare 0.6)."
+}

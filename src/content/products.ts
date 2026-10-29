@@ -13,7 +13,7 @@ export const categories: Record<CategoryId, { name: string; short: string }> = {
   marble: { name: 'Մարմարի տեսքով մեծաչափ թերթեր', short: 'Մարմար' },
   exotic: { name: 'Էկզոտիկ քարի և օնիքսի տեսքով թերթեր', short: 'Էկզոտիկ քար' },
   wood: { name: 'Փայտի և տրավերտինի տեսքով վահանակներ', short: 'Փայտ' },
-  slat: { name: 'Ձայնամեկուսիչ ռեյկային վահանակներ', short: 'Ռեյկային' },
+  slat: { name: 'Ռեյկային և ակոսավոր վահանակներ', short: 'Ռեյկային' },
   stone: { name: 'Քարի ռելիեֆով վահանակներ', short: 'Ռելիեֆ քար' },
   plain: { name: 'Միագույն վահանակներ', short: 'Միագույն' },
 };
@@ -35,7 +35,8 @@ export interface Product {
   alt: string;
   surface: PanelSurface;
   /** Where the reference comes from: TikTok video id and frame. */
-  source: { video: string; frame: string };
+  /** NEW DEC's own TikTok video the reference was photographed from, and the moment used. */
+  source: { video: string; time: string };
 }
 
 export const products: Product[] = catalogProducts;
@@ -47,4 +48,8 @@ export function sheetArea(p: Product): { area: number; label: string } | null {
   if (!w || !h) return null;
   const fmt = (n: number) => n.toFixed(2).replace('.', ',');
   return { area: w * h, label: `${fmt(h)} × ${fmt(w)} մ` };
+}
+
+export function sourceUrl(p: Product): string {
+  return `https://www.tiktok.com/@newdec_yvn/video/${p.source.video}`;
 }

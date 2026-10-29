@@ -1,0 +1,32 @@
+{
+  "id": "white-statuario-sheet",
+  "frame": "t14_900.png",
+  "video": "7675304499333876999",
+  "corners": [
+    [
+      2.0999999046325684,
+      4.800000190734863
+    ],
+    [
+      220.0,
+      167.8000030517578
+    ],
+    [
+      220.0,
+      358.8999938964844
+    ],
+    [
+      2.0999999046325684,
+      288.1000061035156
+    ]
+  ],
+  "widthM": 0.72,
+  "heightM": 0.7,
+  "flatten": 0.75,
+  "deglare": 0.85,
+  "pixels": [
+    251,
+    244
+  ],
+  "note": "t=14.90s (30fps extract). Left wall of the bathroom booth (white/black pair), seen ~40deg off-axis; quad follows its perspective (horizontal VP ~(672,506) from top/bottom trims). Scale: 2.80 m sheet height at the corner (709 px), horizontal from a level-camera model with f=470 px (compromise between the 90-deg-corner value ~420 and ~620 from the neighbouring booth; width uncertainty about +-15%). Quad = u 0.175-0.898 m from the corner, v 0.29-0.99 m from the top: upper-left cloudy area above the band of LED-line/dot reflections (the crack veins just below that band could not be included because a thin LED line sits on them and deglare does not remove it); one LED patch inpainted (deglare 0.85)."
+}

@@ -1,0 +1,581 @@
+[
+ {
+  "id": "beige-petrified-wood-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7675304499333876999",
+   "frame": "t=2.13s (1fps frame 003); saved as t2.13s.png"
+  },
+  "widthM": 0.55,
+  "heightM": 1.01,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Full sheet geometry measured in 7674283683913813266 frame 023, where the left edge and the top and bottom trim lines are visible. Inner-trim height is taken as 2.80 m. The horizontal scale comes from the vanishing points of both corner-booth leaves, assuming a 90-degree corner (f about 633 px). The leaf's 0 to 1.12 m spans x 258 to 550 in that frame, and the result changes by less than 5% for f between 550 and 710. The frame was transferred to the sharper 7675 frame with a SIFT homography (about 60 inliers). The quad covers u 0.03 to 0.58 m and v 0.03 to 1.04 m from the sheet's top-left corner. Native density is about 270 px/m horizontally and 297 px/m vertically.",
+  "quality_notes": "Upper-left part of the sheet, above the presenter's head and left of the big black vein. That vein always has the ceiling-LED reflection lying along its right edge in every frame, so the most characteristic bold black streak is only partly included (a little at the right edge); the crop shows the grey-beige wood striations with thinner dark streaks and the faint horizontal crack lines from the print. One thin LED line was inpainted with deglare 0.6, leaving a barely visible faint trace. Output is 164x300 px and soft from video compression. There is no person, text, trim or other panel in the crop.",
+  "gap_reason": ""
+ },
+ {
+  "id": "black-aubergine-web-marble-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7675304499333876999",
+   "frame": "t=14.90s (30fps extract near 1fps frame 015)"
+  },
+  "widthM": 0.585,
+  "heightM": 0.62,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.6,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Right wall of the same bathroom booth, about 44 deg off-axis. The quad follows the perspective: vanishing point about (-169,540), from the top trim and the bottom edge, with the model's bottom line checked against the panel's bottom edge. Vertical scale comes from the 2.80 m sheet height at the corner (699 px). Horizontal scale uses the same f=470 px compromise; f from 420 to 620 gives 0.55-0.69 m, so the width uncertainty is about -5% to +17%. The quad covers u 0.40-0.985 m from the corner and v 2.12-2.74 m from the top.",
+  "quality_notes": "213x226 px. Black/charcoal base with aubergine cloudiness, crisp white web veins and a band of light-grey breccia. No presenter or text. The large reflected rectangle of the opposite wall, the reflected vertical bar and the LED lines higher on the sheet are all outside the quad. The quad is also set to the right of a smooth light reflection band (probably the presenter's jeans). Deglare is off because it erased the white veins."
+ },
+ {
+  "id": "black-gold-swirl-art-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "024 (exact moment t=23.6 s, extracted at t23_600.png)"
+  },
+  "widthM": 0.51,
+  "heightM": 0.99,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "The panel is a swing leaf in the chrome flip-book rack. I solved the perspective from the leaf's four frame corners at t=24.0 s (visible part H/W 5.65, tilt about 11 deg) and carried it to the sharper, closer t=23.6 frame with a SIFT homography (247 inliers). The vertical scale comes from a leaf print height of about 2.65 m, based on the horizon from the leaf-edge vanishing point and on the presenter's eye level and height (range 2.55-2.8 m). Across the leaves, this gives widths of about 0.56-0.63 m, which fits half-width 0.61 m display leaves. Expected error is about ±10%.",
+  "quality_notes": "177x345 px (about 345 px/m). The quad sits inside the leaf frame between the sticker and glare box above and the chrome-step reflections in the gloss below. It has no presenter, no overlay text and no chrome. One faint vertical reflection streak remains in the black area at the top right; it is minor. No deglare was needed; flatten is 0.6. The top of the leaf, including more gold and cream swirl, is covered by the price overlay. Cream band runs top-left to bottom-right as in the product description."
+ },
+ {
+  "id": "black-marble-white-river-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7675304499333876999",
+   "frame": "t=8.03s (1fps frame 009); saved as t8.03s.png"
+  },
+  "widthM": 0.45,
+  "heightM": 0.92,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.6,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Kitchen-booth right leaf. The top-left corner, left edge and bottom edge are visible, and the inner-trim height is taken as 2.80 m. The horizontal scale comes from the 1.22 m leaf width measured edge to edge in 7671633679050984722 f044, which has the same print (SIFT homography, 110 inliers). There the left edge maps exactly onto the booth leaf's left edge and the right edge maps to x about 690. A pinhole cross-check with f about 520 to 590 px places the right edge at x 650 to 690, about plus or minus 3% on the crop. The quad covers u 0.48 to 0.93 m and v 0.80 to 1.72 m from the sheet's top-left corner. Native density is about 334 to 345 px/m.",
+  "quality_notes": "This is a close-up of the river: the white band with its dark-veined jagged left edge and black field on both sides, but the crop is about 65% white. The real sheet is mostly black, so a visualizer that tiles this 0.45 m crop will over-represent the white. Ideally it should be shown as a single feature, not repeated densely. The crop is limited by the presenter (left and below), a diagonal ceiling-LED reflection on the upper river, a short LED line and a dot on the black to the right, and a faint reflection of the presenter's jeans lower down. Deglare was not used because it erases the fine white veins on this panel. Flatten is 0.5 to keep the black and white contrast. Faint grey reflection haze on the black areas is inherent to the mirror gloss. Output is 155x317 px.",
+  "gap_reason": ""
+ },
+ {
+  "id": "brown-fossil-agate-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7675304499333876999",
+   "frame": "t=4.867s (30fps extract between 1fps frames 005/006; sharper than f4.1)"
+  },
+  "widthM": 0.6,
+  "heightM": 0.95,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Right wall of the bedroom corner booth, turned about 46 deg. The quad follows the wall's perspective: horizontal vanishing point about (-382,517), taken from the top trim and the bottom edge. Vertical scale comes from the 2.80 m sheet height at the corner (788 px). Horizontal scale comes from a level-camera model with f about 649 px, which assumes the booth corner is 90 deg (both walls' vanishing points). The quad covers u 0.03-0.63 m from the corner and v 0.10-1.05 m from the top. With f about 590-630 the width changes by 0 to -4%; with f about 420 it would be about 15% narrower.",
+  "quality_notes": "189x300 px. The area is clean: no presenter, text, inset or trim. It shows the coffee/bronze base, cream-grey wave bands, granular speckled zones and dark pockets. One thin LED line was removed by deglare 0.6. The large, thick diagonal ceiling-LED reflection to the right was left outside the quad, because deglare left a grey ghost band where it was. Slightly soft from the native video resolution."
+ },
+ {
+  "id": "charcoal-white-vein-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "t=52.900s (sub-frame f52_900.png; the price overlays drop out for a moment from 52.8 s, closer to the leaf than 1fps frame 053)"
+  },
+  "widthM": 0.645,
+  "heightM": 0.75,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "finish_hy": "Փայլուն",
+  "gloss": 0.6,
+  "scale_basis": "In frame 053 the leaf faces the camera almost straight on, with equal left and right edge heights. The visible face there measures W/H = 0.268, and that ratio holds for any focal length from 300 to 900 px. I took the visible height as 2.88 m (2.90 m sheet), which makes the visible face about 0.77 m wide; its left part is hidden by the neighbouring leaf. I mapped the leaf corners into t=52.9 s with a SIFT homography on the veins, using a mask that leaves out the reflections. The quad covers u 0.10-0.745 m and v 0.565-1.315 m. Scaling from the presenter's height gives a leaf height of 2.7-2.8 m, within 5% of this.",
+  "quality_notes": "196x228 px. Charcoal/graphite grey with crisp thin white veins at sharp angles and faint dark mottling. On video it reads as a warm mid-dark grey (about RGB 126,118,112), as in the source. The sheet is high gloss and reflects the storefront in its middle, so the quad is the band between a ceiling-edge reflection line (above) and the light-fixture reflections, sticker and storefront window (below). One LED streak was removed cleanly by deglare 0.6. Flatten 0.75. Lighting is even across the quadrants (L 126-129)."
+ },
+ {
+  "id": "cream-copper-plum-art-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "t=21.05s extracted from the mp4 (within 1fps frame 022), t21.05s.png"
+  },
+  "widthM": 0.335,
+  "heightM": 1.27,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "This is a swinging flip-display leaf, captured at its widest and most still moment. Its bottom edge (366,916)-(542,945) and the near-level camera give a horizontal vanishing point near x=-2000, so the leaf is turned about 17 deg. I modelled the plane with f between 650 and 850 px; the size changes by under 3% across that range. I assumed the leaf is about 0.61 m wide, the same as the other leaves (about 180 px at mid-height). The quad then measures 0.335 m wide by 1.27 m tall.",
+  "quality_notes": "Narrow but clean strip in the right part of the leaf: warm ivory base with burnt-orange/copper veins, a copper band, and a deep plum-black mass with pale crackle veins, copper edges and small gold flecks. I avoided the price overlay and red X above, the two label stickers to the left, the inset picture below and the shaded strip at the leaf's right edge. The inset picture covers the lower half of the leaf in every frame where this sheet appears, so no larger clean area exists. Flatten 0.5 to keep the real cream/plum contrast. Native 101x383 px, slightly soft."
+ },
+ {
+  "id": "dark-espresso-acoustic-slat",
+  "status": "ok",
+  "source": {
+   "video": "7684313597001927953",
+   "frame": "t=14.02s (native frame f14_02.png), corners 499,58 573,38 567,424.5 493,425.5"
+  },
+  "widthM": 0.21,
+  "heightM": 1.16,
+  "moduleW": 0.6,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.05,
+  "finish_hy": "Մատ",
+  "scale_basis": "Horizontal: the slat pitch here is 14 px. Each neighbouring panel section (grey, warm walnut) covers about 15 pitches, which gives the standard 0.6 m acoustic panel and a 4.0 cm slat-plus-groove pitch. The quad spans 5.25 pitches, so 0.21 m. Vertical: the panel runs about 910 px top to bottom at this x; taking that as 2.8 m gives about 326 px/m. This agrees with the horizontal ppm after correcting for the wall's perspective (ratio about 1.07). Output pitch is 14.1 px, about 3.95 cm.",
+  "quality_notes": "The panel is only visible as a strip about 88 px wide at the right frame edge (t=13.9-14.1 s). The quad covers the first five slats right of the thin white edge strip and stops above the white label sticker (y 433). It contains no presenter, text or other panel. Output is 75x416 px with five black grooves and grey-brown slats, kept vertical with natural proportions. Flatten 1.0; a mild residual vertical gradient remains (L 70 to 83, top slightly darker). Panel height (2.8 m) and the 0.6 m module width are inferred, not measured."
+ },
+ {
+  "id": "dark-taupe-embossed-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7684313597001927953",
+   "frame": "t=11.33s, just before the presenter's hand enters (native frame f11_33.png), corners 5.9,335.2 112,372 115.1,603.5 8.5,625.4"
+  },
+  "widthM": 0.39,
+  "heightM": 0.81,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.1,
+  "finish_hy": "Ռելիեֆ",
+  "scale_basis": "The sheet is a very oblique left wing, about 26 deg from the view axis. The horizontal vanishing point (531.6, 517.7) comes from the fitted top and bottom trim lines, and the vertical direction from the far edge trim. The camera focal length (about 500 px, a wide lens) was solved from the adjacent travertine sheet, taken as 1.22 x 2.80 m. Two independent constraints agreed on 470-525 px. The sheet height between trims at the far edge is taken as 2.80 m. The plane model then gives 0.39 x 0.81 m for the quad; the width is about +-10% for focal lengths of 460-540 px.",
+  "quality_notes": "Only the band where grazing light reveals the emboss is used. Above it, the same surface looks smooth under the sheen, and below it, it is nearly black. The emboss is a small repeating chevron or herringbone, about 3 cm per V. It is clearest on the left and lower half and softer toward the far (right) side and the top of the crop, because of oblique-view blur. Colour is a dark warm grey-taupe. No hand, text, trim or other panel. Output is 126x261 px. Flatten 0.9; a residual vertical gradient remains (L 108 to 88, bottom slightly darker)."
+ },
+ {
+  "id": "gold-glitter-panel",
+  "status": "gap",
+  "gap_reason": "The panel only appears as a distant background strip next to the rose-gold panel, in t=0-4s of video 7684313597001927953. The saturated gold strip is never wider than about 20-26 px: about 16-24 px at t=0.6-0.9s and about 20-26 px at t=3.8-3.97s (x≈52-78). That is far under the ~60 px threshold. At t=3.7-4.1s the presenter's hand covers it, and it is motion-blurred and has a bright spotlight hotspot near the top (y≈430-450). The panel does not appear anywhere else in the video, so I produced no texture.",
+  "source": {
+   "video": "7684313597001927953",
+   "frame": "best available: t≈0.7s (30fps frame 21), strip x≈72-90, y≈395-655, about 20 px wide"
+  },
+  "finish_hy": "Փայլուն",
+  "gloss": 0.6,
+  "quality_notes": "It looks like dense, bright yellow-gold/amber reflective flecks (glitter or crushed glass) in a silver metal edge trim. A usable texture needs a close-up shot."
+ },
+ {
+  "id": "golden-teak-wood-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7683515606145961223",
+   "frame": "t=10.03s (extracted at 15 fps: f10_03.png; between 1 fps frames 010 and 011)"
+  },
+  "widthM": 0.6,
+  "heightM": 1.02,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.25,
+  "finish_hy": "Կիսափայլ",
+  "scale_basis": "Calibrated on the same video. Frame 1 and frame 22.4s show the ceiling trims and floor lines of the corner bays. Assuming a 90 deg corner, both views give the same focal length, about 461 px, and a wall height of 2.80 m from trim to floor. The right (teak) wall at 10.03s is about 50 deg to the view axis, from the ceiling-trim slope near the corner, with the horizon near the frame centre (wood streaks stay vertical, so there is almost no pitch). The corner is about 1.6 m from the camera, from the ceiling-trim height and the column width (42.5 px against 41-43.5 px in the calibrated frames). The quad was built as a true rectangle in wall coordinates, 0.60 m wide (about half the 1.22 m sheet) x 1.02 m tall, then projected into the frame. Its aspect ratio hardly depends on the angle (about 5% across 46-54 deg).",
+  "quality_notes": "248x422 px. Clean: no presenter, text, inset or trim. Fine vertical golden-honey grain with light and dark streaks. The far (left) part is a little softer because it had fewer source pixels. Used flatten 0.9; the remaining light/dark banding is natural grain variation. No deglare needed."
+ },
+ {
+  "id": "graphite-glossy-fluted-panel",
+  "status": "ok",
+  "source": {
+   "video": "7674283683913813266",
+   "frame": "f13_98.png (t=13.98 s, 30 fps extract; 1 fps frames 012-016 shot)"
+  },
+  "widthM": 0.504,
+  "heightM": 0.432,
+  "moduleW": 0.6,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.45,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "The sample leans on the back wall and is seen about 30 degrees off-axis. Its top and bottom edges converge to a vanishing point near x=-750 to -800, and its verticals stay parallel. The camera model gives a horizontal-to-vertical foreshortening of about 0.72 (0.71-0.76 for f 550-740 px). With the panel 2.8 m tall (its left edge spans about 535 px), that gives about 4.2 cm per flute. Cross-checks agree: the adjacent silver panel's 3.9 cm pitch, corrected for depth and foreshortening, gives about 3.9 cm, and 14 flutes across a 0.6 m panel gives about 4.3 cm. The quad runs groove to groove over 12 pitches (0.504 m). Its height is local vertical px x 0.72 / horizontal px, scaled to that width. moduleW 0.60 is an estimate: the panel shows 14 flutes edge to edge, about 0.59 m.",
+  "quality_notes": "108x93 px. The crop is soft: the rounded flutes have little contrast, and the off-axis view means horizontal detail is interpolated. The only clean area is the top of the panel. It lies below the top edge, above a small dark mark on the panel at about (108, 280), and above the LED reflection band and presenter's hair from y~295 down. In every frame of the shot the panel is about 35% darker at the top than lower down. --flatten 0.9 reduces this to about +/-7%, and the build's even_light and mirroring should remove what remains. The crop has no person, text or foreign object. Flutes are straight and vertical."
+ },
+ {
+  "id": "greige-taupe-vein-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "t=47.733s (sub-frame f47_733.png, between 1fps frames 048 and 049; the inset picture has gone)"
+  },
+  "widthM": 0.48,
+  "heightM": 0.66,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "finish_hy": "Փայլուն",
+  "gloss": 0.55,
+  "scale_basis": "The leaf of the rotating rack is turned about 12-15 degrees. I measured its bottom and side edges in this view and transferred its top edge from t=47.0 s with a SIFT homography on the veins (241 inliers). With f about 460 px, taken from the light-grey sheet, the leaf face is W/H = 0.25. Taking the visible leaf height as 2.88 m gives a face about 0.72 m wide. The quad covers u 0.215-0.695 m and v 2.17-2.83 m in leaf coordinates. As a cross-check, the charcoal leaf in the same rack reads about 0.77 m wide.",
+  "quality_notes": "189x260 px. Warm greige with dense diagonal taupe and brown veins and soft grey mottling, all at natural proportions. The quad sits in the lower part of the leaf: below a window reflection, right of a dark shadow/reflection strip next to the presenter, and clear of the frame trim. A small white LED glint and a few sparkle dots were removed cleanly with deglare 1.0, checked against a difference image. I picked the sharpest sub-frame in the window where the leaf faces the camera. Flatten 0.75."
+ },
+ {
+  "id": "honey-oak-wood-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7684313597001927953",
+   "frame": "t=7.87s, the sharpest moment in 4-9 s (native frame f7_87.png), corners 370,4 553,1 572,477 389,480"
+  },
+  "widthM": 0.46,
+  "heightM": 1.2,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.15,
+  "finish_hy": "Կիսափայլ",
+  "scale_basis": "At t=4.4 s the whole sheet height is visible and near front-facing: 822 px between the frame trims, taken as 2.80 m, so about 294 px/m. At t=7.87 s the camera is closer, and the two label stickers measure about 1.35x larger, so about 397 px/m. The quad is 183x477 px, so 0.46 x 1.20 m. The verticals lean about 2.3 deg (camera roll), and the quad follows that lean.",
+  "quality_notes": "Upper-right part of the sheet: right of the label stickers, above the presenter's shadow, and clear of the on-screen caption (y 700+). No person, text, sticker or frame trim. Fine straight vertical grain, amber-tan with lighter yellow and caramel streaks. Output is 183x477 px. There is a slight left-to-right tone variation that looks like the print's own colour banding, plus a faint lighter sheen at the very top from the ceiling light. Flatten 0.75 (higher values made no difference)."
+ },
+ {
+  "id": "light-grey-acoustic-slat",
+  "status": "ok",
+  "source": {
+   "video": "7684313597001927953",
+   "frame": "t=24.8s (30fps extract, ~frame 025); f24_8.png"
+  },
+  "widthM": 0.56,
+  "heightM": 0.7,
+  "moduleW": 0.6,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.05,
+  "finish_hy": "Մատ",
+  "scale_basis": "I counted 15 slats per panel on this wall: the grey and walnut panels at full width in the 13-25 s shots. The panel has to be about 0.60 m wide: in wide frame 15, a vanishing-point rectification gives a height/width ratio of about 4.5, so a 1.22 m panel would be 5.5 m tall. That puts the slat pitch at 40 mm (slat about 27 mm plus a 13 mm groove), a standard acoustic-slat spec. The quad runs groove-centre to groove-centre across 14 pitches, so it is 0.56 m wide and tiles horizontally without a seam. For the vertical scale I used the local horizontal px/m (15.4 px pitch, so 385 px/m) with a correction of about 1.04 for the wall turning about 13 degrees (horizontal vanishing point at x of about -3350 px, from the pitch gradient). That gives 401 px/m, so the quad's mean height of 281 px is 0.70 m. Top and bottom edges are sloped toward that vanishing point. In the output, the grooves are exactly 16.0 px apart and vertical. moduleH 2.80 is an estimate: the panels run floor to ceiling and the frame-15 aspect gives 2.4-2.8 m.",
+  "quality_notes": "225x281 px. Clean: no presenter (stops above the hair), no on-screen text, no label, no neighbouring panel or band. Sharp, regular slats and black felt grooves with faint grain. Flatten 0.9 and no deglare (there was no glare). The darkest top part of the wall was trimmed off. A mild residual remains: the top eighth is about 10% darker, so a faint step shows if the texture is tiled vertically without blending. Tone is a neutral pale grey (BGR mean about 125/130/136) and reads slightly cool under the showroom light."
+ },
+ {
+  "id": "light-grey-cloud-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "t=32.833s (sub-frame extracted to f32_833.png; text-free moment just before the price overlay, between 1fps frames 033/034)"
+  },
+  "widthM": 0.5,
+  "heightM": 0.92,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "finish_hy": "Կիսափայլ",
+  "gloss": 0.35,
+  "scale_basis": "I measured the whole sheet as a quad: TL 6.5,156, TR 258.7,36.1, BR 276.5,926.6, BL 4,836.7. BR comes from where the right-edge and bottom-edge lines cross. I mapped the quad to the stated 1.22 x 2.90 m. That size fits a focal length of about 445 px, close to the 492 px given by the orthogonality check. The output quad covers u 0.68-1.18 m and v 0.08-1.00 m in sheet coordinates, so the scale and proportions come straight from the rectified sheet.",
+  "quality_notes": "137x252 px, soft and low contrast like the real product: light grey with faint cloudy diagonal veins. A vertical window-reflection band crosses the sheet at u 0.41-0.61 m in every frame, so the quad sits to its right. It also stays above the presenter's head and clear of a faint warm reflection lower down. Every frame from 33.1 s to 53 s has the price overlay over the upper sheet, so a text-free sub-frame was used. The colour is neutral-to-warm light grey (about RGB 178,176,173), which matches the source frame. Flatten 0.85, no deglare needed."
+ },
+ {
+  "id": "light-grey-plain-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7683515606145961223",
+   "frame": "t=11.33s (extracted at 15 fps: f11_33.png; within 1 fps frame 012, before the text overlay appears)"
+  },
+  "widthM": 0.57,
+  "heightM": 1.22,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.05,
+  "finish_hy": "Մատ",
+  "scale_basis": "Same corner-bay model (f about 461 px, 90 deg corner). The corner is about 1.65 m away, from the column width (46 px against 43.5 px at a calibrated 1.75 m). No ceiling is visible in this bay, so the wall angle is assumed to be about 38 deg, the typical value in this video. Across 33-43 deg the size changes only about 5-10%. The quad is a wall rectangle, 0.57 x 1.22 m. The colour is plain, so the scale does not affect how the texture looks.",
+  "quality_notes": "219x468 px. Plain very light cool grey / off-white (mean RGB about 196,193,190) with no grain or relief. Clean: left of the presenter's hair and above her hand and the inset pictures. Flatten 0.85 removed the vertical lighting gradient, and the quadrant brightness now varies by under 2%. Only faint compression mottling remains."
+ },
+ {
+  "id": "light-oak-acoustic-slat",
+  "status": "gap",
+  "source": {
+   "video": "7684313597001927953",
+   "frame": "015-017 and 019 (best moments at 16.4 s and 18.6 s, 30fps)"
+  },
+  "gap_reason": "The light oak panel only appears as a wedge-shaped sliver at the left edge of the frame in 7684313597001927953. I checked 30fps extracts from 13.9 s to 20 s, and the camera never pans further left. At its widest the sliver is about 60 px at the top of the wall, narrowing to about 25 px near the floor. The slats lean about 4 degrees, so a quad that follows them and stays on the panel is only about 30-48 px wide (3-4 slats). It also has a strong spotlight gradient and on-screen text crosses its lower part. The other source, 7680190853645716756 frame 9, is a background strip about 28 px wide that includes a label, and its match to this product is low-confidence. Under the 60 px limit, so I did not make a texture."
+ },
+ {
+  "id": "light-travertine-look-sheet",
+  "status": "ok",
+  "widthM": 1.15,
+  "heightM": 1,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.1,
+  "finish_hy": "Մատ",
+  "source": {
+   "video": "7684313597001927953",
+   "frame": "t=10.4s (extracted at t10_4.png; between 1fps frames 011 and 012)"
+  },
+  "scale_basis": "I measured all four inner edges of the sheet in the t=10.4s frame: TL (168,128), TR (490.5,-9.3), BR (541.5,948), BL (177,846). I assumed a 1.22 x 2.80 m sheet and built a homography from those corners. I then chose a metric rectangle on the sheet (x 0.03-1.18 m, y 0.08-1.08 m from the sheet top) and projected it back to get the quad '174.3,144.4 478.0,20.8 494.2,337.0 177.6,389.6'. That makes it 1.15 x 1.00 m, and the quad follows the sheet's strong keystone and turn exactly. If the sheet is 2.90 m tall, the height would be about 1.04 m, which is within tolerance.",
+  "quality_notes": "The output is 324x282 px and the area is clean. It is the full sheet width above the presenter's head, which starts at about 1.12 m below the sheet top. It stays clear of the top and side black trims, the white label sticker (about 1.33 m down at the right edge) and the on-screen caption. I tracked the quad with ECC alignment across t=10.4-11.4s and it stays on the sheet in every frame, with similar sharpness throughout; 10.4s was chosen. The fine vertical cream/tan striations and short grey-brown dashes keep natural proportions. Light is even after flatten 0.75 and no deglare was needed. The image is slightly soft because of mild motion blur, which is typical for this video."
+ },
+ {
+  "id": "mauve-black-gold-art-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "033 (exact moment t=32.53 s, extracted at t32_533.png)"
+  },
+  "widthM": 0.36,
+  "heightM": 1.32,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Leaf frame corners at t=32.53 s (visible H/W about 5.0; the right side is cut off by a chrome post in front, which moves between frames). Perspective is solved from those corners, and the scale uses the shared leaf height of about 2.65 m. Expected error is about ±10%.",
+  "quality_notes": "107x392 px (about 297 px/m). This is the sharpest frame before the scene cut. The strip runs from right of the sticker column to left of the occluding post, below the second LED-line reflection and above the chrome-step reflections; the presenter's hand is outside the quad. Deglare 0.6 was tested and rejected because it erased the thin pale-gold veins. The top of the leaf, with the large gold blob, is covered by the price overlay and two LED streaks. The crop shows mauve and smoky black marbling with thin gold veins and a molten-gold splash. Flatten is 0.6; no deglare."
+ },
+ {
+  "id": "mocha-taupe-plain-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7683515606145961223",
+   "frame": "t=15.40s (extracted: f15.40.png), between 1fps frames 016 and 017"
+  },
+  "widthM": 0.48,
+  "heightM": 0.73,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.05,
+  "finish_hy": "Մատ",
+  "scale_basis": "Corner booth geometry. In the wide shots (frame 1 and t=19.7s) the ceiling and floor lines give the wall vanishing points and f of about 510 px, assuming a 90-degree corner. Corner wall height is about 755 px for an assumed 2.8 m sheet, so the black-trimmed corner LED profile is about 0.153 m wide. At t=15.40s the profile is 58.5 px, so the corner scale is about 382 px/m, and equal trim widths show the walls at about 45 degrees. The quad's top and bottom edges follow the wall's horizontal lines toward the vanishing point near x 820. The size was solved from a wall-plane model with f about 600 (510-720 bracket, within roughly ±8%).",
+  "quality_notes": "Clean left wall of the hallway corner at t=15.40s, the last moment before the caption and inset pictures appear. There is no presenter, text, trim or LED in the quad. The raw wall has a strong vertical lighting gradient (L 105 to 150), so flatten is 1.0; the top and bottom edges are still a few percent darker. The colour is warm mocha/taupe brown, mean RGB about 150/124/104. The right wall (lighter and greyer, mean about 159/141/127) was not used because it looks desaturated by sheen from a light. Only a faint fine texture and video-compression streaks are visible, no grain. Output is 230x350 px."
+ },
+ {
+  "id": "natural-oak-wood-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7683515606145961223",
+   "frame": "t=24.0s (extracted at 15 fps: f24_00.png; within 1 fps frame 025)"
+  },
+  "widthM": 0.39,
+  "heightM": 0.87,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.1,
+  "finish_hy": "Մատ",
+  "scale_basis": "Same 90 deg corner-bay calibration (f about 461 px). The oak bay's own ceiling trims and floor lines at 22.4s fix the left wall at about 35 deg to the view axis (vanishing point x about 610), the horizon at about 493 px, and the corner depth at 1.75 m (737 px for a 2.80 m wall). 24.0s is a sharper, closer moment from the same camera movement: the column is 57 px wide against 43.5 px, so the corner is about 1.34 m away, and the camera orientation stays stable (the wall angle is 34.5-35.9 deg in every frame where it can be measured). The quad is a wall rectangle, 0.39 m wide x 0.87 m tall, projected into the frame.",
+  "quality_notes": "201x449 px. Clean: left of the presenter, above the location-pin overlay, below the frame top. Light honey-beige oak with fine straight vertical tan grain. The far (right) edge is softer. Flatten 0.75 gives even tone; no glare."
+ },
+ {
+  "id": "plum-black-gold-art-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "t=26.5s extracted from the mp4 (= 1fps frame 027), t26.50s.png"
+  },
+  "widthM": 0.58,
+  "heightM": 1.17,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "gloss": 0.6,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "The flip-display leaf is about 190x850 px and is turned about 10 deg (VP far left), so it is close to front-facing. I assumed the leaf is about 0.61 m wide (half of a 1.22 m sheet). That gives about 311 px/m and a leaf about 2.7 m tall, which is consistent with the camera height and presenter checks. The quad covers 0.95 of the leaf width (180 px = 0.58 m) and 362 px of height. Horizontal and vertical px/m agree to about 1%.",
+  "quality_notes": "Lower part of the leaf below the price stickers: plum band with gold lines, crystalline violet/gold geode edge, jet-black pool, white areas with dark veins and a gold vein. No presenter, text, stickers or frame. The bottom was trimmed above the stepped-base reflections, but faint horizontal reflection lines remain in the small dark area at the lower right. There is a faint soft reflection blob in the black pool. Flatten 0.7, no deglare (deglare would erase the white crackle veins). Native 180x363 px, slightly soft from the video."
+ },
+ {
+  "id": "rose-gold-glitter-panel",
+  "status": "gap",
+  "gap_reason": "The panel only appears as a distant background strip on the corridor's end wall, in t=0-4s of video 7684313597001927953. I checked every frame from 0 to 6s at 30 fps with hue/saturation column profiles. The rose-gold strip is never wider than about 32-40 px: about 32 px at t=0.8-0.9s, and 38-40 px at t=3.83-3.97s (frames ~115-119, x≈6-46, y≈393-657). That is under the ~60 px sliver threshold. The strip is also motion-blurred in most frames and partly cut by the frame edge (t<0.6s and t=2.5-3.5s). It is crossed by the presenter's hands, hair or caption at t=1.0-3.5s, and it has a small white sticker at about y≈505. The panel does not appear anywhere else in the video, so I produced no texture.",
+  "source": {
+   "video": "7684313597001927953",
+   "frame": "best available: t≈3.9s (30fps frame 117), strip x≈6-46, y≈393-657, about 40 px wide"
+  },
+  "finish_hy": "Փայլուն",
+  "gloss": 0.6,
+  "quality_notes": "It looks like dense rose-gold/blush crushed glass or glitter with sparkle highlights from the track lights, set in a silver metal edge trim. A usable texture needs a close-up shot."
+ },
+ {
+  "id": "rust-teak-slat-panel",
+  "status": "gap",
+  "gap_reason": "No usable clean area. Its widest appearance in the video is a sliver of about 30-45 px (t=22.87 s around x 389-425; t=1.5 s around x 397-442), under the 60 px threshold, at a grazing angle. Slats are barely resolved (about 4 px pitch, low contrast). The face has a strong lighting gradient: near-black brown at the top and a saturated orange spotlight glow lower down. White product-label stickers sit at its lower end, with the grey glass panel immediately to the right. The identity is also ambiguous: it may be the warm-walnut acoustic slat under warm spotlighting. It measures about 15-20% wider than the neighbouring 0.26 m strips (about 0.30 m).",
+  "source": {
+   "video": "7687641327487438100",
+   "frame": "best sliver t=22.87s (x 389-425, y 150-420) / t=1.5s 30fps"
+  }
+ },
+ {
+  "id": "sand-camel-plain-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7683515606145961223",
+   "frame": "t=24.50s (extracted: f24.50.png), 1fps frame 025"
+  },
+  "widthM": 0.74,
+  "heightM": 0.86,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.08,
+  "finish_hy": "Մատ",
+  "scale_basis": "Same corner-booth model as the mocha sheet. At t=24.50s the corner LED profile (about 0.153 m, calibrated against the 2.8 m wall height in the wide t=19.7s shot) is 50 px, so the corner scale is about 327 px/m. Equal trim widths show the walls at about 45 degrees, so the right wall recedes to a vanishing point near x -380 (f about 600, 510-720 bracket). The quad's top edge slopes with the wall's horizontal lines and the size was solved from the wall-plane model. ±10%.",
+  "quality_notes": "Upper part of the right wall at t=24.50s, a moment with no pin or location overlay. The presenter's hair and shirt start below and left of the quad, and the corner trim is about 12 px outside it. The wall has a strong soft hotspot to the upper right, so flatten is 1.0. This quad had the most even result of several frames tested (t=19.7 and 24.1-24.5) and quads (8x8 L std about 5.5, L range 164-200). A slight warm-to-pinkish tone drift toward the right edge remains. The colour is warm sand/camel beige, mean RGB about 208/177/142. It is plain and smooth with only faint compression streaks. Output is 311x362 px."
+ },
+ {
+  "id": "silver-grey-glossy-slat-panel",
+  "status": "ok",
+  "source": {
+   "video": "7674283683913813266",
+   "frame": "f17_4.png (t=17.4 s, 30 fps extract; 1 fps frame 018)"
+  },
+  "widthM": 0.351,
+  "heightM": 1.033,
+  "moduleW": 0.6,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.4,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "The sample leans on the wall and faces the camera almost head-on. Its horizontal vanishing point is far away (about x=-5500), and the panel spans y 165 to 772. The slat pitch grows from 8.0 px at the top to 9.1 px at the bottom because of the lean. Integrated over the full height that is about 72 pitch units, so a 2.8 m panel gives about 3.9 cm per slat plus groove, which is plausible. The quad runs groove to groove over 9 pitches (0.351 m). Its height is 218 px at a local 8.25 px pitch, or 26.5 pitch units, so 1.033 m. The lean's vertical compression is offset by the camera looking up at this region, a net error of about 1%. moduleW 0.60 is an estimate: the right edge is hidden by the rack frame, at least 11.5 slats (about 0.45 m) are visible, and 15 slats of about 4 cm would match the neighbouring fluted sample.",
+  "quality_notes": "74x219 px. The crop starts below the LED streak at y~287 and its halo, and stops at y=530. Below that the leaning panel bows slightly, which would curve the slats; inside the crop the bow stays under 1 px. It avoids a specular blob on the leftmost slat and the rack hinge notch beyond the last groove. I took the frame before the presenter's hand reaches the panel and before the caption, which only covers y>700. Slats are straight and black grooves crisp. Flatten 0.9. A slight darkening toward the right (about 10%) remains, which the build's even_light will correct. The crop has no person, text, glare or frame."
+ },
+ {
+  "id": "taupe-slat-panel",
+  "status": "gap",
+  "gap_reason": "No usable clean area. Across the whole video (checked 1fps frames 1-28 and 10/30fps extracts) this strip is only seen at a grazing angle in the corridor sample row. At its widest it is about 36 px (t=22.87 s, x 353-388) and about 32 px at t=1.5 s, well under the 60 px threshold. Its ~10 slats are only about 3.5 px each in the image, and the lower part is behind the presenter's hair or white label stickers. It is also ambiguous: it may be the smoked or warm walnut slat under corridor light. Geometry for a future source: the sample strips in this row (dark brown, light grey, taupe) have equal widths of about 0.26 m (±10%) with about 10 slats, so the pitch is about 2.6 cm.",
+  "source": {
+   "video": "7687641327487438100",
+   "frame": "best sliver t=22.87s (x 353-388, y 90-410) / t=1.5s 30fps"
+  }
+ },
+ {
+  "id": "turquoise-copper-stone-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7674283683913813266",
+   "frame": "f17_6.png (t=17.6 s, 30 fps extract; 1 fps frame 018)"
+  },
+  "widthM": 1.12,
+  "heightM": 0.4,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "I mapped the panel's inner corners TL(131,75.5), TR(405.5,131), BR(409,736) and BL(143,778) to a 1.20 x 2.80 m visible sheet. The video overlay gives the width as 1.220 m and the length as 2.8 m. The bottom edge sits under the caption and was read at y~778. As a check, a camera model with f from 500 to 740 px puts that edge at y 777-813, so the vertical scale is within about 5%. The leaf is turned about 15-20 degrees. The quad is the metric sub-rectangle u 0.02-1.14 m, v 0.02-0.42 m, mapped back through that homography, so perspective is removed without stretching.",
+  "quality_notes": "268x96 px. The crop is the full-width top band of the only frontal view. A thick LED streak crosses the middle of the sheet, and --deglare up to 1.0 left a visible pale ghost line, so the quad stops above it and well above the presenter's head. I trimmed a hinge highlight at the far right edge. The right third has a mild hazy reflection that lowers contrast, but there is no person, text, frame or sticker in the crop. Run with deglare 0, because the region has no streak and deglare only removed natural pale flecks, and flatten 0.75. The rust-to-turquoise brightness change from top to bottom is mostly the pattern itself. The crop is only 0.40 m tall, so the build will mirror or repeat it vertically."
+ },
+ {
+  "id": "violet-sodalite-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7675304499333876999",
+   "frame": "t=5.13s (1fps frame 006); saved as t5.13s.png"
+  },
+  "widthM": 0.68,
+  "heightM": 1.28,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Bedroom-booth left leaf. In the t=4.0s frame the top and bottom trim lines of both booth leaves are visible, and their vanishing points with a 90-degree corner give f about 650 px (620 was used). The inner-trim height is taken as 2.80 m at the corner edge (694 px, or 248 px/m). About 0.97 m of the leaf's width, measured from the corner, is visible. The geometry was transferred to the sharper t=5.13s frame by a SIFT homography (about 500 inliers). The quad spans 0.68 m wide, ending 0.09 m left of the corner trim, and 1.28 m tall from 0.12 m below the top trim. Native density is about 280 to 297 px/m.",
+  "quality_notes": "Clean: deep violet and indigo with cloudy lavender-white mottling and fine crystalline speckle. The crop sits between the diagonal LED reflection (left) and the presenter's hair and raised hand (right and below). The top is slightly darker because of the booth lighting, which flatten 0.75 evens out. Two tiny 2 to 3 px bright specks, possibly spot-light glints, were left in place because deglare also removes the stone's own white speckle. Output is 202x380 px.",
+  "gap_reason": ""
+ },
+ {
+  "id": "warm-walnut-acoustic-slat",
+  "status": "ok",
+  "source": {
+   "video": "7684313597001927953",
+   "frame": "t=24.8s (30fps extract, ~frame 025); f24_8.png"
+  },
+  "widthM": 0.44,
+  "heightM": 0.84,
+  "moduleW": 0.6,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.05,
+  "finish_hy": "Մատ",
+  "scale_basis": "In frame 15 the whole walnut panel is visible and has 15 slats, so it is about a 0.60 m panel with a 40 mm pitch, the same as the grey panel next to it. The quad spans 11 pitches: from a half-groove before slat 1, at the edge of the black band between panels, to the groove between slats 11 and 12. That makes it 0.44 m wide and seamless horizontally. The local pitch is 17.4 px (436 px/m), with a perspective correction of about 0.98 because this panel is almost front-facing to its viewing ray. That gives 426 px/m vertically, so the mean quad height of 358 px is 0.84 m. Top and bottom edges are sloped toward the horizontal vanishing point. In the output, the grooves are evenly spaced at 17.4 px and vertical. moduleH 2.80 is estimated: floor to ceiling, 2.4-2.8 m from frame 15.",
+  "quality_notes": "191x364 px. Clean: it sits above the white product label at y of about 418 and stays clear of the presenter's hair and shoulder, the text overlays, and the right frame edge. Sharp tan-copper walnut slats with visible flowing linear grain on black felt, gaps about half the slat width. Flatten 0.9 and no deglare (there was no glare). The darker top of the wall was trimmed off. A mild residual remains: the top eighth is about 10% darker, which needs a blend if the texture is tiled vertically."
+ },
+ {
+  "id": "white-lavender-gold-art-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "t=12.5s extracted from the mp4 (= 1fps frame 013), t12.50s.png"
+  },
+  "widthM": 0.435,
+  "heightM": 1.27,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "gloss": 0.6,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "The whole right-hand portal panel is visible at t=10.8s (about 140x765 px, front-facing, level camera). Taking the visible height as about 2.85 m (2.9 m sheet) gives about 268 px/m and a panel about 0.52 m wide. Camera-height and floor-line checks rule out a much shorter panel. SIFT scale from t=10.8s to t=12.5s is 1.43, so about 384 px/m in the source frame. The quad is 167x487 px, which gives 0.435 x 1.27 m. Front-facing (horizontal bottom edge), so pixel aspect is kept.",
+  "quality_notes": "Front-facing area from the panel's left chrome edge to the frame edge, below the price labels and the on-screen spec text. It shows a large lavender pool with pale streaks and a thick gold outline, white/pale-grey base with flowing grey veins, and gold at the lower right. No presenter, text, stickers or glare. The dark plum ribbon at the top of the panel is not included because it sits behind labels and overlay text. Flatten 0.7. Native 167x488 px."
+ },
+ {
+  "id": "white-rock-relief-large-sheet",
+  "status": "ok",
+  "widthM": 0.284,
+  "heightM": 0.63,
+  "moduleW": 1.2,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0,
+  "finish_hy": "Ռելիեֆ",
+  "source": {
+   "video": "7687641327487438100",
+   "frame": "t=22.87s, 30fps extract (between 1fps frames 023 and 024); copy at scratchpad/t22_867.png"
+  },
+  "scale_basis": "The rock is on the corridor wall at a steep angle, so the quad is a true wall-plane rectangle. Corridor vanishing point (574,482): the ceiling junction, the ceiling-channel edge and the rock's floor junction all meet within 1 px in 1fps frame 16. Vertical vanishing point comes from the fluted-panel and column edges. Focal length is about 420 px (0.5x ultra-wide). The beam, soffit and track cross-lines give about 420-560 px, and the 0.5x lens prior gives 370-410 px. The principal point was solved for orthogonality. Vertical scale: in frame 16, rock floor junction to ceiling line = 2.80 m (sheet length). This scale was carried to t=15.87 s and then to t=22.87 s by SIFT plane homographies (153 and 311 inliers, 0.7 px mean error). Horizontal and vertical distances agree within 2.5% between frames. Result: 0.284 x 0.630 m. f=370-480 px gives a width of 0.25-0.30 m (within about ±10%); the height does not depend on f. Cross-check: the slat sample strips beside the rock come out at about 0.26 m with about 10 slats, a plausible pitch of about 2.6 cm.",
+  "quality_notes": "176x389 px native, flatten 0.85, no deglare needed (matte stone). No presenter, text, pin overlay, fluted panel or trim inside the quad; it stops left of the rock's right edge and above the presenter's shoulder. The lower two thirds show the deep, sweeping diagonal split-face relief well under raking light. The upper third has softer, lower-contrast relief because the spotlight hits it flatter. The top-left is a little darker even after flattening. Colour is warm ivory/beige. Rock relief is not planar, so expect a residual shear of about 1 degree."
+ },
+ {
+  "id": "white-statuario-sheet",
+  "status": "ok",
+  "source": {
+   "video": "7675304499333876999",
+   "frame": "t=14.90s (30fps extract near 1fps frame 015)"
+  },
+  "widthM": 0.72,
+  "heightM": 0.7,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Left wall of the bathroom corner booth, about 40 deg off-axis. The quad follows the perspective: vanishing point about (672,506), from fitted top and bottom trim lines. Vertical scale comes from the 2.80 m sheet height at the corner (709 px). Horizontal scale uses f=470 px. That is a compromise: a 90-deg corner in this booth gives about 420, and the neighbouring booth gives about 620, so the width is within about +-15%. The quad covers u 0.175-0.898 m from the corner and v 0.29-0.99 m from the top.",
+  "quality_notes": "251x244 px. Clean, light warm-grey/white marble with soft diagonal cloudy grey shading. One LED patch was inpainted with deglare 0.85; only a barely visible faint ring is left. Limitation: the thin crack-like grey veins lie just below a band of LED reflections (a thin LED line and dots). Deglare does not remove that line even at 1.0, so the quad stops above the band. As a result, the texture shows the plain cloudy part of the sheet without the sparse crack veins."
+ },
+ {
+  "id": "white-wide-fluted-panel",
+  "status": "gap",
+  "gap_reason": "In every moment of video 7687641327487438100 (I checked all 28 s at 5 fps, plus extra frames at 0.1 s steps from t=1.2 to 1.8), the white fluted panel shows only as a nearly edge-on strip about 40-46 px wide, well under the ~60 px limit. Row profiles put the visible face at about x 203-245 (t 1.4 s, y 120-280), about x 211-253 at y 430, and about x 174-220 at t 20 s, y 150. The panel is the first sample on the corridor side wall, and its top edge follows the ceiling's vanishing slope, so it is seen about 80+ degrees off-normal. Flattening it would stretch about 5 flute periods (about 8 px each) roughly 8-10x horizontally, and the flute shading at that grazing angle is mostly the self-occluded sides of the half-rounds, not the frontal profile. The real width of what is visible cannot be measured: the sheet width and flute count are unknown, and the rock sheet may hide its left edge. Any metre scale would be a guess. There are also obstructions. The presenter's hair, hand and arm cover the lower half (y > ~350-450) in every frame. Armenian caption text crosses y ~230-290 from t 2 s, and dimension call-out labels sit at y ~200-215 around t 17-21 s. Frame 26 (listed as a source) is even more oblique, at about 30-40 px. No other video shows this product. The 'fluted-panel-colour-range' in 7680190853645716756 is a different, fine-ribbed product. Result: no usable clean area, and no texture was generated.",
+  "source": {
+   "video": "7687641327487438100",
+   "frame": "t=1.4s (best moment examined; panel face ~42 px wide at x≈203-245, y 0-440)"
+  },
+  "finish_hy": "Կիսափայլ",
+  "gloss": 0.2,
+  "moduleW": 1.22,
+  "moduleH": 2.8,
+  "stagger": 0,
+  "quality_notes": "What can be seen: an ivory/warm-white satin surface, no grain, wide convex half-round vertical flutes with soft highlights; about 5-6 flutes are visible across the strip. This is only usable as a reference for a separately sourced or modelled texture. Working crops and 5 fps frames are in ."
+ },
+ {
+  "id": "white-yellow-gold-net-art-marble",
+  "status": "ok",
+  "source": {
+   "video": "7668272239770422548",
+   "frame": "030 (exact moment t=29.83 s, extracted at t29_833.png)"
+  },
+  "widthM": 0.4,
+  "heightM": 1.425,
+  "moduleW": 1.22,
+  "moduleH": 2.9,
+  "stagger": 0,
+  "gloss": 0.55,
+  "finish_hy": "Փայլուն",
+  "scale_basis": "Leaf at its most frontal, with all four frame corners visible (H/W 4.2, tilt about 17 deg). This gave the homography, and the sub-rectangle was taken in leaf coordinates. The scale comes from the same leaf height of about 2.65 m as the other leaves, so this visible leaf is about 0.63 m wide. Expected error is about ±10%.",
+  "quality_notes": "127x454 px (about 318 px/m). The strip lies between the white sticker column at the left edge and a white glare box near the right edge. It starts just below a thin LED-line reflection across the net zone and ends above the step reflections. Deglare was tested and does not catch that LED line, so the line was cropped out instead of kept. This loses the upper half of the yellow net cells; the lower net arms, the black-edged gold vein, the grey veins and the plum-grey net at the bottom right are included. The chosen frame keeps the glare box clear of the strip. The other video (7680190853645716756) only shows strips about 75 px wide, so it was not used. Flatten is 0.6; no deglare."
+ }
+]

@@ -1,7 +1,7 @@
 {
   "id": "white-lavender-gold-art-marble",
-  "frame": "t12.5.png",
-  "video": "white-lavender-gold-art-marble",
+  "frame": "t12.50s.png",
+  "video": "7668272239770422548",
   "corners": [
     [
       404.0,
@@ -28,5 +28,5 @@
     167,
     488
   ],
-  "note": "video 7668272239770422548 t=12.5s (1fps frame 013); fixed right-hand panel of the chrome portal, front-facing; area below the price labels and spec text, left edge of panel to frame edge; scale from full panel visible at t=10.8s (~140x765 px, assumed ~2.85 m visible height -> ~0.52 m wide) and SIFT scale 1.43 to t=12.5s (~384 px/m)"
+  "note": "video 7668272239770422548 t=12.5s (1fps frame 013); right-hand panel of the chrome portal, front-facing; area below the price labels and spec text, from the panel's left edge to the frame edge; scale from the full panel visible at t=10.8s (~140x765 px, ~2.85 m visible height -> ~0.52 m wide) and SIFT scale 1.43 to t=12.5s -> ~384 px/m"
 }
